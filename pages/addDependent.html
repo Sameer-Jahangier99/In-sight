@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>In-Sightonline</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/requestHomeTab.css" />
+    <link rel="stylesheet" href="../css/absenseDetails.css" />
+    <link rel="stylesheet" href="../css/absenseRequestTab.css" />
+    <link rel="stylesheet" href="../css/medicalEnrollment.css" />
+    <link rel="stylesheet" href="../css/checkbox.css" />
+    <link rel="stylesheet" href="../css/editInformation.css" />
+    <!-- Bootstrap file -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b2e6ac0659.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg nav-container">
+      <div class="container-fluid container">
+        <a href="../index.html">
+          <img src="../assets/logo.png" alt="logo" class="pointer" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav w-100 d-flex justify-content-evenly">
+            <li class="nav-item responsive-icon">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item responsive-icon">
+              <a class="nav-link" href="./findProvider.html">Find Provider</a>
+            </li>
+            <li class="nav-item responsive-icon active">
+              <a class="nav-link active" href="#">Req ID Card</a>
+            </li>
+            <li class="nav-item responsive-icon">
+              <a class="nav-link" href="#">Req Dep Access</a>
+            </li>
+          </ul>
+          <div>
+            <div class="d-flex pointer">
+              <img src="../assets/msgIcon.svg" alt="message-icon" />
+              <div class="message-counter">
+                <div
+                  class="counter d-flex justify-content-center align-items-center"
+                >
+                  2
+                </div>
+              </div>
+              <img
+                src="../assets/profileIcon.svg"
+                alt="profile-image"
+                class="ms-5 pointer"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="container">
+      <div class="main-blue-bar mt-5">
+        <h4>Add Dependent</h4>
+      </div>
+      <section>
+        <div class="card card-shadow mb-3">
+          <div class="card-body">
+            <div class="container my-3">
+              <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-9">
+                  <div class="row my-3">
+                    <div class="col-md-3 mb-md-0 mb-3">
+                      <div class="absenve-type">
+                        <p class="caption weight-500 mb-2">Relation</p>
+                        <select class="p-1" name="" id="">
+                          <option value="0">Select</option>
+                          <option value="1">Option 1</option>
+                          <option value="2">Option 2</option>
+                          <option value="2">Option 3</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-3"></div>
+                  </div>
+                  <div class="row my-3">
+                    <div class="col-md-3 mb-md-0 mb-3">
+                      <div class="absenve-type">
+                        <p class="caption weight-500 mb-2">First Name*</p>
+                        <input type="text" name="" id="" />
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-md-0 mb-3">
+                      <div class="absenve-type">
+                        <p class="caption weight-500 mb-2">Last Name*</p>
+                        <input type="text" name="" id="" />
+                      </div>
+                    </div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-3"></div>
+                  </div>
+                  <div class="row my-3">
+                    <div class="col-md-3 mb-md-0 mb-3">
+                      <div class="absenve-type">
+                        <p class="caption weight-500 mb-2">SSN*</p>
+                        <input type="text" placeholder="" />
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-md-0 mb-3">
+                      <div class="absenve-type">
+                        <p class="caption weight-500 mb-2">Date of Birth*</p>
+                        <input type="text" name="" id="" />
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-md-0 mb-3">
+                      <div class="absenve-type">
+                        <p class="caption weight-500 mb-2">Gender*</p>
+                        <select class="p-1" name="" id="">
+                          <option value="0">Select</option>
+                          <option value="1">Option 1</option>
+                          <option value="2">Option 2</option>
+                          <option value="2">Option 3</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-md-0 mb-3"></div>
+                  </div>
+                  <div class="row my-3">
+                    <div class="col-md-6 mb-md-0 mb-3">
+                      <div class="absenve-type">
+                        <p class="caption weight-500 mb-2">Association Effective From Date *</p>
+                        <input type="text" placeholder="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row my-3">
+                    <div class="col-md-4 mb-md-0 mb-3">
+                      <div class="check-box-main">
+                        <label class="check-box-container"
+                          >Address same as Subscriber
+                          <input type="checkbox" checked="checked" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row my-3">
+                    <div class="col-md-3 mb-md-0 mb-3">
+                      <div class="absenve-type">
+                        <p class="caption weight-500 mb-2">Email Address</p>
+                        <input
+                          class="w-100"
+                          type="text"
+                          placeholder="Demo@pmg.com"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-md-0 mb-3">
+                      <div class="absenve-type">
+                        <p class="caption weight-500 mb-2">Email Type</p>
+                        <select class="p-1" name="" id="">
+                          <option value="0">Work</option>
+                          <option value="1">Option 1</option>
+                          <option value="2">Option 2</option>
+                          <option value="2">Option 3</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-md-0 mb-3">
+                      <div class="absenve-type">
+                        <p class="caption weight-500 mb-2">Relation</p>
+                        <select class="p-1" name="" id="">
+                          <option value="0">Primary</option>
+                          <option value="1">Option 1</option>
+                          <option value="2">Option 2</option>
+                          <option value="2">Option 3</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-md-0 mb-3">
+                      <div class="check-box-main">
+                        <label class="check-box-container"
+                          >Preferred Email
+                          <input type="checkbox" checked="checked" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row my-3">
+                    <div class="col-md-3 mb-md-0 mb-3">
+                      <div class="absenve-type">
+                        <p class="caption weight-500 mb-2">Phone Number</p>
+                        <input type="text" placeholder="" />
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-md-0 mb-3">
+                      <div class="absenve-type">
+                        <p class="caption weight-500 mb-2">Phone Type</p>
+                        <select class="p-1" name="" id="">
+                          <option value="0">Select</option>
+                          <option value="1">Option 1</option>
+                          <option value="2">Option 2</option>
+                          <option value="2">Option 3</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-md-0 mb-3">
+                      <div class="absenve-type">
+                        <p class="caption weight-500 mb-2">Relation</p>
+                        <select class="p-1" name="" id="">
+                          <option value="0">Primary</option>
+                          <option value="1">Option 1</option>
+                          <option value="2">Option 2</option>
+                          <option value="2">Option 3</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-md-0 mb-3">
+                      <div class="check-box-main">
+                        <label class="check-box-container"
+                          >Preferred Phone Number
+                          <input type="checkbox" checked="checked" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-5 text-center">
+                    <button class="submit-btn px-4">Save</button>
+                    <button class="exit-btn">Cancel</button>
+                  </div>
+                </div>
+                <div class="col-md-2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/scroll.js"></script>
+  </body>
+</html>

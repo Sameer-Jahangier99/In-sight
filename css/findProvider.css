@@ -1,0 +1,29 @@
+/* global styles */
+:root {
+    --main-bg-color: #003366;
+    --main-font: 'Poppins', sans-serif;
+    --grey-color: #7C7C7C;
+    --lightBlue-color: #398FFF;
+    --silver-color:  #EDEFF1;
+}  
+
+
+.back-btn {
+    border: 1px solid var(--main-bg-color) !important;
+    color: var(--main-bg-color) !important;
+  
+}
+
+.back-btn:hover {
+    background: var(--main-bg-color) !important;
+    color: #ffffff !important;
+}
+
+.btn-text {
+    color: var(--main-bg-color) !important;
+}
+.btn-text:hover {
+    color: #ffffff !important;
+}
+
+

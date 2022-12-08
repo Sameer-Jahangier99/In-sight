@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In-Sightonline</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/reqIdCard.css" />
+    <!-- Bootstrap file -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b2e6ac0659.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg nav-container">
+        <div class="container-fluid container">
+            <a href="../index.html">
+                <img src="../assets/logo.png" alt="logo" class="pointer" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav w-100 d-flex justify-content-evenly">
+                    <li class="nav-item responsive-icon">
+                        <a class="nav-link " aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item responsive-icon">
+                        <a class="nav-link" href="./findProvider.html">Find Provider</a>
+                    </li>
+                    <li class="nav-item responsive-icon active">
+                        <a class="nav-link active" href="#">Req ID Card</a>
+                    </li>
+                    <li class="nav-item responsive-icon">
+                        <a class="nav-link" href="#">Req Dep Access</a>
+                    </li>
+                </ul>
+                <div>
+                    <div class="d-flex pointer">
+                        <img src="../assets/msgIcon.svg" alt="message-icon" />
+                        <div class="message-counter">
+                            <div class="counter d-flex justify-content-center align-items-center">
+                                2
+                            </div>
+                        </div>
+                        <img src="../assets/profileIcon.svg" alt="profile-image" class="ms-5 pointer" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="container">
+            <div class="row d-flex align-items-center mt-3 mt-lg-5 mb-2 mb-lg-5 mb-md-0">
+                <div class="col-lg-2 col-md-12 col-sm-12">
+                    <div class="input-group">
+                        <select class="form-select select-container py-0" aria-label="Default select example">
+                            <option selected>Medical Plan</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <button class="select-btn px-3">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-12 col-sm-12">
+                    <h5 class="weight-500">To view a different plan, select the application plan from the drop-down
+                        list</h5>
+                </div>
+            </div>
+        </section>
+        <section class="container my-3">
+            <div class="dropdown">
+                <div class="dropdown-select">
+                    <p class="select link-text ">Member ID Card</p>
+                    <i class="fa-solid fa-chevron-down arrow-down"></i>
+                </div>
+                <div class="dropdown-list">
+                    <a href="../index.html" class="text-decoration-none navigation-link">
+                        <div class="d-flex align-items-center ">
+                            <i class="fas fa-check ms-1 invisible"></i>
+                            <p class="dropdown-list__item link-text">Home</p>
+                        </div>
+                    </a>
+                    <hr class="solid">
+                    <a href="./reqIdCard.html" class="text-decoration-none navigation-link">
+                        <div class="d-flex align-items-center ">
+                            <i class="fas fa-check ms-1"></i>
+                            <p class="dropdown-list__item link-text">Member ID Card</p>
+                        </div>
+                    </a>
+                    <hr class="solid">
+                    <a href="./medicalBenefits.html" class="text-decoration-none navigation-link">
+                        <div class="d-flex align-items-center ">
+                            <i class="fas fa-check invisible"></i>
+                            <p class="dropdown-list__item link-text">Medical Benefits</p>
+                        </div>
+                    </a>
+                    <hr class="solid">
+                    <a href="./medicalClaims.html" class="text-decoration-none navigation-link">
+                        <div class="d-flex align-items-center ">
+                            <i class="fas fa-check invisible"></i>
+                            <p class="dropdown-list__item link-text">View Medical & Claims</p>
+                        </div>
+                    </a>
+                    <hr class="solid">
+                    <a href="./medicalRxClaims.html" class="text-decoration-none navigation-link">
+                        <div class="d-flex align-items-center ">
+                            <i class="fas fa-check invisible"></i>
+                            <p class="dropdown-list__item link-text">View Medical & Rx Claims</p>
+                        </div>
+                    </a>
+                    <hr class="solid">
+                    <a href="./submitMedicalClaims.html" class="text-decoration-none navigation-link">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-check invisible"></i>
+                            <p class="dropdown-list__item link-text">Submit Medical Claims</p>
+                        </div>
+                    </a>
+                    <hr class="solid">
+                    <a href="./medicalPlanCostShare.html" class="text-decoration-none navigation-link">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-check invisible"></i>
+                            <p class="dropdown-list__item link-text">Medical Plan Cost Share</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="navigation-container mb-5">
+            <div class="d-flex justify-content-between links-container align-items-center">
+                <div class="py-2 d-flex container  chip-container" id="link-container">
+                    <a href="../index.html">
+                        <button type="button" class="btn chip-button py-1 me-3 w-75" id="#divElem">
+                            Home
+                        </button>
+                    </a>
+                    <a href="./reqIdCard.html">
+                        <button type="button" class="btn chip-button py-1 mx-3 active ">
+                            Member ID Card
+                        </button>
+                    </a>
+                    <a href="./medicalBenefits.html">
+                        <button type="button" class="btn chip-button py-1 mx-3 ">
+                            Medical Benefits
+                        </button>
+                    </a>
+                    <a href="./medicalClaims.html">
+                        <button type="button" class="btn chip-button py-1 mx-3 ">
+                            View Medical & Claims
+                        </button>
+                    </a>
+                    <a href="./medicalRxClaims.html">
+                        <button type="button" class="btn chip-button py-1 mx-3">
+                            View Medical & Rx Claims
+                        </button>
+                    </a>
+
+                    <a href="./submitMedicalClaims.html">
+                        <button type="button" class="btn chip-button py-1 mx-3">
+                            Submit Medical Claims
+                        </button>
+                    </a>
+                    <a href="./medicalPlanCostShare.html">
+                        <button type="button" class="btn chip-button py-1 mx-3">
+                            Medical Plan Cost Share
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="card card-shadow h-100">
+                            <div
+                                class="card-header header-title d-flex justify-content-center align-items-center text-center w-100">
+                                <h3 class="m-0 text-white weight-500">PRINT MEMBER ID CARD</h3>
+                            </div>
+                            <div class="h-100 px-5 pt-4 pb-5 d-flex flex-column justify-content-between">
+                                <div>
+                                    <h5 class="weight-400">Need proof of coverage today? View of print a copy of
+                                        your health plan ID.</h5>
+                                </div>
+                                <div class="d-flex justify-content-center ">
+                                    <button type="button" class="btn print-card-btn py-1 mx-1">
+                                        View / Print ID Card
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-lg-6 col-md-12 col-sm-12">
+                        <div class="card card-shadow h-100">
+                            <div
+                                class="card-header header-title d-flex justify-content-center align-items-center text-center w-100">
+                                <h3 class="m-0 text-white weight-500">REQUEST MEMBER ID CARD BY MAIL</h3>
+                            </div>
+                            <div class="px-3 py-4 pb-5">
+                                <div>
+                                    <h5 class="weight-400">Need new health card(s)? Please indicate the number of
+                                        health cards needed and select the Submit Request button.</h5>
+                                </div>
+                                <div class="d-flex flex-wrap w-100 align-items-center mt-4">
+                                    <div class="input-container heading-container d-flex align-items-center">
+                                        <h5 class="weight-500 mb-0"> Number of Card(s)</h5>
+                                    </div>
+                                    <div class="input-container ">
+                                        <form class="d-flex">
+                                            <div class="w-50 d-flex align-items-center">
+                                                <input type="email" class="form-control request-id"
+                                                    id="exampleInputEmail1" aria-describedby="emailHelp">
+                                            </div>
+                                            <button type="button" class="btn print-card-btn py-1 mx-1 w-50">
+                                                Submit Request
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5 class="weight-400 mt-4">The card(s) will be mailed to your current
+                                        correspondence
+                                        address on file. If incorrect, please update your address
+                                        before submitting your request.</h5>
+                                </div>
+                                <div class="row d-flex justify-content-center mt-4">
+                                    <div
+                                        class="col-6 text-center d-flex flex-column justify-content-center align-items-center ">
+                                        <div>
+                                            <h5 class="weight-500 mb-0">225 Smith Rd</h5>
+                                        </div>
+                                        <div>
+                                            <h5 class="weight-500 mb-0"> St.Charles, IL - 60174</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 d-flex justify-content-center align-items-center">
+                                        <button type="button" class="btn print-card-btn py-1 mx-1 ">
+                                            Edit Address
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/scroll.js"></script>
+</body>
+
+</html>

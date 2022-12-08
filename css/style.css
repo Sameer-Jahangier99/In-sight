@@ -1,0 +1,330 @@
+/* global styles */
+:root {
+  --main-bg-color: #003366;
+  --main-font: "Poppins", sans-serif;
+  --grey-color: #7c7c7c;
+  --lightBlue-color: #398fff;
+  --linkBlue-color: #1cc1ff;
+  --silver-color: #edeff1;
+  --light-grey: #a0a0a0;
+  --dark-grey: #4f4f4f;
+  --main-grey: #f9f9f9;
+  --green-color: #04bd00;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: var(--main-grey) !important;
+}
+h1 {
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+}
+
+h2 {
+  font-size: 36px;
+  font-family: "Poppins", sans-serif;
+}
+
+h3 {
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+}
+
+h4 {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+h5 {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+span {
+  font-size: 18px;
+  color: var(--grey-color);
+  font-family: "Poppins", sans-serif;
+}
+a {
+  color: unset !important;
+  text-decoration: unset !important;
+}
+
+.caption {
+  font-size: 14px !important;
+  font-family: "Poppins", sans-serif !important;
+}
+
+.caption2 {
+  font-size: 12px !important;
+  font-family: "Poppins", sans-serif !important;
+}
+
+.caption3 {
+  font-size: 10px;
+  font-family: "Poppins", sans-serif !important;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  h1 {
+    font-size: 35px !important;
+  }
+
+  h2 {
+    font-size: 28px !important;
+  }
+
+  h3 {
+    font-size: 22px !important;
+  }
+
+  h4 {
+    font-size: 18px !important;
+  }
+
+  h5 {
+    font-size: 16px !important;
+  }
+
+  p {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 570px) {
+  h1 {
+    font-size: 30px !important;
+  }
+
+  h2 {
+    font-size: 25px !important;
+  }
+
+  h3 {
+    font-size: 20px !important;
+  }
+
+  h4 {
+    font-size: 16px !important;
+  }
+
+  h5 {
+    font-size: 14px !important;
+  }
+
+  p {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 570px) {
+  h1 {
+    font-size: 25px !important;
+  }
+
+  h2 {
+    font-size: 20px !important;
+  }
+
+  h3 {
+    font-size: 20px !important;
+  }
+
+  h4 {
+    font-size: 12px !important;
+  }
+
+  h5 {
+    font-size: 12px !important;
+  }
+
+  p {
+    font-size: 11px !important;
+  }
+  .caption {
+    font-size: 12px !important;
+  }
+}
+
+/* font weights */
+.weight-700 {
+  font-weight: 700 !important;
+}
+
+.weight-600 {
+  font-weight: 600 !important;
+}
+
+.weight-500 {
+  font-weight: 500 !important;
+}
+
+.weight-400 {
+  font-weight: 400 !important;
+}
+
+/* color */
+.grey {
+  color: var(--grey-color) !important;
+}
+
+.blue {
+  color: var(--main-bg-color);
+}
+
+.light-blue {
+  color: var(--lightBlue-color);
+}
+
+.black {
+  color: #000000;
+}
+
+.light-grey {
+  color: var(--light-grey) !important;
+}
+.link-blue {
+  color: var(--lightBlue-color) !important;
+}
+
+.green {
+  color: var(--green-color) !important;
+}
+
+.main-grey {
+  background: var(--main-grey) !important;
+}
+
+.dark-grey {
+  color: var(--dark-grey) !important;
+}
+
+/* cursor  */
+
+.pointer {
+  cursor: pointer;
+}
+
+/* navbar styling */
+.nav-container {
+  background: var(--main-bg-color) !important;
+}
+
+li a {
+  font-family: var(--main-font);
+  font-size: 20px;
+  color: #ffffff !important;
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid #ffffff;
+}
+
+.active {
+  border-bottom: 1px solid #ffffff;
+}
+
+.nav-link {
+  padding: 0px !important;
+}
+
+.message-counter {
+  position: relative;
+  bottom: 6px;
+  right: 5px;
+  font-size: 10px;
+  font-family: var(--main-font);
+}
+
+.counter {
+  background: #ffffff;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+/* filter boxes */
+
+.filter-box {
+  background: var(--sky-blue);
+}
+
+.filter-select {
+  border: 1px solid #003366 !important;
+  border-radius: 0px !important;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 10px !important;
+  font-weight: 600 !important;
+  background-image: none !important;
+}
+
+.drop-down-icon {
+  float: right;
+  margin-top: -22px;
+  margin-right: 5px;
+  color: var(--main-bg-color) !important;
+}
+
+.select-form-width {
+  width: 30%;
+}
+
+@media only screen and (max-width: 1390px) {
+  .select-form-width {
+    width: 80%;
+    margin-top: 5px;
+  }
+}
+
+/* plans styling */
+
+.card-shadow {
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+.header-title {
+  background-color: var(--main-bg-color) !important;
+}
+
+.select-container {
+  border: 1px solid var(--main-bg-color) !important;
+  background-image: none !important;
+  color: var(--main-bg-color) !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+}
+
+/* navbar mobile setting */
+.navbar-toggler {
+  border: var(--bs-border-width) solid #ffffff !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url(../assets/arrowRight.svg) !important;
+  transform: rotate(90deg);
+}
+
+@media only screen and (max-width: 480px) {
+  .responsive-icon {
+    padding: 12px 0px;
+  }
+}
+
+/* Inactive plans */
+.card-border {
+  border: 1px solid var(--silver-color);
+}
+
+/* https://www.figma.com/file/rPZoOrHSAtvc4nITupi6I6/Paul-Project?node-id=0%3A1 */

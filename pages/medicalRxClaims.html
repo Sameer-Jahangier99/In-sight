@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In-Sightonlines</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/medicalRxClaims.css" />
+    <!-- Bootstrap file -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b2e6ac0659.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg nav-container">
+        <div class="container-fluid container">
+            <a href="../index.html">
+                <img src="../assets/logo.png" alt="logo" class="pointer" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav w-100 d-flex justify-content-evenly">
+                    <li class="nav-item responsive-icon">
+                        <a class="nav-link " aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item responsive-icon">
+                        <a class="nav-link" href="./findProvider.html">Find Provider</a>
+                    </li>
+                    <li class="nav-item responsive-icon">
+                        <a class="nav-link" href="#">Req ID Card</a>
+                    </li>
+                    <li class="nav-item responsive-icon">
+                        <a class="nav-link" href="#">Req Dep Access</a>
+                    </li>
+                </ul>
+                <div>
+                    <div class="d-flex pointer">
+                        <img src="../assets/msgIcon.svg" alt="message-icon" />
+                        <div class="message-counter">
+                            <div class="counter d-flex justify-content-center align-items-center">
+                                2
+                            </div>
+                        </div>
+                        <img src="../assets/profileIcon.svg" alt="profile-image" class="ms-5 pointer" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="mb-3"> 
+        <section class="container">
+            <div class="row  d-flex align-items-center mt-3 mt-lg-5 mb-2 mb-lg-5 mb-md-0">
+                    <div class="col-lg-2 col-md-12 col-sm-12">
+                        <div class="input-group">
+                            <select class="form-select select-container py-0" aria-label="Default select example">
+                                <option selected>Medical Plan</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <button class="select-btn px-3">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-12 col-sm-12">
+                        <h5 class="weight-500">To view a different plan, select the application plan from the drop-down
+                            list</h5>
+                    </div>
+                </div>
+        </section>
+        <section class="container my-3">
+            <div class="dropdown">
+                <div class="dropdown-select">
+                    <p class="select link-text ">View Medical & Rx Claims</p>
+                    <i class="fa-solid fa-chevron-down arrow-down"></i>
+                </div>
+                <div class="dropdown-list">
+                    <a href="../index.html" class="text-decoration-none navigation-link">
+                        <div class="d-flex align-items-center ">
+                            <i class="fas fa-check ms-1 invisible"></i>
+                            <p class="dropdown-list__item link-text">Home</p>
+                        </div>
+                    </a>
+                    <hr class="solid">
+                    <a href="./reqIdCard.html" class="text-decoration-none navigation-link">
+                        <div class="d-flex align-items-center ">
+                            <i class="fas fa-check ms-1 invisible"></i>
+                            <p class="dropdown-list__item link-text">Member ID Card</p>
+                        </div>
+                    </a>
+                    <hr class="solid">
+                    <a href="./medicalBenefits.html" class="text-decoration-none navigation-link">
+                        <div class="d-flex align-items-center ">
+                            <i class="fas fa-check invisible"></i>
+                            <p class="dropdown-list__item link-text">Medical Benefits</p>
+                        </div>
+                    </a>
+                    <hr class="solid">
+                    <a href="./medicalRxClaims.html" class="text-decoration-none navigation-link">
+                        <div class="d-flex align-items-center ">
+                            <i class="fas fa-check"></i>
+                            <p class="dropdown-list__item link-text">View Medical & Rx Claims</p>
+                        </div>
+                    </a>
+                    <hr class="solid">
+                    <a href="./submitMedicalClaims.html" class="text-decoration-none navigation-link">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-check invisible"></i>
+                            <p class="dropdown-list__item link-text">Submit Medical Claims</p>
+                        </div>
+                    </a>
+                    <hr class="solid">
+                    <a href="./medicalPlanCostShare.html" class="text-decoration-none navigation-link">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-check invisible"></i>
+                            <p class="dropdown-list__item link-text">Medical Plan Cost Share</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="navigation-container mb-5">
+            <div class="d-flex justify-content-between links-container align-items-center">
+                <div class="py-2 d-flex container  chip-container" id="link-container">
+                    <a href="../index.html">
+                        <button type="button" class="btn chip-button py-1 me-3 w-75" id="#divElem">
+                            Home
+                        </button>
+                    </a>
+                    <a href="./reqIdCard.html">
+                        <button type="button" class="btn chip-button py-1 mx-3">
+                            Member ID Card
+                        </button>
+                    </a>
+                    <a href="./medicalBenefits.html">
+                        <button type="button" class="btn chip-button py-1 mx-3 ">
+                            Medical Benefits
+                        </button>
+                    </a>
+                    <a href="./medicalClaims.html">
+                        <button type="button" class="btn chip-button py-1 mx-3 ">
+                            View Medical & Claims
+                        </button>
+                    </a>
+                    <a href="./medicalClaims.html">
+                        <button type="button" class="btn chip-button py-1 mx-3 active">
+                            View Medical & Rx Claims
+                        </button>
+                    </a>
+
+                    <a href="./submitMedicalClaims.html">
+                        <button type="button" class="btn chip-button py-1 mx-3">
+                            Submit Medical Claims
+                        </button>
+                    </a>
+                    <a href="./medicalPlanCostShare.html">
+                        <button type="button" class="btn chip-button py-1 mx-3">
+                            Medical Plan Cost Share
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col-md-6 responsive-space">
+                        <div class="card card-shadow responsive-box ">
+                            <div class="card-header header-title px-5">
+                                <h4 class="m-0 text-white weight-500">REQUEST LEAVE</h4>
+                            </div>
+                            <div class=" px-4 pt-3">
+                                <p class="caption ">Request New Leave of Absence</p>
+                                <p class="caption">Request Call-in for Existing Approved Intermittent leave of
+                                    Absence</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 responsive-space">
+                        <div class="card card-shadow h-100 ">
+                            <div class="card-header header-title px-5">
+                                <h4 class="m-0 text-white weight-500">MY ABSENCE HISTORY</h4>
+                            </div>
+                            <div class="px-4 py-3">
+                                <div class="d-flex justify-content-between box-container p-2">
+                                    <div>
+                                        <p class="weight-600 ">Patient Leave</p>
+                                        <p class="caption weight-400 ">Continous 480 hours</p>
+                                        <p class="caption weight-400 "> Childbirth and/or to care for child</p>
+                                        <p class="caption weight-400">Start Date: 05/03/2021: End Date: 07/25/2021
+                                        </p>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <p class="caption  ">Absence Status: <span
+                                                    class="caption weight-600 black">Approved</span></p>
+                                            <p class="caption light-blue">2021062562187</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between box-container p-2 mt-2">
+                                    <div>
+                                        <p class="weight-600 ">Family and Medical Leave Act</p>
+                                        <p class="caption weight-400 ">Continous 480 hours</p>
+                                        <p class="caption weight-400 "> Childbirth and/or to care for child</p>
+                                        <p class="caption weight-400">Start Date: 05/03/2021: End Date: 07/25/2021
+                                        </p>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <p class="caption  ">Absence Status: <span
+                                                    class="caption weight-600 black">Approved</span></p>
+                                            <p class="caption light-blue">2021062562187</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between box-container p-2 mt-2">
+                                    <div>
+                                        <p class="weight-600 ">Non-FMLA Medical Leave </p>
+                                        <p class="caption weight-400 ">Continous 20 hours</p>
+                                        <p class="caption weight-400 "> Employee’s own Medical Condition</p>
+                                        <p class="caption weight-400">Start Date: 07/26/2021: End Date: 08/08/2021
+                                        </p>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <p class="caption mb-0">Absence Status: <span
+                                                    class="caption weight-600 black">Denied;</span></p>
+                                            <p class="caption">
+                                                Does not qualify,</p>
+                                            <p class="caption light-blue">2021062562187</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <div class="card card-shadow responsive-box">
+                            <div class="card-header header-title px-5">
+                                <h4 class="m-0 text-white weight-500">REQUEST LEAVE</h4>
+                            </div>
+                            <div class=" px-4 pt-3">
+                                <p class="caption ">Request Absence</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card card-shadow h-100 ">
+                            <div class="card-header header-title px-5">
+                                <h4 class="m-0 text-white weight-500">MY ABSENCE HISTORY</h4>
+                            </div>
+                            <div class="px-4 py-3">
+                                <div class="d-flex justify-content-between box-container p-2">
+                                    <div>
+                                        <p class="weight-600 ">Paid Time Off</p>
+                                        <p class="caption weight-400 ">Benefits Allowed: 187.5</p>
+                                        <p class="caption weight-400 ">Scheduled Hours: 158</p>
+                                        <p class="caption weight-400">Accrued Hours: 93.75
+                                        </p>
+                                    </div>
+                                    <div class="d-flex align-items-end">
+                                        <div>
+                                            <p class="caption weight-400 ">Used Hours: 80.5</p>
+                                            <p class="caption weight-400 ">Balance Hours: 29.5</p>
+                                            <a href="#" class="text-decoration-none">
+                                                <p class="caption weight-400 ">View History</p>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between box-container p-2 mt-2">
+                                    <div>
+                                        <p class="weight-600 ">Birthhday</p>
+                                        <p class="caption weight-400 ">Benefits Allowed: 7.5</p>
+                                        <p class="caption weight-400 ">Scheduled Hours: 7.5</p>
+                                        <p class="caption weight-400">Accrued Hours: N/A
+                                        </p>
+                                    </div>
+                                    <div class="d-flex align-items-end">
+                                        <div>
+                                            <p class="caption weight-400 ">Used Hours: 7.5</p>
+                                            <p class="caption weight-400 ">Balance Hours: 0</p>
+                                            <a href="#" class="text-decoration-none">
+                                                <p class="caption weight-400 ">View History</p>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between box-container p-2 mt-2">
+                                    <div>
+                                        <p class="weight-600 ">Floating Holiday</p>
+                                        <p class="caption weight-400 ">Benefits Allowed: 15</p>
+                                        <p class="caption weight-400 ">Scheduled Hours: 16</p>
+                                        <p class="caption weight-400">Accrued Hours: 7.68
+                                        </p>
+                                    </div>
+                                    <div class="d-flex align-items-end">
+                                        <div>
+                                            <p class="caption weight-400 ">Used Hours: 8</p>
+                                            <p class="caption weight-400 ">Balance Hours: 1</p>
+                                            <a href="#" class="text-decoration-none">
+                                                <p class="caption weight-400 ">View History</p>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/scroll.js"></script>
+</body>
+
+</html>

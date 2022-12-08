@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In-Sightonline</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/medicalClaims.css" />
+    <!-- Bootstrap file -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b2e6ac0659.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg nav-container">
+        <div class="container-fluid container">
+            <a href="../index.html">
+                <img src="../assets/logo.png" alt="logo" class="pointer" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav w-100 d-flex justify-content-evenly">
+                    <li class="nav-item responsive-icon">
+                        <a class="nav-link " aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item responsive-icon">
+                        <a class="nav-link" href="./findProvider.html">Find Provider</a>
+                    </li>
+                    <li class="nav-item responsive-icon">
+                        <a class="nav-link" href="./reqIdCard.html">Req ID Card</a>
+                    </li>
+                    <li class="nav-item responsive-icon">
+                        <a class="nav-link" href="#">Req Dep Access</a>
+                    </li>
+                </ul>
+                <div>
+                    <div class="d-flex pointer">
+                        <img src="../assets/msgIcon.svg" alt="message-icon" />
+                        <div class="message-counter">
+                            <div class="counter d-flex justify-content-center align-items-center">
+                                2
+                            </div>
+                        </div>
+                        <img src="../assets/profileIcon.svg" alt="profile-image" class="ms-5 pointer" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="container">
+            <div class="row  d-flex align-items-center  mt-3 mt-lg-5 mb-2 mb-lg-5 mb-md-0">
+                    <div class="col-lg-2 col-md-12 col-sm-12">
+                        <div class="input-group">
+                            <select class="form-select select-container py-0" aria-label="Default select example">
+                                <option selected>Medical Plan</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <button class="select-btn px-3">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-12 col-sm-12">
+                        <h5 class="weight-500">To view a different plan, select the application plan from the drop-down
+                            list</h5>
+                    </div>
+                </div>
+        </section>
+        <section class="container my-3">
+            <div class="dropdown">
+                <div class="dropdown-select">
+                    <p class="select link-text ">Submit Medical Claims</p>
+                    <i class="fa-solid fa-chevron-down arrow-down"></i>
+                </div>
+                <div class="dropdown-list">
+                    <a href="../index.html" class="text-decoration-none navigation-link">
+                        <div class="d-flex align-items-center ">
+                            <i class="fas fa-check ms-1 invisible"></i>
+                            <p class="dropdown-list__item link-text">Home</p>
+                        </div>
+                    </a>
+                    <hr class="solid">
+                    <a href="./reqIdCard.html" class="text-decoration-none navigation-link">
+                        <div class="d-flex align-items-center ">
+                            <i class="fas fa-check ms-1 invisible"></i>
+                            <p class="dropdown-list__item link-text">Member ID Card</p>
+                        </div>
+                    </a>
+                    <hr class="solid">
+                    <a href="./medicalBenefits.html" class="text-decoration-none navigation-link">
+                        <div class="d-flex align-items-center ">
+                            <i class="fas fa-check invisible"></i>
+                            <p class="dropdown-list__item link-text">View Medical Benefits</p>
+                        </div>
+                    </a>
+                    <hr class="solid">
+                    <a href="./medicalRxClaims.html" class="text-decoration-none navigation-link">
+                        <div class="d-flex align-items-center ">
+                            <i class="fas fa-check invisible"></i>
+                            <p class="dropdown-list__item link-text">View Medical & Rx Claims</p>
+                        </div>
+                    </a>
+                    <hr class="solid">
+                    <a href="./submitMedicalClaims.html" class="text-decoration-none navigation-link">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-check invisible"></i>
+                            <p class="dropdown-list__item link-text">Submit Medical Claims</p>
+                        </div>
+                    </a>
+                    <hr class="solid">
+                    <a href="./medicalPlanCostShare.html" class="text-decoration-none navigation-link">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-check invisible"></i>
+                            <p class="dropdown-list__item link-text">Medical Plan Cost Share</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="navigation-container mb-5">
+            <div class="d-flex justify-content-between links-container align-items-center">
+                <div class="py-2 d-flex container  chip-container" id="link-container">
+                    <a href="../index.html">
+                        <button type="button" class="btn chip-button py-1 me-3 w-75" id="#divElem">
+                            Home
+                        </button>
+                    </a>
+                    <a href="./reqIdCard.html">
+                        <button type="button" class="btn chip-button py-1 mx-3">
+                            Member ID Card
+                        </button>
+                    </a>
+                    <a href="./medicalBenefits.html">
+                        <button type="button" class="btn chip-button py-1 mx-3 ">
+                            Medical Benefits
+                        </button>
+                    </a>
+                    <a href="./medicalClaims.html">
+                        <button type="button" class="btn chip-button py-1 mx-3 active">
+                            View Medical & Claims
+                        </button>
+                    </a>
+                    <a href="./medicalRxClaims.html">
+                        <button type="button" class="btn chip-button py-1 mx-3">
+                            View Medical & Rx Claims
+                        </button>
+                    </a>
+                    <a href="./submitMedicalClaims.html">
+                        <button type="button" class="btn chip-button py-1 mx-3">
+                            Submit Medical Claims
+                        </button>
+                    </a>
+                    <a href="./medicalPlanCostShare.html">
+                        <button type="button" class="btn chip-button py-1 mx-3">
+                            Medical Plan Cost Share
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="weight-400">This view is for Medical and Rx Claims for the current year. For
+                            information on Medical or Rx claims, use the date range filter.</p>
+                    </div>
+                    <div class="col-md-3 mt-2">
+                        <div class="filter-header py-3 px-2">
+                            <h5 class="mb-0">Medical & Claim Filters</h5>
+                        </div>
+                        <div class="filter-box p-0 px-2 pb-1 pt-3">
+                            <div>
+                                <p class="caption mb-0">Date Range</p>
+                            </div>
+                            <div class="d-flex justify-content-end py-1 py-lg-1 py-md-1">
+                                <label class="form-check-label caption3 light-grey weight-600 d-flex align-items-center"
+                                    for="flexCheckDefault">
+                                    From
+                                </label>
+                                <div class="">
+                                    <div class="form-check d-flex justify-content-end">
+                                        <div class="d-flex justify-content-end">
+                                            <input type="date" class="form-control date-picker">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-end ">
+                                <label class="form-check-label caption3 light-grey weight-600 d-flex align-items-center"
+                                    for="flexCheckDefault">
+                                    To
+                                </label>
+                                <div>
+                                    <div class="form-check d-flex justify-content-end">
+                                        <div class="d-flex justify-content-end">
+                                            <input type="date" class="form-control date-picker">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-0 filter-box p-0 px-2 py-1">
+                            <div>
+                                <p class="caption mb-0">Claimant type</p>
+                            </div>
+                            <div class="d-flex justify-content-end py-1">
+                                <div class="w-50">
+                                    <div class="form-check">
+                                        <input class="form-check-input custom-checkbox" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label caption3 light-grey weight-600"
+                                            for="flexCheckDefault">
+                                            Rx (2)
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input custom-checkbox" type="checkbox" value=""
+                                            id="flexCheckChecked">
+                                        <label class="form-check-label caption3 light-grey weight-600"
+                                            for="flexCheckChecked">
+                                            Medical (4)
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt- filter-box p-0 px-2 py-1">
+                            <div>
+                                <p class="caption mb-0">Claimant</p>
+                            </div>
+                            <div class="d-flex justify-content-end py-1">
+                                <div class="w-50">
+                                    <select class="form-select form-select-sm filter-select"
+                                        aria-label=".form-select-sm example">
+                                        <option selected>All</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <i class="fa-solid fa-caret-down drop-down-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-0 filter-box p-0 px-2 py-1">
+                            <div>
+                                <p class="caption mb-0 ">Claim Status</p>
+                            </div>
+                            <div class="d-flex justify-content-end py-1">
+                                <div class="w-50">
+                                    <select class="form-select form-select-sm filter-select"
+                                        aria-label=".form-select-sm example">
+                                        <option selected>All</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <i class="fa-solid fa-caret-down drop-down-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-0 filter-last-box p-0 px-2 pt-1 pb-3">
+                            <div>
+                                <p class="caption mb-0">Provider</p>
+                            </div>
+                            <div class="d-flex justify-content-end py-1">
+                                <div class="w-50">
+                                    <select class="form-select form-select-sm filter-select"
+                                        aria-label=".form-select-sm example">
+                                        <option selected>All</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <i class="fa-solid fa-caret-down drop-down-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <div class="row p-3  medical-claimBox">
+
+                            <div class="col-md-12 d-flex justify-content-end">
+                                <div class="d-flex">
+                                    <div>
+                                        <button type="button" class="btn  print-btn me-3">Print</button>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="btn btn-light export-btn">Export</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 claim-list d-flex mt-2 ">
+                                <a href="./claimListDetail.html" class="text-decoration-none w-100">
+                                    <div class="p-2 w-100">
+                                        <div class="d-flex flex-wrap">
+                                            <p class="me-2 box-title black">Mercy Hospital Springfield</p>
+                                            <p class="caption3 d-flex align-items-center light-grey">Claim Status;
+                                                Received
+                                            </p>
+                                        </div>
+                                        <div class="d-flex flex-wrap justify-content-between">
+                                            <div>
+                                                <div>
+                                                    <p class="caption3 light-grey">Services Date: 6/01/2021</p>
+                                                </div>
+                                                <div>
+                                                    <p class="caption3  light-grey">For Hew (subscriber)</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <p class="caption3 light-grey">Amount Bailed</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="caption3  light-grey fw-bold">$26,992.07</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <p class="caption3 light-grey">Plain Paid</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="caption3  light-grey fw-bold">$12,431.93</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <p class="caption3 light-grey">Member Ramianing</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="caption3  light-grey fw-bold">$2413.71</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <p class="caption3 light-blue">300002106</p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="caption3  light-grey">Medical</p>
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-12 claim-list d-flex mt-2 ">
+                                <a href="./claimListDetail.html" class="text-decoration-none w-100">
+                                    <div class="p-2 w-100">
+
+                                        <div class="d-flex flex-wrap">
+                                            <p class="me-2 box-title black">Dr. Smith</p>
+                                            <p class="caption3 d-flex align-items-center light-grey">Claim Status;
+                                                Completed
+                                            </p>
+                                        </div>
+                                        <div class="d-flex flex-wrap justify-content-between">
+                                            <div>
+                                                <div>
+                                                    <p class="caption3 light-grey">Services Date: 5/15/2021</p>
+                                                </div>
+                                                <div>
+                                                    <p class="caption3  light-grey">For Tallou (Child)</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <p class="caption3 light-grey">Amount Bailed</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="caption3  light-grey fw-bold">$273.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <p class="caption3 light-grey">Plain Paid</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="caption3  light-grey fw-bold">$139.79</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <p class="caption3 light-grey">Member Ramianing</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="caption3  light-grey fw-bold">$0.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <p class="caption3 light-blue">300002106</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="caption3 light-blue">View EDB</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="caption3  light-grey">Medical</p>
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-12 claim-list d-flex mt-2 ">
+                                <a href="./claimListDetail.html" class="text-decoration-none w-100">
+                                    <div class="p-2 w-100">
+                                        <div class="d-flex flex-wrap">
+                                            <p class="me-2 box-title black">Dr. Patel DDS</p>
+                                            <p class="caption3 d-flex align-items-center light-grey">Claim Status;
+                                                Completed
+                                            </p>
+                                        </div>
+                                        <div class="d-flex flex-wrap justify-content-between">
+                                            <div>
+                                                <div>
+                                                    <p class="caption3 light-grey">Services Date: 5/6/2021</p>
+                                                </div>
+                                                <div>
+                                                    <p class="caption3  light-grey">For Hew (Subscriber)</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <p class="caption3 light-grey">Amount Bailed</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="caption3  light-grey fw-bold">$307.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <p class="caption3 light-grey">Plain Paid</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="caption3  light-grey fw-bold">$116.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <p class="caption3 light-grey">Member Ramianing</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="caption3  light-grey fw-bold">$37.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <p class="caption3 light-blue">300002103</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="caption3 light-blue">View EDB</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="caption3  light-grey">Medical</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-12 claim-list d-flex mt-2 ">
+                                <a href="./claimListDetail.html" class="text-decoration-none w-100">
+                                    <div class="p-2 w-100">
+                                        <div class="d-flex flex-wrap">
+                                            <p class="me-2 box-title black">Dr. Patel DDS</p>
+                                            <p class="caption3 d-flex align-items-center light-grey">Claim Status;
+                                                Completed
+                                            </p>
+                                        </div>
+                                        <div class="d-flex flex-wrap justify-content-between">
+                                            <div>
+                                                <div>
+                                                    <p class="caption3 light-grey">Services Date: 5/6/2021</p>
+                                                </div>
+                                                <div>
+                                                    <p class="caption3  light-grey">For Reggen (Subscriber)</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <p class="caption3 light-grey">Amount Bailed</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="caption3  light-grey fw-bold">$300.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <p class="caption3 light-grey">Plain Paid</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="caption3  light-grey fw-bold">$210.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <p class="caption3 light-grey">Member Ramianing</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="caption3  light-grey fw-bold">$90.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <p class="caption3 light-blue">300002103</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="caption3 light-blue">View EDB</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="caption3  light-grey">Medical</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-12 claim-list d-flex mt-2 ">
+                                <a href="./claimListDetail.html" class="text-decoration-none w-100">
+                                    <div class="p-2 w-100">
+                                        <div class="d-flex flex-wrap">
+                                            <p class="me-2 box-title black">Janssen Vacc Inj Covid-19</p>
+                                            <p class="caption3 d-flex align-items-center light-grey">Claim Status;
+                                                Completed
+                                            </p>
+                                        </div>
+                                        <div class="d-flex flex-wrap justify-content-between">
+                                            <div>
+                                                <div>
+                                                    <p class="caption3 light-grey">Services Date: 5/6/2021</p>
+                                                </div>
+                                                <div>
+                                                    <p class="caption3  light-grey">For Reggen (Subscriber)</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <p class="caption3 light-grey">Amount Bailed</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="caption3  light-grey fw-bold">$28.39</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <p class="caption3 light-grey">Plain Paid</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="caption3  light-grey fw-bold">$28.39</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <p class="caption3 light-grey">Member Ramianing</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="caption3  light-grey fw-bold">$0.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <p class="caption3 light-blue">300002102</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="caption3 light-blue">View EDB</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="caption3  light-grey">Pharmacy</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-12 claim-list d-flex mt-2 ">
+                                <a href="./claimListDetail.html" class="text-decoration-none w-100">
+                                    <div class="p-2 w-100">
+                                        <div class="d-flex flex-wrap">
+                                            <p class="me-2 box-title black">Janssen Vacc Inj Covid-19</p>
+                                            <p class="caption3 d-flex align-items-center light-grey">Claim Status;
+                                                Completed
+                                            </p>
+                                        </div>
+                                        <div class="d-flex flex-wrap justify-content-between">
+                                            <div>
+                                                <div>
+                                                    <p class="caption3 light-grey">Services Date: 5/6/2021</p>
+                                                </div>
+                                                <div>
+                                                    <p class="caption3  light-grey">For Reggen (Subscriber)</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <p class="caption3 light-grey">Amount Bailed</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="caption3  light-grey fw-bold">$28.39</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <p class="caption3 light-grey">Plain Paid</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="caption3  light-grey fw-bold">$28.39</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <p class="caption3 light-grey">Member Ramianing</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="caption3  light-grey fw-bold">$0.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <p class="caption3 light-blue">300002102</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="caption3 light-blue">View EDB</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="caption3  light-grey">Pharmacy</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/scroll.js"></script>
+</body>
+
+</html>

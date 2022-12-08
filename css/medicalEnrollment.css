@@ -1,0 +1,228 @@
+.dashboard-box {
+  /* background-color: #46cd2f; */
+  /* background-color: #6c757d; */
+  background-color: #B7B7B7;
+  border-radius: 3px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.dashboard-box i {
+  display: none;
+}
+
+.dashboard-box span {
+  color: white;
+  margin-left: 5px;
+}
+
+/* For active dashboard box  */
+.dashboard-box-active {
+  /* background-color: #46cd2f; */
+  background-color: #003366;
+  border-radius: 3px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.dashboard-box-active i {
+  background: white;
+  border-radius: 50%;
+  padding: 5px;
+  /* color: #46cd2f; */
+  color: #003366;
+}
+
+.dashboard-box-active span {
+  color: white;
+  margin-left: 5px;
+}
+
+.waive-btn {
+  background-color: #343a40;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 5px 15px;
+}
+
+.profile-main {
+  position: relative;
+  text-align: center;
+}
+
+.sub-profile-main {
+  position: relative;
+  background-color: #46cd2f;
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 50%;
+}
+.profile-main .fa-user {
+  /* background-color: #46cd2f; */
+  background-color: #003366;
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 50%;
+  position: relative;
+}
+.profile-main-non-active {
+  text-align: center;
+}
+.profile-main-non-active .fa-user {
+  background-color: #8e8e8e;
+  border: 2px solid #cfcfcf;
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.profile-check {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  font-size: 8px;
+  background: #0279FB;
+  /* background: #19a700; */
+  border-radius: 50%;
+  padding: 3px;
+}
+.save-con-btn{
+  background-color: #003366;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 5px 8px;
+}
+
+.download-btn{
+  background-color: #003366;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 5px 40px;
+}
+
+.exit-grey-btn{
+  background-color: #6f6f6f;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 5px 40px;
+}
+
+
+.add-dependent i {
+  /* background-color: #46cd2f; */
+  background-color: #0479FB;
+  color: white;
+  padding: 15px;
+  font-size: 14px;
+  border-radius: 8px;
+}
+.add-dependent span {
+  color: #000000;
+  font-size: 14px;
+}
+.footer-bar {
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+.footer-bar p {
+  color: #a6a6a6;
+  margin-bottom: 0;
+}
+.link-allow-class {
+  color: #18c0ff !important;
+  text-decoration: underline !important;
+}
+
+/* checkbox css */
+
+/* Customize the label (the container) */
+.medical-check-box-container {
+  display: block;
+  position: relative;
+  padding-left: 15px;
+  /* margin-bottom: 12px; */
+  cursor: pointer;
+  font-size: 14px;
+  /* font-weight: 500; */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.medical-check-box-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.medical-check-box-container .checkmark {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  height: 11px;
+  width: 11px;
+  background-color: transparent;
+  border: 1px solid black;
+}
+
+/* On mouse-over, add a grey background color */
+.medical-check-box-container:hover input ~ .checkmark {
+  background-color: transparent;
+}
+
+/* When the checkbox is checked, add a blue background */
+.medical-check-box-container input:checked ~ .checkmark {
+  background-color: transparent;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.medical-check-box-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.medical-check-box-container .checkmark:after {
+  left: 1px;
+    top: 0px;
+    width: 5px;
+    height: 7px;
+    border: solid black;
+    border-width: 0 1px 1px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.checkbox-margin{
+  margin-top: -2px;
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+  .profile-main .caption {
+    font-size: 11px !important;
+  }
+}

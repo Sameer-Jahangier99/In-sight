@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In-Sightonline</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/claimListDetail.css" />
+    <!-- Bootstrap file -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b2e6ac0659.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg nav-container">
+        <div class="container-fluid container">
+            <a href="../index.html">
+                <img src="../assets/logo.png" alt="logo" class="pointer" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav w-100 d-flex justify-content-evenly">
+                    <li class="nav-item responsive-icon">
+                        <a class="nav-link " aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item responsive-icon">
+                        <a class="nav-link" href="./findProvider.html">Find Provider</a>
+                    </li>
+                    <li class="nav-item responsive-icon">
+                        <a class="nav-link" href="./reqIdCard.html">Req ID Card</a>
+                    </li>
+                    <li class="nav-item responsive-icon">
+                        <a class="nav-link" href="#">Req Dep Access</a>
+                    </li>
+                </ul>
+                <div>
+                    <div class="d-flex pointer">
+                        <img src="../assets/msgIcon.svg" alt="message-icon" />
+                        <div class="message-counter">
+                            <div class="counter d-flex justify-content-center align-items-center">
+                                2
+                            </div>
+                        </div>
+                        <img src="../assets/profileIcon.svg" alt="profile-image" class="ms-5 pointer" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="mb-3">
+        <section class="container">
+            <div class="row  d-flex align-items-center mt-3 mt-lg-5 mb-2 mb-lg-5 mb-md-0">
+                    <div class="col-lg-2 col-md-12 col-sm-12">
+                        <div class="input-group">
+                            <select class="form-select select-container py-0" aria-label="Default select example">
+                                <option selected>Medical Plan</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <button class="select-btn px-3">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-12 col-sm-12">
+                        <h5 class="weight-500">To view a different plan, select the application plan from the drop-down
+                            list</h5>
+                    </div>
+                </div>
+        </section>
+        <section class="container my-3">
+            <div class="dropdown">
+                <div class="dropdown-select">
+                    <p class="select link-text">View Medical & Rx Claims</p>
+                    <i class="fa-solid fa-chevron-down arrow-down"></i>
+                </div>
+                <div class="dropdown-list">
+                    <a href="../index.html" class="text-decoration-none navigation-link">
+                        <div class="d-flex align-items-center ">
+                            <i class="fas fa-check ms-1 invisible"></i>
+                            <p class="dropdown-list__item link-text">Home</p>
+                        </div>
+                    </a>
+                    <hr class="solid">
+                    <a href="./reqIdCard.html" class="text-decoration-none navigation-link">
+                        <div class="d-flex align-items-center ">
+                            <i class="fas fa-check ms-1 invisible"></i>
+                            <p class="dropdown-list__item link-text">Member ID Card</p>
+                        </div>
+                    </a>
+                    <hr class="solid">
+                    <a href="./medicalBenefits.html" class="text-decoration-none navigation-link">
+                        <div class="d-flex align-items-center ">
+                            <i class="fas fa-check invisible"></i>
+                            <p class="dropdown-list__item link-text">View Medical Benefits</p>
+                        </div>
+                    </a>
+                    <hr class="solid">
+                    <a href="./medicalRxClaims.html" class="text-decoration-none navigation-link">
+                        <div class="d-flex align-items-center ">
+                            <i class="fas fa-check"></i>
+                            <p class="dropdown-list__item link-text">View Medical & Rx Claims</p>
+                        </div>
+                    </a>
+                    <hr class="solid">
+                    <a href="./submitMedicalClaims.html" class="text-decoration-none navigation-link">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-check invisible"></i>
+                            <p class="dropdown-list__item link-text">Submit Medical Claims</p>
+                        </div>
+                    </a>
+                    <hr class="solid">
+                    <a href="./medicalPlanCostShare.html" class="text-decoration-none navigation-link">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-check invisible"></i>
+                            <p class="dropdown-list__item link-text">Medical Plan Cost Share</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="navigation-container mb-5">
+            <div class="d-flex justify-content-between links-container align-items-center">
+                <div class="py-2 d-flex container  chip-container" id="link-container">
+                    <a href="../index.html">
+                        <button type="button" class="btn chip-button py-1 me-3 w-75" id="#divElem">
+                            Home
+                        </button>
+                    </a>
+                    <a href="./reqIdCard.html">
+                        <button type="button" class="btn chip-button py-1 mx-3">
+                            Member ID Card
+                        </button>
+                    </a>
+                    <a href="./medicalBenefits.html">
+                        <button type="button" class="btn chip-button py-1 mx-3 ">
+                            Medical Benefits
+                        </button>
+                    </a>
+                    <a href="./medicalClaims.html">
+                        <button type="button" class="btn chip-button py-1 mx-3 ">
+                            View Medical & Claims
+                        </button>
+                    </a>
+                    <a href="./medicalClaims.html">
+                        <button type="button" class="btn chip-button py-1 mx-3 active">
+                            View Medical & Rx Claims
+                        </button>
+                    </a>
+
+                    <a href="./submitMedicalClaims.html">
+                        <button type="button" class="btn chip-button py-1 mx-3">
+                            Submit Medical Claims
+                        </button>
+                    </a>
+                    <a href="./medicalPlanCostShare.html">
+                        <button type="button" class="btn chip-button py-1 mx-3">
+                            Medical Plan Cost Share
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container mt-3">
+                <div class="row">
+                    <div class=" col-lg-2 col-md-12">
+                        <button type="button" class="btn back-btn">
+                            <a href="./medicalClaims.html" class="text-decoration-none btn-text">
+                                < - Back to Claim List </a>
+                        </button>
+                    </div>
+                    <div class="col-lg-7 col-md-12">
+                        <div class="row">
+                            <div class="col-md-12 d-flex justify-content-end">
+                                <div class="d-flex">
+                                    <div>
+                                        <button type="button" class="btn  detail-print-btn me-3">Print</button>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="btn btn-light detail-export-btn">Export</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 ">
+                                <div class="card card-shadow mt-2">
+                                    <div
+                                        class="card-header header-title d-flex flex-column justify-content-center align-items-center text-center w-100">
+                                        <p class="m-0 text-white weight-500">MERCY HOSPITAL SPRINGFIELD FOR REGEN
+                                            (SPOUSE)
+                                        </p>
+                                        <p class="m-0 text-white weight-500">
+                                            MEDICAL CLAIM #300002106</p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 px-5 pt-4">
+                                            <div>
+                                                <p class="caption">Status Date: 6/10/2021</p>
+                                                <p class="caption">Status: Completed</p>
+                                                <p class="caption">Service Date:6/10/2021 - 6/01/2021</p>
+                                                <p class="caption">Diagnosis: S53441A - Ulnar Collateral Ligment Sprain
+                                                    Of Right Elbow</p>
+                                            </div>
+                                            <div class="d-flex  justify-content-end w-100">
+                                                <div class="list-info">
+                                                    <div class=" d-flex justify-content-between">
+                                                        <div>
+                                                            <p class="caption">Amount Billed:</p>
+                                                        </div>
+                                                        <div class="price-container">
+                                                            <p class="caption">$26,992.07</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class=" d-flex justify-content-between">
+                                                        <div>
+                                                            <p class="caption">Plan Discount:</p>
+                                                        </div>
+                                                        <div class="price-container">
+                                                            <p class="caption">$12,146.43</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class=" d-flex justify-content-between">
+                                                        <div>
+                                                            <p class="caption">Plan Paid:</p>
+                                                        </div>
+                                                        <div class="price-container">
+                                                            <p class="caption">$12,1431.93</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class=" d-flex justify-content-between">
+                                                        <div>
+                                                            <p class="caption">Member Responsibility: </p>
+                                                        </div>
+                                                        <div class="price-container">
+                                                            <p class="caption green">$2,413.71</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class=" d-flex justify-content-between">
+                                                        <div class="d-flex justify-content-between list-details ">
+                                                            <div>
+                                                                <a href="#" class="text-decoration-none">
+                                                                    <p class="caption2">View Check</p>
+                                                                </a>
+                                                            </div>
+                                                            <div>
+                                                                <a href="#" class="text-decoration-none">
+                                                                    <p class="caption2">View EOB</p>
+                                                            </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class=" price-container">
+                                                            <p class="caption">$2,413.71</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mt-2 ">
+                                <div class="card card-shadow mt-2">
+                                    <div
+                                        class="card-header header-title d-flex flex-column justify-content-center align-items-center text-center w-100">
+                                        <p class="m-0 text-white weight-500">SERVICES UNDER THIS CLAIM
+                                        </p>
+                                        <p class="m-0 text-white weight-500 visiblility-hidden">
+                                            MEDICAL CLAIM #300002106</p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 px-5 pt-4">
+                                            <div>
+                                                <p class="caption">On 6/01/2021 - 6/01/2021 HOSPITAL OUTPATIENT 2F EA
+                                                    ADDL 15 MIN (02/2008) was performed.</p>
+                                            </div>
+                                            <div class="d-flex  justify-content-center w-100">
+                                                <div class="w-50">
+                                                    <div class=" d-flex justify-content-between">
+                                                        <div>
+                                                            <p class="caption">Amount Billed:</p>
+                                                        </div>
+                                                        <div class="price-container">
+                                                            <p class="caption ">$15,197.07</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class=" d-flex justify-content-between">
+                                                        <div>
+                                                            <p class="caption">Plan Discount:</p>
+                                                        </div>
+                                                        <div class=" price-container">
+                                                            <p class="caption text-start">$2,338.71</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class=" d-flex justify-content-between">
+                                                        <div>
+                                                            <p class="caption">Plan Paid:</p>
+                                                        </div>
+                                                        <div class=" price-container">
+                                                            <p class="caption light-blue ">$2,286.69</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class=" d-flex justify-content-between">
+                                                        <div>
+                                                            <p class="caption">Member Responsibility: </p>
+                                                        </div>
+                                                        <div class=" price-container">
+                                                            <p class="caption green">$571.67</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p class="caption">Remarks: Network discount applied; patient should not
+                                                    be responsible for the dicount amount.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/scroll.js"></script>
+</body>
+
+</html>

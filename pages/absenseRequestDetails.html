@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>In-Sightonline</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/requestHomeTab.css" />
+    <link rel="stylesheet" href="../css/absenseDetails.css" />
+    <link rel="stylesheet" href="../css/absenseRequestTab.css" />
+    <!-- Bootstrap file -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b2e6ac0659.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg nav-container">
+      <div class="container-fluid container">
+        <a href="../index.html">
+          <img src="../assets/logo.png" alt="logo" class="pointer" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav w-100 d-flex justify-content-evenly">
+            <li class="nav-item responsive-icon">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item responsive-icon">
+              <a class="nav-link" href="./findProvider.html">Find Provider</a>
+            </li>
+            <li class="nav-item responsive-icon active">
+              <a class="nav-link active" href="#">Req ID Card</a>
+            </li>
+            <li class="nav-item responsive-icon">
+              <a class="nav-link" href="#">Req Dep Access</a>
+            </li>
+          </ul>
+          <div>
+            <div class="d-flex pointer">
+              <img src="../assets/msgIcon.svg" alt="message-icon" />
+              <div class="message-counter">
+                <div
+                  class="counter d-flex justify-content-center align-items-center"
+                >
+                  2
+                </div>
+              </div>
+              <img
+                src="../assets/profileIcon.svg"
+                alt="profile-image"
+                class="ms-5 pointer"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="container">
+      <div class="main-blue-bar mt-5">Absence Request Details</div>
+      <section>
+        <div class="card card-shadow my-3">
+          <div class="card-body">
+            <h5 class="blue">Accrued Balance Detail in Hours</h5>
+            <div class="d-flex flex-wrap my-3 justify-content-between">
+              <div>
+                <p class="caption weight-500">Allowed Benefit Hours</p>
+                <p class="dark-grey">187.50</p>
+              </div>
+              <div>
+                <p class="caption weight-500">Accrued Hours</p>
+                <p class="dark-grey">125.00</p>
+              </div>
+              <div>
+                <p class="caption weight-500">
+                  Absence Hours Scheduled(Approved only within peios)
+                </p>
+                <p class="dark-grey">185.00</p>
+              </div>
+              <div>
+                <p class="caption weight-500">Absence Balance Hourse</p>
+                <p class="dark-grey">156.50</p>
+              </div>
+              <div>
+                <p class="caption weight-500">Absence Hourse Used</p>
+                <p class="dark-grey">156.50</p>
+              </div>
+            </div>
+            <!-- Second Row -->
+            <div class="mt-4">
+              <h5 class="blue">Absence Schedule</h5>
+              <div class="row">
+                <div class="col-md-3 col-4">
+                  <div>
+                    <p class="caption weight-500">Day</p>
+                    <p class="dark-grey">Fri:9-26-2022</p>
+                  </div>
+                </div>
+                  <div class="col-md-3 col-4">
+                    <div>
+                      <p class="caption weight-500">Start</p>
+                      <p class="dark-grey">08:00 AM</p>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-4">
+                    <div>
+                      <p class="caption weight-500">End</p>
+                      <p class="dark-grey">09:00 AM</p>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-4">
+                    <div>
+                      <p class="caption weight-500">Hours</p>
+                      <p class="dark-grey">1</p>
+                    </div>
+                  </div>
+               
+              </div>
+              <!-- <div class="d-flex flex-wrap my-3 justify-content-between">
+                <div>
+                  <p class="caption weight-500">Day</p>
+                  <p class="dark-grey">Fri:9-26-2022</p>
+                </div>
+                <div>
+                  <p class="caption weight-500">Start</p>
+                  <p class="dark-grey">08:00 AM</p>
+                </div>
+                <div>
+                  <p class="caption weight-500">End</p>
+                  <p class="dark-grey">09:00 AM</p>
+                </div>
+                <div>
+                  <p class="caption weight-500">Hours</p>
+                  <p class="dark-grey">1</p>
+                </div>
+              </div> -->
+            </div>
+            <!-- Third Row -->
+            <!-- <div class="mt-4">
+              <h5 class="blue">Absence Schedule</h5>
+              <div class="d-flex flex-wrap my-3 justify-content-between">
+                <div>
+                  <p class="caption weight-500">Absence Request ID</p>
+                  <p class="dark-grey">202209231170</p>
+                </div>
+                <div>
+                  <p class="caption weight-500">Start</p>
+                  <p class="dark-grey">PTO</p>
+                </div>
+                <div>
+                  <p class="caption weight-500">Start Date</p>
+                  <p class="dark-grey">09-26-2022</p>
+                </div>
+                <div>
+                  <p class="caption weight-500">End Date</p>
+                  <p class="dark-grey">09-26-2022</p>
+                </div>
+                <div>
+                  <p class="caption weight-500">Absence Status</p>
+                  <p class="dark-grey">Requested</p>
+                </div>
+              </div>
+              <div class="row mt-5">
+                <div class="col-md-4">
+                  <div class="absenve-type">
+                    <p class="caption weight-500 mb-2">Comments</p>
+                    <textarea name="" id="" class="comment-textarea"></textarea>
+                  </div>
+                </div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4"></div>
+              </div>
+              <div class="container-fluid aprroval-section">
+                <div class="container">
+                  <div>
+                    <h5>Approval</h5>
+                    <p>
+                      Please review the request prior to approcal. If absence
+                      type or hours need to be changed you can edit the request
+                      at the page with the edit button. If the supervisor would
+                      like to have a calender invite sent for this employee
+                      absence, please one of the opton below along with any
+                      additional attendees.The addditional attendees need to be
+                      a semi colon delimited list of email addresses.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="calender-input">
+                    <p class="caption weight-600 mb-2">
+                      Supervisor Calendar Invite Option
+                    </p>
+                    <select name="" id="">
+                      <option value="0">Calendar Invite Option *</option>
+                      <option value="1">Option 1</option>
+                      <option value="2">Option 2</option>
+                      <option value="2">Option 3</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="calender-input">
+                    <p class="caption weight-600 mb-2">Additional Attendees</p>
+                    <input type="date" />
+                  </div>
+                </div>
+                <div class="col-md-4"></div>
+              </div>
+              <div class="my-3">
+                <button class="approve-absense-btn">Approve Absence</button>
+              </div>
+              <div>
+                <button class="cancel-absense-btn">Cancel Absence</button>
+                <button class="cancel-absense-btn">Edit Absence</button>
+                <button class="cancel-absense-btn">Deny Absence</button>
+              </div>
+            </div> -->
+            
+            <!-- Row Column -->
+            <div class="mt-4">
+              <h5 class="blue">Absence Schedule</h5>
+              <div class="row my-3 ">
+                <div class="col-md-3 col-6">
+                  <p class="caption weight-500">Absence Request ID</p>
+                  <p class="dark-grey">202209231170</p>
+                </div>
+                <div class="col-md-2 col-6">
+                  <p class="caption weight-500">Start</p>
+                  <p class="dark-grey">PTO</p>
+                </div>
+                <div class="col-md-2 col-6">
+                  <p class="caption weight-500">Start Date</p>
+                  <p class="dark-grey">09-26-2022</p>
+                </div>
+                <div class="col-md-2 col-6">
+                  <p class="caption weight-500">End Date</p>
+                  <p class="dark-grey">09-26-2022</p>
+                </div>
+                <div class="col-md-3 col-6">
+                  <p class="caption weight-500">Absence Status</p>
+                  <p class="dark-grey">Requested</p>
+                </div>
+              </div>
+              <div class="row mt-5">
+                <div class="col-md-4">
+                  <div class="absenve-type">
+                    <p class="caption weight-500 mb-2">Comments</p>
+                    <textarea name="" id="" class="comment-textarea"></textarea>
+                  </div>
+                </div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4"></div>
+              </div>
+              <div class="container-fluid aprroval-section">
+                <div class="container">
+                  <div>
+                    <h5>Approval</h5>
+                    <p>
+                      Please review the request prior to approcal. If absence
+                      type or hours need to be changed you can edit the request
+                      at the page with the edit button. If the supervisor would
+                      like to have a calender invite sent for this employee
+                      absence, please one of the opton below along with any
+                      additional attendees.The addditional attendees need to be
+                      a semi colon delimited list of email addresses.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="calender-input">
+                    <p class="caption weight-600 mb-2">
+                      Supervisor Calendar Invite Option
+                    </p>
+                    <select name="" id="">
+                      <option value="0">Calendar Invite Option *</option>
+                      <option value="1">Option 1</option>
+                      <option value="2">Option 2</option>
+                      <option value="2">Option 3</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="calender-input">
+                    <p class="caption weight-600 mb-2">Additional Attendees</p>
+                    <input type="date" />
+                  </div>
+                </div>
+                <div class="col-md-4"></div>
+              </div>
+              <div class="my-3">
+                <button class="approve-absense-btn">Approve Absence</button>
+              </div>
+              <div>
+                <button class="cancel-absense-btn">Cancel Absence</button>
+                <button class="cancel-absense-btn">Edit Absence</button>
+                <button class="cancel-absense-btn">Deny Absence</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/scroll.js"></script>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+/* global styles */
+:root {
+  --main-bg-color: #003366;
+  --main-font: "Poppins", sans-serif;
+  --grey-color: #7c7c7c;
+  --lightBlue-color: #398fff;
+  --silver-color: #edeff1;
+  --light-grey: #a0a0a0;
+  --main-grey: #f9f9f9;
+  --green-color: #04bd00;
+}
+
+.tab-link {
+  color: var(--main-bg-color) !important;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.nav-tab-item:hover {
+  background: #ffffff;
+}
+
+.active-tab {
+  background: #ffffff;
+}
+
+.nav-tabs-border {
+  border: 1px solid lightgrey;
+}
+
+.absenve-type select {
+  padding: 5px 8px;
+  width: 100%;
+  /* text-align: left;
+  -moz-appearance: none; 
+  -webkit-appearance: none; 
+  appearance: none;
+  background-image: url("data:image/svg+xml,<svg width='24' height='24' xmlns='http://www.w3.org/2000/svg'><path d='m0,6l12,12l12,-12l-24,0z'/><path fill='none' d='m0,0l24,0l0,24l-24,0l0,-24z'/></svg>");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position-x: 95%;
+  background-position-y: 8px; */
+}
+.comment-textarea {
+  width: 100%;
+  height: 100px;
+}
+.absenve-type input {
+  width: 100%;
+  text-align: left;
+}
+.total-hours input {
+  background-color: #bfbfbf;
+  text-align: left;
+  padding-left: 10px;
+  width: 50%;
+  border: none;
+}
+.date-checkbox {
+  /* visibility: hidden; */
+  display: none;
+}
+label {
+  cursor: pointer;
+}
+.date-checkbox + label:before {
+  border: 1px solid #333;
+  content: "\00a0";
+  display: inline-block;
+  font: 16px/1em sans-serif;
+  height: 16px;
+  margin: 0 0.25em 0 0;
+  padding: 0;
+  /* vertical-align: top; */
+  width: 16px;
+}
+.date-checkbox + label:before {
+  background: #fff;
+  color: #333;
+  content: "\2713";
+  text-align: center;
+}
+.non-active-check + label:before {
+  content: "" !important;
+}
+.date-checkbox + label:after {
+  font-weight: bold;
+}
+
+.date-checkbox:focus + label::before {
+  outline: rgb(59, 153, 252) auto 5px;
+}
+
+.time-input {
+  width: 100%;
+}
+.time-input::-webkit-calendar-picker-indicator {
+  background-color: #bfbfbf;
+  color: black;
+  margin: 0;
+}
+/* .disabled-input::-webkit-calendar-picker-indicator {
+  background-color: #bfbfbf40 !important;
+  color: white;
+  margin: 0;
+} */
+
+.arrow-input {
+  width: 50%;
+}
+.arrow-input::-webkit-calendar-picker-indicator {
+  background-image: url("../assets/up-and-down-arrow.png");
+  background-position: center;
+  background-size: contain;
+  background-color: #bfbfbf;
+  width: 15px;
+  height: 15px;
+  margin: 0 !important;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  /* width: 15px;
+  height: 15px; */
+}
+
+.submit-btn {
+  /* background-color: #00b3f6; */
+  background-color: #0479FB;
+  padding: 5px 8px;
+  border: none;
+  outline: none;
+  color: white;
+}
+.exit-btn {
+  /* margin-left: 20px; */
+  background-color: #6f6f6f;
+  padding: 5px 20px;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+@media screen and (max-width: 767px) {
+  .time-input {
+    width: 50%;
+  }
+}

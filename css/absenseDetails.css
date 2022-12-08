@@ -1,0 +1,50 @@
+.main-blue-bar {
+  /* background-color: #1d386d; */
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.aprroval-section {
+  /* background-color: #1d386d40; */
+  background-color: #DFDFDF;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.calender-input select {
+  padding: 5px 8px;
+  width: 100%;
+  text-align: left;
+  /* -moz-appearance: none;
+  -webkit-appearance: none; 
+  appearance: none;
+  background-image: url("data:image/svg+xml,<svg width='24' height='24' xmlns='http://www.w3.org/2000/svg'><path d='m0,6l12,12l12,-12l-24,0z'/><path fill='none' d='m0,0l24,0l0,24l-24,0l0,-24z'/></svg>");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position-x: 95%;
+  background-position-y: 8px; */
+}
+
+.calender-input input {
+  width: 100%;
+}
+
+.approve-absense-btn {
+  /* background-color: #003366; */
+  background-color: #0479FB;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 5px 8px;
+}
+.cancel-absense-btn {
+  background-color: #6f6f6f;
+  padding: 5px 20px;
+  border: none;
+  outline: none;
+  color: white;
+  margin-bottom: 5px;
+}

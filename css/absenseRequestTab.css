@@ -1,0 +1,17 @@
+.container-bg {
+  background-color: #00336633;
+}
+.cross-icon {
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+}
+
+.view-absense-btn {
+  /* background-color: #003366; */
+  background-color: #0479FB;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 5px 8px;
+}
