@@ -1,252 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>In-Sightonline</title>
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/requestHomeTab.css" />
-    <link rel="stylesheet" href="../css/absenseDetails.css" />
-    <link rel="stylesheet" href="../css/absenseRequestTab.css" />
-    <link rel="stylesheet" href="../css/medicalEnrollment.css" />
-    <!-- Bootstrap file -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css" />
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/b2e6ac0659.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg nav-container">
-      <div class="container-fluid container">
-        <a href="../index.html">
-          <img src="../assets/logo.png" alt="logo" class="pointer" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav w-100 d-flex justify-content-evenly">
-            <li class="nav-item responsive-icon">
-              <a class="nav-link" aria-current="page" href="../index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item responsive-icon">
-              <a class="nav-link" href="./findProvider.html">Find Provider</a>
-            </li>
-            <li class="nav-item responsive-icon active">
-              <a class="nav-link active" href="#">Req ID Card</a>
-            </li>
-            <li class="nav-item responsive-icon">
-              <a class="nav-link" href="#">Req Dep Access</a>
-            </li>
-          </ul>
-          <div>
-            <div class="d-flex pointer">
-              <img src="../assets/msgIcon.svg" alt="message-icon" />
-              <div class="message-counter">
-                <div
-                  class="counter d-flex justify-content-center align-items-center"
-                >
-                  2
-                </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>In-Sightonline</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/requestHomeTab.css" />
+  <link rel="stylesheet" href="../css/absenseDetails.css" />
+  <link rel="stylesheet" href="../css/absenseRequestTab.css" />
+  <link rel="stylesheet" href="../css/medicalEnrollment.css" />
+  <!-- Bootstrap file -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/b2e6ac0659.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg nav-container">
+    <div class="container-fluid container">
+      <a href="../index.html">
+        <img src="../assets/logo.png" alt="logo" class="pointer" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav w-100 d-flex justify-content-evenly">
+          <li class="nav-item responsive-icon">
+            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item responsive-icon">
+            <a class="nav-link" href="./findProvider.html">Find Provider</a>
+          </li>
+          <li class="nav-item responsive-icon active">
+            <a class="nav-link active" href="#">Req ID Card</a>
+          </li>
+          <li class="nav-item responsive-icon">
+            <a class="nav-link" href="#">Req Dep Access</a>
+          </li>
+        </ul>
+        <div>
+          <div class="d-flex pointer">
+            <img src="../assets/msgIcon.svg" alt="message-icon" />
+            <div class="message-counter">
+              <div class="counter d-flex justify-content-center align-items-center">
+                2
               </div>
-              <img
-                src="../assets/profileIcon.svg"
-                alt="profile-image"
-                class="ms-5 pointer"
-              />
             </div>
+            <img src="../assets/profileIcon.svg" alt="profile-image" class="ms-5 pointer" />
           </div>
         </div>
       </div>
-    </nav>
-    <main class="container">
-      <div class="main-blue-bar mt-5">
-        <h4>WELCOME TO OPEN ENROLLMENT</h4>
-        <p>
-          Open enrollmrnt is a period of time year when you can sign up for
-          health insurance or make changes to your exiting benefits.
-        </p>
-      </div>
-      <section>
-        <div class="card card-shadow my-3">
-          <div class="card-body">
-            <p>
-              Below is the list of benefits available to you. You are required
-              to make an action for each benefit available to you by electing or
-              waiving the benefot.
-            </p>
-            <div class="container my-3">
-              <div class="row">
-                <div class="col-md-2">
-                  <a href="./medicalEnrollment.html">
-                    <div class="dashboard-box-active">
-                      <i class="fa-solid fa-check"></i>
-                      <span>MEDICAL</span>
-                    </div>
-                  </a>
-                  <a href="./dentalEnrollment.html">
-                    <div class="dashboard-box-active">
-                      <i class="fa-solid fa-check"></i>
-                      <span>DENTAL</span>
-                    </div>
-                  </a>
-                  <a href="./visionEnrollment.html">
-                    <div class="dashboard-box">
-                      <i class="fa-solid fa-check"></i>
-                      <span>VISION</span>
-                    </div>
-                  </a>
-                  <a href="./reviewEnrollment.html">
-                    <div class="dashboard-box">
-                      <i class="fa-solid fa-check"></i>
-                      <span>REVIEW</span>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-md-10">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <h5 class="mb-0 mt-2">Dental</h5>
-                    </div>
-                    <div class="col-md-4">
-                      <button class="waive-btn">WAIVE THIS BENEFITS</button>
-                    </div>
-                    <div class="col-md-4"></div>
+    </div>
+  </nav>
+  <main class="container">
+    <div class="main-blue-bar mt-5">
+      <h4>WELCOME TO OPEN ENROLLMENT</h4>
+      <p>
+        Open enrollmrnt is a period of time year when you can sign up for
+        health insurance or make changes to your exiting benefits.
+      </p>
+    </div>
+    <section>
+      <div class="card card-shadow my-3">
+        <div class="card-body">
+
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-8">
+              <p class="text-center">
+                Below is the list of benefits available to you. You are required
+                to make an action for each benefit available to you by electing or
+                waiving the benefot.
+              </p>
+            </div>
+          </div>
+
+          <div class="container my-3">
+            <div class="row">
+
+              <!-- tabs -->
+              <div class="col-md-2">
+                <a href="./medicalEnrollment.html">
+                  <div class="dashboard-box-active">
+                    <i class="fa-solid fa-check"></i>
+                    <span>MEDICAL</span>
                   </div>
-                  <div class="my-3">
-                    <h6>1.Which plan would you prefer?</h6>
+                </a>
+                <a href="./dentalEnrollment.html">
+                  <div class="dashboard-box-active">
+                    <i class="fa-solid fa-check"></i>
+                    <span>DENTAL</span>
                   </div>
-                  <div class="row my-3 ">
-                    <div class="col-md-4 col-lg-2 col-6 mb-lg-0 mb-3">
-                      <p class="caption weight-500">PLAN</p>
-                      <div class="">
-                        <label class="medical-check-box-container">
-                          <input type="checkbox" checked="checked" />
-                          <span class="checkmark"></span>
-                          <span class="dark-grey  caption2"
-                      >675001 MEDICAL
-                    </span>
-                      </label>
+                </a>
+                <a href="./visionEnrollment.html">
+                  <div class="dashboard-box">
+                    <i class="fa-solid fa-check"></i>
+                    <span>VISION</span>
                   </div>
-                  <div class="mt-lg-5 mt-2">
-                    <label class="medical-check-box-container">
-                      <input type="checkbox" checked="checked" />
-                      <span class="checkmark"></span>
-                      <span class="dark-grey caption2"
-                  >675001 BUY UP MEDICAL
-                </span>
-                  </label>
+                </a>
+                <a href="./reviewEnrollment.html">
+                  <div class="dashboard-box">
+                    <i class="fa-solid fa-check"></i>
+                    <span>REVIEW</span>
+                  </div>
+                </a>
               </div>
+
+              <!-- table container -->
+              <div class="col-md-8">
+
+                <!-- first section -->
+                <div class="row">
+                  <div class="col-md-4">
+                    <h5 class="mb-0 mt-2">Dental</h5>
+                  </div>
+                  <div class="col-md-4">
+                    <button class="waive-btn">WAIVE THIS BENEFITS</button>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card px-3 pb-3 currently-enrolled-card">
+                      <div class="info-icon d-flex justify-content-center align-items-center">
+                        <img src="../assets/infoIcon.png" class="info-inside-icon" alt="message-icon" />
+                      </div>
+                      <div class="card-body p-0">
+                        <p class="caption weight-500">CURRENTLY ENROLLED</p>
+                        <p class="link-blue mb-0 caption2">
+                          1. VIRW 1/1/2023 PLAN DOCUMENT
+                        </p>
+                        <p class="link-blue mb-0 caption2">2. VIRW 1/1/2023 SBC</p>
+                        <p class="link-blue mb-0 caption2">
+                          3. VIRW 1/1/2023 PLAN DOCUMENT
+                        </p>
+                        <p class="link-blue mb-0 caption2">4. VIRW 1/1/2023 SBC</p>
+                      </div>
                     </div>
-                    <div class="col-md-4 col-lg-2 col-6 mb-lg-0 mb-3">
+                  </div>
+                </div>
+
+                <div class="my-3">
+                  <h6>1.Which plan would you prefer?</h6>
+                </div>
+
+                <!-- plans table -->
+                <div class="plan-table-main-body">
+                  <!-- table header -->
+                  <div class="row plan-row">
+                    <div class="col-3">
+                      <p class="caption weight-500">PLAN</p>
+                    </div>
+                    <div class="col-2">
                       <p class="caption weight-500">NETWORK</p>
-                      <p class="dark-grey caption2">HLTHHF</p>
-                      <p class="dark-grey caption2 mt-lg-5 mt-2">HEALTHLINKOAlll</p>
                     </div>
-                    <div class="col-md-4 col-lg-2 col-6 mb-lg-0 mb-3">
+                    <div class="col-2">
                       <p class="caption weight-500">EFFECTIVE DATE</p>
+                    </div>
+                    <div class="col-2">
+                      <p class="caption weight-500">WAIVE DATE</p>
+                    </div>
+                    <div class="col-3">
+                      <p class="caption weight-500">EMPLOYEE PREMIUM</p>
+                    </div>
+                  </div>
+
+                  <!-- table row -->
+                  <div class="row plan-row">
+                    <div class="col-3">
+                      <div class="">
+                        <div class="form-check">
+                          <input class="form-check-input rounded-check-box" type="checkbox" value=""
+                            id="flexCheckDefault">
+
+                          <span class="dark-grey  caption2">675001 MEDICAL
+
+                            </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <p class="dark-grey caption2">HLTHHF</p>
+                    </div>
+                    <div class="col-2">
                       <p class="dark-grey caption2">1/1/2023</p>
                     </div>
-                    <div class="col-md-4 col-lg-2 col-6 mb-lg-0 mb-3">
-                      <p class="caption weight-500">WAIVE DATE</p>
-                      <!-- <p class="dark-grey">185.00</p> -->
+                    <div class="col-2">
+
                     </div>
-                    <div class="col-md-4 col-lg-2 col-6 mb-lg-0 mb-3">
-                      <p class="caption weight-500">EMPLOYEE PREMIUM</p>
+                    <div class="col-2">
                       <p class="dark-grey caption2">$XX.XX</p>
-                      <p class="dark-grey caption2 mt-lg-5 mt-2">$XX.XX</p>
-                    </div>
-                    <div class="mt-lg-5 col-md-4 col-lg-2 col-6 mb-lg-0 mb-3">
-                      <p class="caption weight-500">CURRENTLY ENROLLED</p>
-                      <p class="link-blue mb-0 caption2">
-                        VIRW 1/1/2023 PLAN DOCUMENT
-                      </p>
-                      <p class="link-blue mb-0 caption2">VIRW 1/1/2023 SBC</p>
-                      <p class="link-blue mb-0 caption2">
-                        VIRW 1/1/2023 PLAN DOCUMENT
-                      </p>
-                      <p class="link-blue mb-0 caption2">VIRW 1/1/2023 SBC</p>
                     </div>
                   </div>
-                  <div class="my-3">
-                    <h6>2. what do you want to cover?</h6>
-                    <div class="d-flex flex-wrap my-3 justify-content-between">
-                      <div class="profile-main">
-                        <i class="fa-regular fa-user">
-                          <i class="fa-solid fa-check profile-check"></i>
-                        </i>
-                        <p class="caption weight-500 text-center">You</p>
-                      </div>
-                      <div class="profile-main-non-active">
-                        <i class="fa-regular fa-user">
-                          <!-- <i class="fa-solid fa-check profile-check"></i> -->
-                        </i>
-                        <p class="caption weight-500 text-center">
-                          Augustine Butterwick
-                        </p>
-                        <p class="dark-grey caption2 text-center mt-3">
-                          Spouse
-                        </p>
-                      </div>
-                      <div class="profile-main">
-                        <i class="fa-regular fa-user">
-                          <i class="fa-solid fa-check profile-check"></i>
-                        </i>
-                        <p class="caption weight-500 text-center">
-                          Begen Butterwick
-                        </p>
-                        <p class="dark-grey caption2 text-center mt-3">Child</p>
-                      </div>
-                      <div class="profile-main">
-                        <i class="fa-regular fa-user">
-                          <i class="fa-solid fa-check profile-check"></i>
-                        </i>
-                        <p class="caption weight-500 text-center">
-                          Tallou Butterwick
-                        </p>
-                        <p class="dark-grey caption2 text-center mt-3">Child</p>
-                      </div>
-                      <div class="mt-5 add-dependent">
-                        <i class="fa-solid fa-plus"></i>
-                        <span>Add Dependents</span>
+                  <!-- table row -->
+                  <div class="row plan-row">
+                    <div class="col-3">
+                      <div class="">
+                        <div class="form-check">
+                          <input class="form-check-input rounded-check-box" type="checkbox" value=""
+                            id="flexCheckDefault">
+
+                          <span class="dark-grey  caption2">675001 MEDICAL
+
+                            </label>
+                        </div>
                       </div>
                     </div>
+                    <div class="col-2">
+                      <p class="dark-grey caption2">HEALTHLINKOAlll</p>
+                    </div>
+                    <div class="col-2">
+
+                    </div>
+                    <div class="col-2">
+
+                    </div>
+                    <div class="col-2">
+                      <p class="dark-grey caption2">$XX.XX</p>
+                    </div>
                   </div>
-                  <div class="my-3 text-end">
-                    <button class="save-con-btn">Save and Continue</button>
-                    <button class="exit-btn">Exit</button>
+                </div>
+                <div class="my-3">
+                  <h6>2. what do you want to cover?</h6>
+                  <div class="d-flex flex-wrap my-3 justify-content-between">
+                    <div class="profile-main">
+                      <i class="fa-regular fa-user">
+                        <i class="fa-solid fa-check profile-check"></i>
+                      </i>
+                      <p class="caption weight-500 text-center">You</p>
+                    </div>
+                    <div class="profile-main-non-active">
+                      <i class="fa-regular fa-user">
+                        <!-- <i class="fa-solid fa-check profile-check"></i> -->
+                      </i>
+                      <p class="caption weight-500 text-center">
+                        Augustine Butterwick
+                      </p>
+                      <p class="dark-grey caption2 text-center mt-3">
+                        Spouse
+                      </p>
+                    </div>
+                    <div class="profile-main">
+                      <i class="fa-regular fa-user">
+                        <i class="fa-solid fa-check profile-check"></i>
+                      </i>
+                      <p class="caption weight-500 text-center">
+                        Begen Butterwick
+                      </p>
+                      <p class="dark-grey caption2 text-center mt-3">Child</p>
+                    </div>
+                    <div class="profile-main">
+                      <i class="fa-regular fa-user">
+                        <i class="fa-solid fa-check profile-check"></i>
+                      </i>
+                      <p class="caption weight-500 text-center">
+                        Tallou Butterwick
+                      </p>
+                      <p class="dark-grey caption2 text-center mt-3">Child</p>
+                    </div>
+                    <div class="mt-5 add-dependent">
+                      <i class="fa-solid fa-plus"></i>
+                      <span>Add Dependents</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-3 text-end">
+                  <button class="save-con-btn">Save and Continue</button>
+                  <button class="exit-btn">Exit</button>
+                </div>
+              </div>
+
+              <!-- currently enrolled -->
+              <div class="col-md-2 px-0">
+
+                <div class="card px-3 pb-3 currently-enrolled-large-screen-card" style="width: 13rem">
+                  <div class="info-icon d-flex justify-content-center align-items-center">
+                    <img src="../assets/infoIcon.png" class="info-inside-icon" alt="message-icon" />
+                  </div>
+                  <div class="card-body p-0">
+                    <p class="caption weight-500">CURRENTLY ENROLLED</p>
+                    <p class="link-blue mb-0 caption2">
+                      1. VIRW 1/1/2023 PLAN DOCUMENT
+                    </p>
+                    <p class="link-blue mb-0 caption2">2. VIRW 1/1/2023 SBC</p>
+                    <p class="link-blue mb-0 caption2">
+                      3. VIRW 1/1/2023 PLAN DOCUMENT
+                    </p>
+                    <p class="link-blue mb-0 caption2">4. VIRW 1/1/2023 SBC</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="my-3 text-center footer-bar">
-              <p class="caption">Open Enrollment Window.MM/DD/YYYY</p>
-            </div>
+          </div>
+          <div class="my-3 text-center footer-bar">
+            <p class="caption">Open Enrollment Window.MM/DD/YYYY</p>
           </div>
         </div>
-      </section>
-    </main>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/scroll.js"></script>
-  </body>
+      </div>
+    </section>
+  </main>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/scroll.js"></script>
+</body>
+
 </html>

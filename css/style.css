@@ -211,6 +211,10 @@ a {
   color: var(--dark-grey) !important;
 }
 
+.scroll-hidden {
+  overflow: hidden;
+}
+
 /* cursor  */
 
 .pointer {
