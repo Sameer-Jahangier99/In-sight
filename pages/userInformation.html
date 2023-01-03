@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In-Sightonline</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/record.css" />
+
+    <!-- Bootstrap file -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- find provider  -->
+    <nav class="navbar navbar-expand-lg nav-container">
+        <div class="container-fluid container">
+            <a href="../index.html">
+                <img src="../assets/logo.png" alt="logo" class="pointer" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav w-100 d-flex justify-content-evenly">
+                    <li class="nav-item responsive-icon">
+                        <a class="nav-link" aria-current="page" href="../index.html">Quick Employee view</a>
+                    </li>
+                    <li class="nav-item responsive-icon">
+                        <a class="nav-link" href="findProvider.html">Live chat</a>
+                    </li>
+                </ul>
+                <div>
+                    <div class="d-flex pointer">
+                        <img src="../assets/msgIcon.svg" alt="message-icon" />
+                        <div class="message-counter">
+                            <div class="counter d-flex justify-content-center align-items-center">
+                                2
+                            </div>
+                        </div>
+                        <img src="../assets/profileIcon.svg" alt="profile-image" class="ms-5 pointer" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main container -->
+    <main class="container">
+
+        <div class="row">
+            <h1 class="weight-600 blue py-4">Welcome, FirstName</h1>
+            <div class="row">
+                <div class="col-lg-10">
+                    <h4 class="weight-400">Our records indicate you have more than one account with us. You are viewing
+                        account:</h4>
+                </div>
+                <div class="col-lg-2">
+                    <select class="form-select select-font-styles py-1" aria-label="Default select example">
+                        <option selected>Client - Legal Name a</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- cards -->
+            <div class="col-lg-4  mt-3 mt-lg-0 mt-md-0">
+                <div class="card card-shadow mt-2 h-100">
+                    <div class="card-header header-title card-header">
+                        <h4 class="m-0 text-white weight-400 mb-3">HUMAN RESOURCE ADMINISTRATION
+                            FUNCTIONS</h4>
+
+                        <span class="caption text-light">
+                            Place holder for marketing
+                        </span>
+                    </div>
+                    <div class="card-body container  record-card">
+
+                        <div class="card-body h-100 px-0 d-flex flex-column justify-content-between">
+                            <div>
+                                <p class="caption">view Employee Roster</p>
+                                <p class="caption">Approval Database & Enrollment Status</p>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn btn-primary">Enroll New Employee</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4  mt-3 mt-lg-0 mt-md-0">
+                <div class="card card-shadow mt-2 h-100">
+                    <div class="card-header header-title card-header">
+                        <h4 class="m-0 text-white weight-400 mb-3">OPEN ENROLLMENT FUNCTIONS</h4>
+                        <p class="caption text-light">
+                            You are currently in the Open Enrollment period
+                            12/1 - 12/31
+                        </p>
+                        <span class="caption text-light">
+                            Place holder for marketing
+                        </span>
+                    </div>
+                    <div class="card-body container  record-card">
+
+                        <div class="card-body h-100 px-0 d-flex flex-column justify-content-between">
+                            <img src="../assets/graph-image.png" alt="graph" />
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4  mt-3 mt-lg-0 mt-md-0">
+                <div class="card card-shadow mt-2 h-100">
+                    <div class="card-header header-title card-header">
+                        <h4 class="m-0 text-white weight-400 mb-2">FINANCIAL ADMINISTRATIVE
+                            FUNCTIONS</h4>
+
+                        <span class="caption text-light">
+                            This view consists of new and pending Invoices
+                            and Drafts. For a all other status, select the View
+                            Full List button.
+                        </span>
+                    </div>
+                    <div class="card-body container  record-card">
+
+                        <div class="card-body h-100 px-0 d-flex flex-column justify-content-between">
+                            <div>
+                                <p class="caption">New Draft Register - Advance - Run Date: <span
+                                        class="light-grey caption">1/15/2023</span></p>
+                                <p class="caption">New Draft Register - Regular - Run Date: <span
+                                        class="light-grey caption">1/15/2023</span></p>
+                                <p class="caption">New Draft Register - RX - Run Date: <span
+                                        class="light-grey caption">1/15/2023</span></p>
+                                <p class="caption">New Invoice- Run Date:<span
+                                        class="light-grey caption">1/14/2023</span></p>
+                                <p class="caption">Pending Follow up Invoice- Run Date:<span
+                                        class="light-grey caption">12/14/2022</span></p>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn btn-primary">View Full List</button>
+                                <button type="button" class="btn btn-primary ms-2">View Bank Account</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Informational Data: -->
+        <div class="row">
+            <h3 class="weight-600 blue py-4">Informational Data:</h3>
+
+            <!-- cards -->
+            <div class="col-lg-4  mt-3 mt-lg-0 mt-md-0">
+                <div class="card card-shadow mt-2 h-100">
+                    <div class="card-header header-title card-header">
+                        <h4 class="m-0 text-white weight-400 mb-3">CLIENT CONTACT LIST</h4>
+
+                        <span class="caption text-light">
+                            Below are the Client Contacts.
+                            Reach out to your account manager to edit this list.
+                            Place holder for Marketing text.
+                        </span>
+                    </div>
+                    <div class="card-body container  record-card">
+
+                        <div class="card-body h-100 px-0 d-flex flex-column justify-content-between">
+                            <div>
+                                <p class="caption">Full Name - Job</p>
+                                <p class="caption">Full Name - Job</p>
+                                <p class="caption">Full Name - Job</p>
+                                <p class="caption">Full Name - Job</p>
+                                <p class="caption">Full Name - Job</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4  mt-3 mt-lg-0 mt-md-0">
+                <div class="card card-shadow mt-2 h-100">
+                    <div class="card-header header-title card-header">
+                        <h4 class="m-0 text-white weight-400 mb-3">SERVICES COVERED BY IPMG</h4>
+
+                        <span class="caption text-light">
+                            Per contact, the below services are rendered by IPMG.
+                            Place Holder for Marketing text.
+                        </span>
+                    </div>
+                    <div class="card-body container  record-card">
+
+                        <div class="card-body h-100 px-0">
+                            <div class="d-flex justify-content-between">
+                                <p class="caption">Medical - From 1/1/2019 - Active</p>
+                                <a href="#" class="caption light-blue">Plan Information</a>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="caption">Vision - From 1/1/2019 - Active</p>
+                                <a href="#" class="caption light-blue">Plan Information</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4  mt-3 mt-lg-0 mt-md-0">
+                <div class="card card-shadow mt-2 h-100">
+                    <div class="card-header header-title card-header">
+                        <h4 class="m-0 text-white weight-400 mb-1">EMPLOYEE BENEFITS PREFERRED
+                            NETWORK AND RX WEB ADDRESS</h4>
+
+                        <span class="caption text-light">
+                            Below are the address to your preferred and
+                            Rx vendors. Reach out to your account manager to
+                            make changes to this list.
+                        </span>
+                    </div>
+                    <div class="card-body container  record-card">
+
+                        <div class="card-body px-0">
+                            <div>
+                                <p class="weight-500 m-0">Provider Organization:</p>
+                                <p class="caption mb-1 blackish-color">Description - Webaddress.com</p>
+                                <p class="caption blackish-color">Description - Webaddress.com</p>
+                            </div>
+                            <div>
+                                <p class="weight-500 m-0 ">Rx Drug Palan:</p>
+                                <p class="caption mb-1 blackish-color">Description - Webaddress.com</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Reports and statistics -->
+        <div class="row  pb-4">
+            <h3 class="weight-600 blue py-4">Reports and statistics: </h3>
+
+            <!-- cards -->
+            <div class="col-lg-4  mt-3 mt-lg-0 mt-md-0">
+                <div class="card card-shadow mt-2 h-100">
+                    <div class="card-header header-title card-header">
+                        <h4 class="m-0 text-white weight-400 mb-3">EMPLOYEE BENEFITS REPORTS</h4>
+
+                        <span class="caption text-light">
+                            Lorem ipsum dolor sit amet consectetur. Porta
+                            magna viverra ultrices diam adipiscing et nam.
+                            ipsum dolor sit amet consectetur.
+                        </span>
+                    </div>
+                    <div class="card-body container  record-card">
+
+                        <div class="card-body h-100 px-0 d-flex flex-column justify-content-between">
+                            <div>
+                                <p class="caption">> Census</p>
+                                <p class="caption">> Funding</p>
+                                <p class="caption">> Claims</p>
+                                <p class="caption">> Benefits</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4  mt-3 mt-lg-0 mt-md-0">
+                <div class="card card-shadow mt-2 h-100">
+                    <div class="card-header header-title card-header">
+                        <h4 class="m-0 text-white weight-400 mb-3">POWER BI PLACE HOLDER</h4>
+
+                        <span class="caption text-light">
+                            This is a place holder of a snippet to be displayed
+                            from Power Bi. Selecting the snippet will display the
+                            different report details.
+                        </span>
+                    </div>
+                    <div class="card-body container  record-card">
+
+                        <div class="card-body h-100 px-0 d-flex flex-column justify-content-between">
+                            <img src="../assets/graph-image.png" alt="graph" />
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </main>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In-Sightonline</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/record.css" />
+    <!-- Bootstrap file -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- find provider  -->
+    <nav class="navbar navbar-expand-lg nav-container">
+        <div class="container-fluid container">
+            <a href="../index.html">
+                <img src="../assets/logo.png" alt="logo" class="pointer" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav w-100 d-flex justify-content-evenly">
+                    <li class="nav-item responsive-icon">
+                        <a class="nav-link" aria-current="page" href="../index.html">Quick Employee view</a>
+                    </li>
+                    <li class="nav-item responsive-icon">
+                        <a class="nav-link" href="findProvider.html">Live chat</a>
+                    </li>
+                </ul>
+                <div>
+                    <div class="d-flex pointer">
+                        <img src="../assets/msgIcon.svg" alt="message-icon" />
+                        <div class="message-counter">
+                            <div class="counter d-flex justify-content-center align-items-center">
+                                2
+                            </div>
+                        </div>
+                        <img src="../assets/profileIcon.svg" alt="profile-image" class="ms-5 pointer" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main container -->
+    <main class="container">
+
+        <div class="row">
+            <h1 class="weight-600 blue py-4">Welcome, FirstName</h1>
+            <div class="row">
+                <div class="col-lg-10">
+                    <h4 class="weight-400">Our records indicate you have more than one account with us. You are viewing
+                        account:</h4>
+                </div>
+                <div class="col-lg-2">
+                    <select class="form-select select-font-styles py-1" aria-label="Default select example">
+                        <option selected>Client - Legal Name a</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- cards -->
+            <div class="col-lg-4 mt-3 mt-lg-0 mt-md-0">
+                <div class="card card-shadow mt-2 h-100">
+                    <div class="card-header header-title card-header">
+                        <h4 class="m-0 text-white weight-400 mb-3">HUMAN RESOURCE ADMINISTRATION
+                            FUNCTIONS</h4>
+
+                        <span class="caption text-light">
+                            Place holder for marketing
+                        </span>
+                    </div>
+                    <div class="card-body container  record-card">
+
+                        <div class="card-body h-100 px-0 d-flex flex-column justify-content-between">
+                            <div>
+                                <p class="caption">view Employee Roster</p>
+                                <p class="caption">Approval Database & Enrollment Status</p>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn btn-primary">Enroll New Employee</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-3 mt-lg-0 mt-md-0">
+                <div class="card card-shadow mt-2 h-100">
+                    <div class="card-header header-title card-header">
+                        <h4 class="m-0 text-white weight-400 mb-3">OPEN ENROLLMENT FUNCTIONS</h4>
+
+                        <p class="caption text-light">
+                            You are currently in the Open Enrollment period
+                            12/1 - 12/31
+                        </p>
+                        <span class="caption text-light">
+                            Place holder for marketing
+                        </span>
+                    </div>
+                    <div class="card-body container record-card">
+                        <div class="card-body h-100 px-0 d-flex flex-column justify-content-between">
+                            <div>
+                                <p class="caption">Absence Request Administration - FMLA</p>
+                                <p class="caption">Absence Request Administration </p>
+                                <p class="caption">Call-In Validation Queue </p>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn btn-primary">Request Absence</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4  mt-3 mt-lg-0 mt-md-0">
+                <div class="card card-shadow mt-2 h-100">
+                    <div class="card-header header-title card-header">
+                        <h4 class="m-0 text-white weight-400 mb-3">OPEN ENROLLMENT FUNCTIONS</h4>
+
+                        <span class="caption text-light">
+                            This view consists of new and pending Invoices
+                            and Drafts. For a all other status, select the View
+                            Full List button.
+                        </span>
+                    </div>
+                    <div class="card-body container  d-flex align-items-center">
+
+                        <div class="card-body px-0">
+                            <div class="container">
+                                <div class="disablity-search px-2">
+                                    <p class="weight-700 pt-1">Short Term Disability Search Options </p>
+
+                                    <span class="caption weight-600 blue">STD Quick Search</span>
+                                    <form>
+                                        <div class="mb-1">
+                                            <label for="exampleInputEmail1" class="form-label caption m-0 blue">Claim
+                                                Number</label>
+                                            <input type="text" class="form-control py-0 w-75" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="mb-1">
+                                            <label for="exampleInputPassword1" class="form-label caption m-0 blue">Claim
+                                                Name</label>
+                                            <input type="text" class="form-control py-0 w-75" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="mb-1">
+                                            <label for="exampleInputPassword1"
+                                                class="form-label caption m-0 blue">Employee Number</label>
+                                            <input type="text" class="form-control py-0 w-75" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp">
+                                        </div>
+                                        <button type="submit"
+                                            class="btn search-disability-btn py-1 px-3 mb-2">Search</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-3">
+                <div class="card card-shadow mt-2 h-100">
+                    <div class="card-header header-title card-header">
+                        <h4 class="m-0 text-white weight-400 mb-2">FINANCIAL ADMINISTRATIVE
+                            FUNCTIONS</h4>
+
+                        <span class="caption text-light">
+                            This view consists of new and pending Invoices
+                            and Drafts. For a all other status, select the View
+                            Full List button.
+                        </span>
+                    </div>
+                    <div class="card-body container  record-card">
+
+                        <div class="card-body h-100 px-0 d-flex flex-column justify-content-between">
+                            <div>
+                                <p class="caption">New Draft Register - Advance - Run Date: 1/15/2023</p>
+                                <p class="caption">New Draft Register - Regular - Run Date: 1/15/2023</p>
+                                <p class="caption">New Draft Register - RX - Run Date: 1/16/2023</p>
+                                <p class="caption">New Invoice- Run Date: 1/14/2023</p>
+                                <p class="caption">Pending Follow up Invoice- Run Date: 12/14/2022</p>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn btn-primary">View Full List</button>
+                                <button type="button" class="btn btn-primary ms-2">View Bank Account</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-3">
+                <div class="card card-shadow mt-2 h-100">
+                    <div class="card-header header-title card-header">
+                        <h4 class="m-0 text-white weight-400 mb-3">WC & PL CLAIMS ADMINISTRATIVE
+                            FUNCTIONS</h4>
+
+                        <span class="caption text-light">
+                            Place holder for Marketing text.
+                        </span>
+                    </div>
+                    <div class="card-body container  record-card">
+
+                        <div class="card-body h-100 px-0 d-flex flex-column justify-content-between">
+                            <div>
+                                <p class="caption">In-Sightonline Claims - WC and PL</p>
+                                <p class="caption">OSHA</p>
+                                <p class="caption">Review WC & PL Submitted Claims</p>
+                                <p class="caption">View My WC & PL Claims</p>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn btn-primary">Submit WC & PL Claims</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Report and Statistics -->
+        <div class="row">
+            <h3 class="weight-600 blue py-4">Report and Statistics:</h3>
+
+            <!-- cards -->
+            <div class="col-lg-4  mt-3 mt-lg-0 mt-md-0">
+                <div class="card card-shadow mt-2 h-100">
+                    <div class="card-header header-title card-header">
+                        <h4 class="m-0 text-white weight-400 mb-3">ABSENCE REPORTS</h4>
+
+                        <span class="caption text-light">
+                            Lorem ipsum dolor sit amet consectetur. Porta 
+                            magna viverra ultrices diam adipiscing et nam.
+                            ipsum dolor sit amet consectetur. 
+                        </span>
+                    </div>
+                    <div class="card-body container  record-card">
+
+                        <div class="card-body h-100 px-0 d-flex flex-column justify-content-between">
+                            <div>
+                                <p class="caption">Absence Dashboardr</p>
+                                <p class="caption">Absence Request History Report </p>
+                                <p class="caption">Absence Eligibility Report</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4  mt-3 mt-lg-0 mt-md-0">
+                <div class="card card-shadow mt-2 h-100">
+                    <div class="card-header header-title card-header">
+                        <h4 class="m-0 text-white weight-400 mb-3">WC & PC REPORTS</h4>
+
+                        <span class="caption text-light">
+                            Lorem ipsum dolor sit amet consectetur. Porta 
+                            magna viverra ultrices diam adipiscing et nam.
+                            ipsum dolor sit amet consectetur. 
+                        </span>
+                    </div>
+                    <div class="card-body container  record-card">
+
+                        <div class="card-body h-100 px-0 d-flex flex-column justify-content-between">
+                            <div>
+                                <p class="caption">Claim Summary Report</p>
+                                <p class="caption">Claimant Report</p>
+                                <p class="caption">Employee With Indemnity Payments</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4  mt-3 mt-lg-0 mt-md-0">
+                <div class="card card-shadow mt-2 h-100">
+                    <div class="card-header header-title card-header">
+                        <h4 class="m-0 text-white weight-400 mb-3">POWER BI PLACE HOLDER</h4>
+
+                        <span class="caption text-light">
+                            This view consists of new and pending Invoices
+                            and Drafts. For a all other status, select the View
+                            Full List button.
+                        </span>
+                    </div>
+                    <div class="card-body container  record-card">
+
+                        <div class="card-body h-100 px-0 d-flex flex-column justify-content-between">
+                           <img src="../assets/graph-image.png" alt="graph" />
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+          <!-- Informational Data -->
+          <div class="row  pb-4">
+            <h3 class="weight-600 blue py-4">Informational Data:</h3>
+
+            <!-- cards -->
+            <div class="col-lg-4  mt-3 mt-lg-0 mt-md-0">
+                <div class="card card-shadow mt-2 h-100">
+                    <div class="card-header header-title card-header">
+                        <h4 class="m-0 text-white weight-400 mb-3">CLIENT CONTACT LIST</h4>
+
+                        <span class="caption text-light">
+                            Below are the Client Contacts.
+                            Reach out to your account manager to edit this list.
+                            Place holder for Marketing text.
+                        </span>
+                    </div>
+                    <div class="card-body container  record-card">
+
+                        <div class="card-body h-100 px-0 d-flex flex-column justify-content-between">
+                            <div>
+                                <p class="caption">Full Name - Job</p>
+                                <p class="caption">Full Name - Job</p>
+                                <p class="caption">Full Name - Job</p>
+                                <p class="caption">Full Name - Job</p>
+                                <p class="caption">Full Name - Job</p>
+                                <p class="caption">Full Name - Job</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4  mt-3 mt-lg-0 mt-md-0">
+                <div class="card card-shadow mt-2 h-100">
+                    <div class="card-header header-title card-header">
+                        <h4 class="m-0 text-white weight-400 mb-3">SERVICES COVERED BY IPMG</h4>
+
+                        <span class="caption text-light">
+                            Per contact, the below services are rendered by IPMG.
+                            Place Holder for Marketing text.
+                        </span>
+                    </div>
+                    <div class="card-body container  record-card">
+
+                        <div class="card-body h-100 px-0">
+                            <div class="d-flex justify-content-between">
+                               <p class="caption">FMLA - From 1/1/2019 - Active</p>
+                               <a href="#" class="caption light-blue">Plan Information</a>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="caption">NONFMLA - From 1/1/2019 - Active</p>
+                                <a href="#" class="caption light-blue">Plan Information</a>
+                             </div>
+                             <div class="d-flex justify-content-between">
+                                <p class="caption">VESSA - From 1/1/2019 - Active</p>
+                                <a href="#" class="caption light-blue">Plan Information</a>
+                             </div>
+                             <div class="d-flex justify-content-between">
+                                <p class="caption">Personal - 1/1/2019 - Active</p>
+                                <a href="#" class="caption light-blue">Plan Information</a>
+                             </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </main>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

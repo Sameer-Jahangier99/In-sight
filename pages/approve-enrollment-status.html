@@ -1,0 +1,1553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>In-Sightonline</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/approve-enrollment-status.css" />
+    <!-- Bootstrap file -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/b2e6ac0659.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg nav-container">
+        <div class="container-fluid container">
+            <a href="../index.html">
+                <img src="../assets/logo.png" alt="logo" class="pointer" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav w-100 d-flex ms-5 gap-5">
+                    <li class="nav-item responsive-icon">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item responsive-icon">
+                        <a class="nav-link" href="findProvider.html">Contact Us</a>
+                    </li>
+                </ul>
+                <div>
+                    <div class="pointer">
+                        <ul class="navbar-nav w-100 d-flex ms-5 gap-5">
+                            <li class="nav-item responsive-icon">
+                                <a class="nav-link" aria-current="page" href="../index.html">Register</a>
+                            </li>
+                            <li class="nav-item responsive-icon">
+                                <a class="nav-link" href="findProvider.html">Sign In</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-2">
+        <h5>Your are viewing the Employee Roster. the view is of employee with active employment. This must not be
+            mistaken for active benefit view.</h5>
+        <!-- tabs -->
+        <div class="container mt-4 px-0">
+            <ul class="nav nav-tabs d-flex gap-2 px-2 py-0 border-0">
+                <li class="nav-tab-item px-2 py-2">
+                    <a class="tab-link link-blue" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-tab-item py-2 px-2">
+                    <a class="tab-link link-blue" href="./employee-roster.html">Employee Roster</a>
+                </li>
+                <li class="nav-tab-item py-2 px-2 active-tab">
+                    <a class="tab-link link-blue" href="#">Approval Database & Enrollment Status</a>
+                </li>
+                <div class="action-button flex-wrap">
+                    <button type="button" class="btn btn-success green-bg-color border-0 mt-2 mt-lg-0">Add
+                        Employee</button>
+                    <button type="button" class="btn btn-secondary silver-bg-color  ms-1 border-0 mt-2 mt-lg-0">Employee
+                        Filter
+                    </button>
+                    <button type="button"
+                        class="btn btn-secondary silver-bg-color ms-1 border-0 mt-2 mt-lg-0">Non-Employee
+                        Filter</button>
+                    <div class="position-relative mt-2 mt-lg-0">
+                        <select class="form-select action-select ms-1 text-light" aria-label="Default select example">
+                            <option selected>Action</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                        </select>
+                        <img src="../assets/arrow-down.png" class="position-absolute arrow-down-icon-styles" />
+                    </div>
+                    <div class="form-check form-switch ms-2 mt-2 mt-lg-0">
+
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" />
+                    </div>
+                    <img src="../assets/documnet-icon.png" class="ms-1 mt-2 mt-lg-0" />
+                </div>
+            </ul>
+        </div>
+
+        <div class="row container">
+            <div class="col-lg-3 mt-3">
+                <p>Employment & Coverage Filter</p>
+
+                <!-- filters container -->
+                <div class="filter-container">
+                    <p class="caption light-grey">Last and/or First Name</p>
+                    <form>
+                        <div class="mb-1 d-flex gap-1 align-items-center">
+                            <label for="exampleInputEmail1"
+                                class="form-label caption2 m-0 light-grey filter-label">First Name</label>
+                            <input type="text" class="form-control py-0 w-75 input-height" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-1 d-flex gap-1 align-items-center">
+                            <label for="exampleInputPassword1"
+                                class="form-label caption2 m-0 light-grey filter-label">Last Name</label>
+                            <input type="text" class="form-control py-0 w-75 input-height" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="filter-container mt-2">
+                    <p class="caption light-grey">Alt ID or Employee # or SSN</p>
+                    <form>
+                        <div class="mb-1 d-flex gap-1 align-items-center">
+                            <label for="exampleInputEmail1"
+                                class="form-label caption2 m-0 light-grey filter-label">Alternate ID</label>
+                            <input type="text" class="form-control py-0 w-75 input-height" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-1 d-flex gap-1 align-items-center">
+                            <label for="exampleInputPassword1"
+                                class="form-label caption2 m-0 light-grey filter-label">EE Number</label>
+                            <input type="text" class="form-control py-0 w-75 input-height" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-1 d-flex gap-1 align-items-center">
+                            <label for="exampleInputPassword1"
+                                class="form-label caption2 m-0 light-grey filter-label">SSN</label>
+                            <input type="text" class="form-control py-0 w-75 input-height" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="filter-container mt-2">
+                    <p class="caption light-grey">Employment Status</p>
+                    <form>
+                        <div class="mb-1 d-flex justify-content-center ">
+                            <input type="text" class="form-control py-1 w-75 caption2 input-height"
+                                id="exampleInputEmail1" aria-describedby="emailHelp" value="Active and Future Term">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="filter-container mt-2">
+                    <p class="caption light-grey">Coverage Status</p>
+                    <div class="d-flex justify-content-center">
+                        <div class="w-75">
+                            <select class="form-select form-select-sm filter-select input-height"
+                                aria-label=".form-select-sm example">
+                                <option selected>All</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <i class="fa-solid fa-caret-down drop-down-icon"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-container mt-2">
+                    <p class="caption light-grey">Hire and/or Term Date</p>
+                    <form>
+                        <div class="mb-1 d-flex gap-1 align-items-center">
+                            <label for="exampleInputEmail1" class="form-label caption2 m-0 light-grey filter-label">Hire
+                                Date</label>
+                            <input type="date" class="form-control py-0 w-75 input-height" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-1 d-flex gap-1 align-items-center">
+                            <label for="exampleInputPassword1"
+                                class="form-label caption2 m-0 light-grey filter-label">Term Date</label>
+                            <input type="text" class="form-control py-0 w-75 input-height" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="filter-container mt-2">
+                    <p class="caption light-grey">Coverage Status</p>
+                    <div class="d-flex justify-content-center">
+                        <div class="w-75">
+                            <select class="form-select form-select-sm filter-select input-height"
+                                aria-label=".form-select-sm example">
+                                <option selected>All</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <i class="fa-solid fa-caret-down drop-down-icon"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-container mt-2">
+                    <p class="caption light-grey">Tier Type</p>
+                    <div class="d-flex justify-content-center">
+                        <div class="w-75">
+                            <select class="form-select form-select-sm filter-select input-height"
+                                aria-label=".form-select-sm example">
+                                <option selected>All</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <i class="fa-solid fa-caret-down drop-down-icon"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-container mt-2">
+                    <p class="caption light-grey">Location & Department</p>
+                    <div class="d-flex gap-2">
+                        <div class="rectangle-icon d-flex align-items-center">
+                            -
+                        </div>
+                        <div>
+                            <p class="caption3 weight-500 mb-2">Client Code Include All</p>
+                            <p class="caption3 weight-500 mb-2">Location 1</p>
+                            <p class="caption3 weight-500 mb-2">Location 2</p>
+                            <p class="caption3 weight-500 mb-2">Location 3</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-9">
+
+                <div class="table-main-body pb-3">
+                    <!-- table header -->
+                    <div class="record-row d-flex align-items-center mt-3 table-header-row">
+                        <div class="column-buttons ms-2">
+                            <p class="caption m-0">
+                                Select All
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Last Name
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                First Name
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Date Of Birth
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Alternate ID
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                SSN
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Hire Date
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Term Date
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Eligibility
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Department
+                            </p>
+                        </div>
+                        <div class="table-dependant">
+                            <p class="caption m-0">
+                                Dependent
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- column -->
+                    <div class="record-row d-flex align-items-center mt-1">
+                        <div class="column-buttons d-flex gap-2">
+                            <button type="button" class="btn btn-dark caption2 mat-bg-color py-1">View Detils</button>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input p-2" type="checkbox" id="inlineCheckbox1" value="option1">
+                              </div>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                123456719
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <a href="#" class="link-blue caption">View Eligibility</a>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-dependant">
+                            <a href="#" class="link-blue caption">1-View/Add Department</a>
+                        </div>
+                    </div>
+
+                    <!-- column -->
+                    <div class="record-row d-flex align-items-center mt-1">
+                        <div class="column-buttons d-flex gap-2">
+                            <button type="button" class="btn btn-dark caption2 mat-bg-color">View Detils</button>
+                            <button type="button" class="btn btn-secondary silver-bg-color border-0">
+                                <img src="../assets/pencil-icon.png" alt="edit-icon" />
+                            </button>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                123456719
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <a href="#" class="link-blue caption">View Eligibility</a>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-dependant">
+                            <a href="#" class="link-blue caption">1-View/Add Department</a>
+                        </div>
+                    </div>
+                    <!-- column -->
+                    <div class="record-row d-flex align-items-center mt-1">
+                        <div class="column-buttons d-flex gap-2">
+                            <button type="button" class="btn btn-dark caption2 mat-bg-color">View Detils</button>
+                            <button type="button" class="btn btn-secondary silver-bg-color border-0">
+                                <img src="../assets/pencil-icon.png" alt="edit-icon" />
+                            </button>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                123456719
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <a href="#" class="link-blue caption">View Eligibility</a>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-dependant">
+                            <a href="#" class="link-blue caption">1-View/Add Department</a>
+                        </div>
+                    </div>
+
+                    <!-- column -->
+                    <div class="record-row d-flex align-items-center mt-1">
+                        <div class="column-buttons d-flex gap-2">
+                            <button type="button" class="btn btn-dark caption2 mat-bg-color">View Detils</button>
+                            <button type="button" class="btn btn-secondary silver-bg-color border-0">
+                                <img src="../assets/pencil-icon.png" alt="edit-icon" />
+                            </button>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                123456719
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <a href="#" class="link-blue caption">View Eligibility</a>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-dependant">
+                            <a href="#" class="link-blue caption">1-View/Add Department</a>
+                        </div>
+                    </div>
+
+                     <!-- column -->
+                     <div class="record-row d-flex align-items-center mt-1">
+                        <div class="column-buttons d-flex gap-2">
+                            <button type="button" class="btn btn-dark caption2 mat-bg-color">View Detils</button>
+                            <button type="button" class="btn btn-secondary silver-bg-color border-0">
+                                <img src="../assets/pencil-icon.png" alt="edit-icon" />
+                            </button>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                123456719
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <a href="#" class="link-blue caption">View Eligibility</a>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-dependant">
+                            <a href="#" class="link-blue caption">1-View/Add Department</a>
+                        </div>
+                    </div>
+
+                     <!-- column -->
+                     <div class="record-row d-flex align-items-center mt-1">
+                        <div class="column-buttons d-flex gap-2">
+                            <button type="button" class="btn btn-dark caption2 mat-bg-color">View Detils</button>
+                            <button type="button" class="btn btn-secondary silver-bg-color border-0">
+                                <img src="../assets/pencil-icon.png" alt="edit-icon" />
+                            </button>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                123456719
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <a href="#" class="link-blue caption">View Eligibility</a>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-dependant">
+                            <a href="#" class="link-blue caption">1-View/Add Department</a>
+                        </div>
+                    </div>
+
+                     <!-- column -->
+                     <div class="record-row d-flex align-items-center mt-1">
+                        <div class="column-buttons d-flex gap-2">
+                            <button type="button" class="btn btn-dark caption2 mat-bg-color">View Detils</button>
+                            <button type="button" class="btn btn-secondary silver-bg-color border-0">
+                                <img src="../assets/pencil-icon.png" alt="edit-icon" />
+                            </button>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                123456719
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <a href="#" class="link-blue caption">View Eligibility</a>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-dependant">
+                            <a href="#" class="link-blue caption">1-View/Add Department</a>
+                        </div>
+                    </div>
+
+                     <!-- column -->
+                     <div class="record-row d-flex align-items-center mt-1">
+                        <div class="column-buttons d-flex gap-2">
+                            <button type="button" class="btn btn-dark caption2 mat-bg-color">View Detils</button>
+                            <button type="button" class="btn btn-secondary silver-bg-color border-0">
+                                <img src="../assets/pencil-icon.png" alt="edit-icon" />
+                            </button>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                123456719
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <a href="#" class="link-blue caption">View Eligibility</a>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-dependant">
+                            <a href="#" class="link-blue caption">1-View/Add Department</a>
+                        </div>
+                    </div>
+
+                     <!-- column -->
+                     <div class="record-row d-flex align-items-center mt-1">
+                        <div class="column-buttons d-flex gap-2">
+                            <button type="button" class="btn btn-dark caption2 mat-bg-color">View Detils</button>
+                            <button type="button" class="btn btn-secondary silver-bg-color border-0">
+                                <img src="../assets/pencil-icon.png" alt="edit-icon" />
+                            </button>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                123456719
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <a href="#" class="link-blue caption">View Eligibility</a>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-dependant">
+                            <a href="#" class="link-blue caption">1-View/Add Department</a>
+                        </div>
+                    </div>
+
+                     <!-- column -->
+                     <div class="record-row d-flex align-items-center mt-1">
+                        <div class="column-buttons d-flex gap-2">
+                            <button type="button" class="btn btn-dark caption2 mat-bg-color">View Detils</button>
+                            <button type="button" class="btn btn-secondary silver-bg-color border-0">
+                                <img src="../assets/pencil-icon.png" alt="edit-icon" />
+                            </button>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                123456719
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <a href="#" class="link-blue caption">View Eligibility</a>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-dependant">
+                            <a href="#" class="link-blue caption">1-View/Add Department</a>
+                        </div>
+                    </div>
+
+                     <!-- column -->
+                     <div class="record-row d-flex align-items-center mt-1">
+                        <div class="column-buttons d-flex gap-2">
+                            <button type="button" class="btn btn-dark caption2 mat-bg-color">View Detils</button>
+                            <button type="button" class="btn btn-secondary silver-bg-color border-0">
+                                <img src="../assets/pencil-icon.png" alt="edit-icon" />
+                            </button>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                123456719
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <a href="#" class="link-blue caption">View Eligibility</a>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-dependant">
+                            <a href="#" class="link-blue caption">1-View/Add Department</a>
+                        </div>
+                    </div>
+
+                     <!-- column -->
+                     <div class="record-row d-flex align-items-center mt-1">
+                        <div class="column-buttons d-flex gap-2">
+                            <button type="button" class="btn btn-dark caption2 mat-bg-color">View Detils</button>
+                            <button type="button" class="btn btn-secondary silver-bg-color border-0">
+                                <img src="../assets/pencil-icon.png" alt="edit-icon" />
+                            </button>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                123456719
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <a href="#" class="link-blue caption">View Eligibility</a>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-dependant">
+                            <a href="#" class="link-blue caption">1-View/Add Department</a>
+                        </div>
+                    </div>
+
+                     <!-- column -->
+                     <div class="record-row d-flex align-items-center mt-1">
+                        <div class="column-buttons d-flex gap-2">
+                            <button type="button" class="btn btn-dark caption2 mat-bg-color">View Detils</button>
+                            <button type="button" class="btn btn-secondary silver-bg-color border-0">
+                                <img src="../assets/pencil-icon.png" alt="edit-icon" />
+                            </button>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                123456719
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <a href="#" class="link-blue caption">View Eligibility</a>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-dependant">
+                            <a href="#" class="link-blue caption">1-View/Add Department</a>
+                        </div>
+                    </div>
+
+                     <!-- column -->
+                     <div class="record-row d-flex align-items-center mt-1">
+                        <div class="column-buttons d-flex gap-2">
+                            <button type="button" class="btn btn-dark caption2 mat-bg-color">View Detils</button>
+                            <button type="button" class="btn btn-secondary silver-bg-color border-0">
+                                <img src="../assets/pencil-icon.png" alt="edit-icon" />
+                            </button>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                123456719
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <a href="#" class="link-blue caption">View Eligibility</a>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-dependant">
+                            <a href="#" class="link-blue caption">1-View/Add Department</a>
+                        </div>
+                    </div>
+
+                     <!-- column -->
+                     <div class="record-row d-flex align-items-center mt-1">
+                        <div class="column-buttons d-flex gap-2">
+                            <button type="button" class="btn btn-dark caption2 mat-bg-color">View Detils</button>
+                            <button type="button" class="btn btn-secondary silver-bg-color border-0">
+                                <img src="../assets/pencil-icon.png" alt="edit-icon" />
+                            </button>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                123456719
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <a href="#" class="link-blue caption">View Eligibility</a>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-dependant">
+                            <a href="#" class="link-blue caption">1-View/Add Department</a>
+                        </div>
+                    </div>
+
+                     <!-- column -->
+                     <div class="record-row d-flex align-items-center mt-1">
+                        <div class="column-buttons d-flex gap-2">
+                            <button type="button" class="btn btn-dark caption2 mat-bg-color">View Detils</button>
+                            <button type="button" class="btn btn-secondary silver-bg-color border-0">
+                                <img src="../assets/pencil-icon.png" alt="edit-icon" />
+                            </button>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                123456719
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <a href="#" class="link-blue caption">View Eligibility</a>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-dependant">
+                            <a href="#" class="link-blue caption">1-View/Add Department</a>
+                        </div>
+                    </div>
+
+                     <!-- column -->
+                     <div class="record-row d-flex align-items-center mt-1">
+                        <div class="column-buttons d-flex gap-2">
+                            <button type="button" class="btn btn-dark caption2 mat-bg-color">View Detils</button>
+                            <button type="button" class="btn btn-secondary silver-bg-color border-0">
+                                <img src="../assets/pencil-icon.png" alt="edit-icon" />
+                            </button>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                123456719
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <a href="#" class="link-blue caption">View Eligibility</a>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-dependant">
+                            <a href="#" class="link-blue caption">1-View/Add Department</a>
+                        </div>
+                    </div>
+
+                     <!-- column -->
+                     <div class="record-row d-flex align-items-center mt-1">
+                        <div class="column-buttons d-flex gap-2">
+                            <button type="button" class="btn btn-dark caption2 mat-bg-color">View Detils</button>
+                            <button type="button" class="btn btn-secondary silver-bg-color border-0">
+                                <img src="../assets/pencil-icon.png" alt="edit-icon" />
+                            </button>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                123456719
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <a href="#" class="link-blue caption">View Eligibility</a>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-dependant">
+                            <a href="#" class="link-blue caption">1-View/Add Department</a>
+                        </div>
+                    </div>
+
+                     <!-- column -->
+                     <div class="record-row d-flex align-items-center mt-1">
+                        <div class="column-buttons d-flex gap-2">
+                            <button type="button" class="btn btn-dark caption2 mat-bg-color">View Detils</button>
+                            <button type="button" class="btn btn-secondary silver-bg-color border-0">
+                                <img src="../assets/pencil-icon.png" alt="edit-icon" />
+                            </button>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                123456719
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <a href="#" class="link-blue caption">View Eligibility</a>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-dependant">
+                            <a href="#" class="link-blue caption">1-View/Add Department</a>
+                        </div>
+                    </div>
+
+                     <!-- column -->
+                     <div class="record-row d-flex align-items-center mt-1">
+                        <div class="column-buttons d-flex gap-2">
+                            <button type="button" class="btn btn-dark caption2 mat-bg-color">View Detils</button>
+                            <button type="button" class="btn btn-secondary silver-bg-color border-0">
+                                <img src="../assets/pencil-icon.png" alt="edit-icon" />
+                            </button>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                123456719
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <a href="#" class="link-blue caption">View Eligibility</a>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-dependant">
+                            <a href="#" class="link-blue caption">1-View/Add Department</a>
+                        </div>
+                    </div>
+
+                     <!-- column -->
+                     <div class="record-row d-flex align-items-center mt-1">
+                        <div class="column-buttons d-flex gap-2">
+                            <button type="button" class="btn btn-dark caption2 mat-bg-color">View Detils</button>
+                            <button type="button" class="btn btn-secondary silver-bg-color border-0">
+                                <img src="../assets/pencil-icon.png" alt="edit-icon" />
+                            </button>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                123456719
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <a href="#" class="link-blue caption">View Eligibility</a>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-dependant">
+                            <a href="#" class="link-blue caption">1-View/Add Department</a>
+                        </div>
+                    </div>
+
+                     <!-- column -->
+                     <div class="record-row d-flex align-items-center mt-1">
+                        <div class="column-buttons d-flex gap-2">
+                            <button type="button" class="btn btn-dark caption2 mat-bg-color">View Detils</button>
+                            <button type="button" class="btn btn-secondary silver-bg-color border-0">
+                                <img src="../assets/pencil-icon.png" alt="edit-icon" />
+                            </button>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                123456719
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-header">
+                            <a href="#" class="link-blue caption">View Eligibility</a>
+                        </div>
+                        <div class="table-header">
+                            <p class="caption m-0">
+                                Data Display
+                            </p>
+                        </div>
+                        <div class="table-dependant">
+                            <a href="#" class="link-blue caption">1-View/Add Department</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center w-100 py-3">
+                    <div class="d-flex align-items-center">
+                        <i class="fa fa-angle-double-left me-2 pagination-arrow" aria-hidden="true"></i>
+                        <div class="d-flex gap-3 align-items-center">
+                            <p class="m-0 p-2 pagination-btn pagination-arrow">1</p>
+                            <p class="m-0 pagination-active-btn p-2">2</p>
+                            <p class="m-0 p-2 pagination-btn pagination-arrow">3</p>
+                        </div>
+                        <i class="fa fa-angle-double-right ms-2 pagination-arrow" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <p class="caption m-0">16-30 of 91 items</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/scroll.js"></script>
+</body>
+
+</html>

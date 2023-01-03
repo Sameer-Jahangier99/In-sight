@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In-Sightonline</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <!-- Bootstrap file -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg nav-container">
+        <div class="container-fluid container">
+            <a href="../index.html">
+                <img src="../assets/logo.png" alt="logo" class="pointer" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav w-100 d-flex ms-5 gap-5">
+                    <li class="nav-item responsive-icon">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item responsive-icon">
+                        <a class="nav-link" href="findProvider.html">Contact Us</a>
+                    </li>
+                </ul>
+                <div>
+                    <div class="pointer">
+                        <ul class="navbar-nav w-100 d-flex ms-5 gap-5">
+                            <li class="nav-item responsive-icon">
+                                <a class="nav-link" aria-current="page" href="../index.html">Register</a>
+                            </li>
+                            <li class="nav-item responsive-icon">
+                                <a class="nav-link" href="findProvider.html">Sign In</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-bg-color row d-flex justify-content-center" style="height: 91vh;">
+
+        <div class="col-lg-6">
+            <div class="w-100 d-flex justify-content-center pt-5 container">
+                <img src="../assets/login-logo.png" class="img-fluid" />
+            </div>
+            <div class="container">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label caption text-light">Email address</label>
+                        <input type="email" class="form-control" id="emailInput"
+                            placeholder="youremail@gmail.com" aria-describedby="emailHelp" oninput="handleInputChange()">
+                    </div>
+                    <div class="mb-3 position-relative">
+                        <label for="exampleInputPassword1" class="form-label caption text-light">Password</label>
+                        <input type="password" class="form-control" id="passwordInput" placeholder="Enter password"
+                            oninput="handleInputChange()">
+                        <div class="eye-icon" id="passwordIcon" onclick="passwordVisiblityTogle()">
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <button class="btn btn-primary w-100 py-2" type="button" id="loginButton"
+                            disabled="true">Login</button>
+                    </div>
+                </form>
+
+                <div class="text-center py-2">
+                    <span class="caption2 black text-light">Forgot your password? <a href="#"> Reset password</a></span>
+                    <p class="text-center mt-2 text-light">
+                        Need an account? <a href="#"> Click to Register </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../js/bootstrap.min.js"></script>
+    <script>
+        function passwordVisiblityTogle() {
+            var passwordFieldElement = document.getElementById("passwordInput");
+            var passowordFieldIconElement = document.getElementById("passwordIcon");
+
+            console.log('passwordField', passowordFieldIconElement.classList);
+            if (passwordFieldElement.type === "password") {
+                passwordFieldElement.type = "text";
+                passowordFieldIconElement.classList.remove("eye-icon")
+                passowordFieldIconElement.classList.add("hide-eye-icon")
+            } else {
+                passwordFieldElement.type = "password";
+                passowordFieldIconElement.classList.remove("hide-eye-icon")
+                passowordFieldIconElement.classList.add("eye-icon")
+            }
+        }
+    </script>
+    <script>
+        function handleInputChange() {
+            let emailDocument = document.getElementById("emailInput");
+            let passwordDocument = document.getElementById("passwordInput")
+
+            let emailLength = emailDocument?.value?.length > 0;
+            let passwordLength = passwordDocument?.value?.length > 0;
+
+            if(emailLength && passwordLength)
+            {
+
+                document.getElementById("loginButton").disabled = false;
+            }
+            else {
+                document.getElementById("loginButton").disabled = true;
+            }
+
+        }
+    </script>
+</body>
+
+</html>

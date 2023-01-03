@@ -1,0 +1,39 @@
+.select-font-styles {
+    font-size: 14px !important;
+    color: var(--lightBlue-color) !important;
+}
+
+.card-header {
+    height: 145px;
+}
+
+.disablity-search {
+    background: var(--sky-blue-color);
+}
+
+.search-disability-btn {
+    border-radius: 50px !important;
+    background: var(--main-bg-color) !important;
+    color: white !important;
+    border: none;
+}
+
+
+@media  (min-width: 1200px) and (max-width: 1399px) {
+    .card-header {
+        height: 170px;
+    }
+}
+
+
+@media  (min-width: 992px) and (max-width: 1200px) {
+    .card-header {
+        height: 210px;
+    }
+}
+
+@media  (max-width: 991px) {
+    .card-header {
+        height: 100%
+    }
+}

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In-Sightonline</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <!-- Bootstrap file -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg nav-container">
+        <div class="container-fluid container">
+            <a href="../index.html">
+                <img src="../assets/logo.png" alt="logo" class="pointer" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav w-100 d-flex ms-5 gap-5">
+                    <li class="nav-item responsive-icon">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item responsive-icon">
+                        <a class="nav-link" href="findProvider.html">Contact Us</a>
+                    </li>
+                </ul>
+                <div>
+                    <div class="pointer">
+                        <ul class="navbar-nav w-100 d-flex ms-5 gap-5">
+                            <li class="nav-item responsive-icon">
+                                <a class="nav-link" aria-current="page" href="../index.html">Register</a>
+                            </li>
+                            <li class="nav-item responsive-icon">
+                                <a class="nav-link" href="findProvider.html">Sign In</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <div class="container">
+            <div class="row">
+                <!-- Form -->
+                <div class="col-lg-6 py-4">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label caption">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                placeholder="youremail@gmail.com" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3 position-relative">
+                            <label for="exampleInputPassword1" class="form-label caption">Password</label>
+                            <input type="password" class="form-control" id="passwordInput"
+                                placeholder="Enter password">
+                            <div class="eye-icon" id="passwordIcon" onclick="passwordVisiblityTogle()">
+
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <button class="btn btn-primary w-100 py-2" type="button">Login</button>
+                        </div>
+                    </form>
+
+                    <div class="text-center py-2">
+                        <span class="caption2 black">Forgot your password?
+                            <a href="#">Reset password</a></span>
+                        <p class="text-center mt-2">
+                            Need an account? <a href="#">Click to Register</a>
+                        </p>
+                    </div>
+
+                    <!-- download button card -->
+                    <div class="col-md-8">
+                        <div class="card card-shadow h-100">
+                            <div class="card-header header-title">
+                                <p class="m-0 text-white weight-400">Download the App</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="caption">
+                                    Download the In-Sightonline.com app designed
+                                    for members of our employee benefits
+                                    services. View your ID card, Claims, Dedoubble
+                                    and more.
+                                </p>
+                                <div class="container d-flex">
+                                    <img src="../assets/android.png" alt="android app button" class="app-link-btn" />
+                                    <img src="../assets/apple-btn.png" alt="ios app button" class="ios-app-link-btn" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- empty col -->
+                <div class="col-lg-2"></div>
+
+                <div class="col-lg-4 py-4 col-sm-12">
+
+                    <!--Benefits claims -->
+                    <div class="card card-shadow">
+                        <div class="card-header header-title">
+                            <p class="m-0 text-white weight-600 text-center">Are you a Healthcare Provider</p>
+                        </div>
+                        <div class="card-body container benefits-claim-container d-flex align-items-center">
+
+                            <div
+                                class="w-100 d-flex gap-3 align-items-center justify-content-center benefits-claims-btn">
+                                <img src="../assets/doctor-icon.png" class="benefits-claim-icon" />
+                                <p class="weight-500 white m-0 py-2">Click to View Benefits or Claims</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- are you health care provider -->
+                    <div class="card card-shadow mt-2">
+                        <div class="card-header header-title ">
+                            <p class="m-0 text-white weight-600 text-center">Are you a Healthcare Provider</p>
+                        </div>
+                        <div class="card-body container  d-flex align-items-center">
+
+                            <div class="card-body px-0">
+
+                                <div class="d-flex gap-2 grey-border py-2 w-100 px-2 ">
+                                    <div>
+                                        <img src="../assets/dot-icon.svg" />
+                                    </div>
+                                    <div>
+                                        <p class="m-0">How In-Sight 360° Improves Workforce
+                                            Health and Reduces Claims Expenses</p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex gap-2 grey-border py-2 w-100 px-2 mt-2 ">
+                                    <div>
+                                        <img src="../assets/dot-icon.svg" />
+                                    </div>
+                                    <div>
+                                        <p class="m-0">IPMG In-Sight 360° Capabilities </p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex gap-2 grey-border py-2 w-100 px-2  mt-2">
+                                    <div>
+                                        <img src="../assets/dot-icon.svg" />
+                                    </div>
+                                    <div>
+                                        <p class="m-0">IPMG Absence Management
+                                            Capabilities</p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex gap-2 grey-border py-2 w-100 px-2  mt-2">
+                                    <div>
+                                        <img src="../assets/dot-icon.svg" />
+                                    </div>
+                                    <div>
+                                        <p class="m-0">IPMG Employee Benefits Capablilitiess</p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex gap-2 grey-border py-2 w-100 px-2  mt-2">
+                                    <div>
+                                        <img src="../assets/dot-icon.svg" />
+                                    </div>
+                                    <div>
+                                        <p class="m-0">IPMG Claims Management Capabilities</p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex gap-2 grey-border py-2 w-100 px-2  mt-2">
+                                    <div>
+                                        <img src="../assets/dot-icon.svg" />
+                                    </div>
+                                    <div>
+                                        <p class="m-0">IPMG Wholesale Broken age Services
+                                            Capabilities</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- notices -->
+                    <div class="card card-shadow mt-2">
+                        <div class="card-header header-title">
+                            <p class="m-0 text-white weight-600">Notices</p>
+                        </div>
+                        <div class="card-body container benefits-claim-container d-flex align-items-center">
+
+                            <div class="w-100  text-center grey-border py-2 ">
+                                <p class="m-0">IPMG HIPAA Privacy Notice</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../js/bootstrap.min.js"></script>
+    <script>
+        function passwordVisiblityTogle() {
+            var passwordFieldElement = document.getElementById("passwordInput");
+            var passowordFieldIconElement = document.getElementById("passwordIcon");
+
+            if (passwordFieldElement.type === "password") {
+                passwordFieldElement.type = "text";
+                passowordFieldIconElement.classList.remove("eye-icon")
+                passowordFieldIconElement.classList.add("hide-eye-icon")
+            } else {
+                passwordFieldElement.type = "password";
+                passowordFieldIconElement.classList.remove("hide-eye-icon")
+                passowordFieldIconElement.classList.add("eye-icon")
+            }
+        }
+    </script>
+</body>
+
+</html>

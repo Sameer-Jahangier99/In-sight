@@ -5,11 +5,17 @@
   --grey-color: #7c7c7c;
   --lightBlue-color: #398fff;
   --linkBlue-color: #1cc1ff;
+  --sky-blue-color: #DEEBF8;
   --silver-color: #edeff1;
   --light-grey: #a0a0a0;
+  --silver-color: #a9a9a9;
   --dark-grey: #4f4f4f;
+  --mat-color: #2F2F2F;
   --main-grey: #f9f9f9;
   --green-color: #04bd00;
+  --white-color: #fff;
+  --blackish-color: #464646;
+  --sky-color: #DFEBF8;
 }
 
 html {
@@ -22,6 +28,7 @@ body {
   font-family: "Poppins", sans-serif;
   background: var(--main-grey) !important;
 }
+
 h1 {
   font-size: 40px;
   font-family: "Poppins", sans-serif;
@@ -73,7 +80,7 @@ a {
 }
 
 .caption3 {
-  font-size: 10px;
+  font-size: 10px !important;
   font-family: "Poppins", sans-serif !important;
 }
 
@@ -175,6 +182,7 @@ a {
   font-weight: 400 !important;
 }
 
+
 /* color */
 .grey {
   color: var(--grey-color) !important;
@@ -185,7 +193,7 @@ a {
 }
 
 .light-blue {
-  color: var(--lightBlue-color);
+  color: var(--lightBlue-color) !important;
 }
 
 .black {
@@ -195,6 +203,8 @@ a {
 .light-grey {
   color: var(--light-grey) !important;
 }
+
+
 .link-blue {
   color: var(--lightBlue-color) !important;
 }
@@ -211,8 +221,53 @@ a {
   color: var(--dark-grey) !important;
 }
 
+.white {
+  color: var(--white-color) !important;
+}
+
+.blackish-color {
+  color: var(--blackish-color) !important;
+}
+
 .scroll-hidden {
   overflow: hidden;
+}
+
+/* background color */
+
+.main-bg-color {
+  background: #003366 !important;
+}
+
+.grey-bg-color {
+  background: var(--ligh-grey) !important;
+}
+
+.silver-bg-color {
+  background: var(--silver-color) !important;
+}
+
+.green-bg-color {
+  background: var(--green-color) !important;
+}
+
+.mat-bg-color {
+  background: var(--mat-color) !important;
+}
+
+.blue-bg-color {
+  background: var(--linkBlue-color) !important;
+}
+
+.password-field-icon {
+  position: absolute;
+  right: 0;
+}
+/* border */
+
+.grey-border {
+  border: 1px  solid var(--light-grey);
+  border-radius: 5px;
 }
 
 /* cursor  */

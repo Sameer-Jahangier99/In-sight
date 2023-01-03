@@ -1,0 +1,38 @@
+.benefits-claim-container {
+    height: 100px;
+}
+
+.benefits-claims-btn {
+    background-color: var(--main-bg-color);
+    height: 50px;
+}
+
+.benefits-claim-icon {
+    width: 25px;
+}
+
+.app-link-btn {
+    height: 48px;
+}
+
+.ios-app-link-btn {
+    height: 42px;
+}
+
+.eye-icon {
+    background: url('../assets/eye-icon.png') center no-repeat;
+    width: 30px;
+    height: 40px;
+    position: absolute;
+    right: 10px;
+    top: 32px;
+}
+
+.hide-eye-icon {
+    background: url('../assets/hide-eye-icon.png') center no-repeat;
+    width: 30px;
+    height: 40px;
+    position: absolute;
+    right: 10px;
+    top: 32px;
+}
