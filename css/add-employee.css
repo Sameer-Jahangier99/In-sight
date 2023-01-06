@@ -1,0 +1,47 @@
+.tab-link {
+    color: var(--main-bg-color) !important;
+    text-decoration: none;
+    font-size: 12px;
+  }
+  
+  .input-height {
+    height: 24px;
+  }
+  
+  .nav-tab-item:hover {
+    background: #ffffff;
+  }
+  
+  .active-tab {
+    background: #ffffff;
+  }
+  
+  .nav-tabs-border {
+    border: 1px solid lightgrey;
+  }
+  
+  .action-select {
+    width: 100px !important;
+    background: var(--main-bg-color) !important;
+  }
+
+  .select-all-action{
+      width: 130px;
+  }
+
+  .select-row-checkbox{
+      padding: 9px;
+  }
+
+  /* accordian styles */
+
+  .accordian-btn-styles {
+    border: 0.5px solid #7c7c7c!important;
+    border-radius: 6px !important;
+  }
+
+
+  .add-additional-information {
+    position: absolute;
+    top: 21px;
+  }

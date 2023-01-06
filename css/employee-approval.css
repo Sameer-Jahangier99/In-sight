@@ -24,6 +24,18 @@
     width: 100px !important;
     background: var(--main-bg-color) !important;
   }
+
+  .select-all-action{
+      width: 130px;
+  }
+
+  .select-row-checkbox{
+      padding: 9px;
+  }
+
+  .filter-select-checkbox {
+      padding: 9px;
+  }
   
   .arrow-down-icon-styles {
     width: 24px !important;
@@ -38,12 +50,16 @@
   }
   
   .filter-label {
-    width: 100px;
+    width: 150px;
   }
   
   .table-header {
-    width: 130px;
+    width: 135px;
   }
+
+  .date-last-modified-header {
+    width: 150px;
+}
   
   .table-dependant {
     width: 230px !important;
@@ -86,7 +102,7 @@
   }
   
   .record-row {
-    width: 1300px;
+    width: 1200px;
   }
   
   .rectangle-icon {

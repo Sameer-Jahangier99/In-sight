@@ -55,11 +55,11 @@
         </div>
     </nav>
 
-    <main class="container py-2">
+    <main class="px-lg-5 px-md-5 px-3 py-2">
         <h5>Your are viewing the Employee Roster. the view is of employee with active employment. This must not be
             mistaken for active benefit view.</h5>
         <!-- tabs -->
-        <div class="container mt-4 px-0">
+        <div class=" mt-4 px-0">
             <ul class="nav nav-tabs d-flex gap-2 px-2 py-0 border-0">
                 <li class="nav-tab-item px-2 py-2">
                     <a class="tab-link link-blue" aria-current="page" href="#">Home</a>
@@ -68,7 +68,8 @@
                     <a class="tab-link link-blue" href="./employee-roster.html">Employee Roster</a>
                 </li>
                 <li class="nav-tab-item py-2 px-2">
-                    <a class="tab-link link-blue" href="./approve-enrollment-status.html">Approval Database & Enrollment Status</a>
+                    <a class="tab-link link-blue" href="./approve-enrollment-status.html">Approval Database & Enrollment
+                        Status</a>
                 </li>
                 <div class="action-button flex-wrap">
                     <button type="button" class="btn btn-success green-bg-color border-0 mt-2 mt-lg-0">Add
@@ -80,12 +81,14 @@
                         class="btn btn-secondary silver-bg-color ms-1 border-0 mt-2 mt-lg-0">Non-Employee
                         Filter</button>
                     <div class="position-relative mt-2 mt-lg-0">
-                        <select class="form-select action-select ms-1 text-light" aria-label="Default select example">
-                            <option selected>Action</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                        </select>
-                        <img src="../assets/arrow-down.png" class="position-absolute arrow-down-icon-styles" />
+                        <div class="action-select-style">
+                            <select class="form-select action-select ms-1 text-light select-btn">
+                                <option selected>Action</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="form-check form-switch ms-2 mt-2 mt-lg-0">
 
@@ -96,7 +99,7 @@
             </ul>
         </div>
 
-        <div class="row container">
+        <div class="row ">
             <div class="col-lg-3 mt-3">
                 <p>Employment & Coverage Filter</p>
 
@@ -145,26 +148,32 @@
 
                 <div class="filter-container mt-2">
                     <p class="caption light-grey">Employment Status</p>
-                    <form>
-                        <div class="mb-1 d-flex justify-content-center ">
-                            <input type="text" class="form-control py-1 w-75 caption2 input-height"
-                                id="exampleInputEmail1" aria-describedby="emailHelp" value="Active and Future Term">
+                    <div class="d-flex justify-content-center">
+                        <div class="w-75">
+                            <div class="select-style">
+                                <select class="form-select form-select-sm filter-select input-heigh">
+                                    <option selected>Active and Future Term</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
                         </div>
-                    </form>
+                    </div>
                 </div>
 
                 <div class="filter-container mt-2">
                     <p class="caption light-grey">Coverage Status</p>
                     <div class="d-flex justify-content-center">
                         <div class="w-75">
-                            <select class="form-select form-select-sm filter-select input-height"
-                                aria-label=".form-select-sm example">
-                                <option selected>All</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                            <i class="fa-solid fa-caret-down drop-down-icon"></i>
+                            <div class="select-style">
+                                <select class="form-select form-select-sm filter-select input-heigh">
+                                    <option selected>All</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -181,7 +190,7 @@
                         <div class="mb-1 d-flex gap-1 align-items-center">
                             <label for="exampleInputPassword1"
                                 class="form-label caption2 m-0 light-grey filter-label">Term Date</label>
-                            <input type="text" class="form-control py-0 w-75 input-height" id="exampleInputEmail1"
+                            <input type="date" class="form-control py-0 w-75 input-height" id="exampleInputEmail1"
                                 aria-describedby="emailHelp">
                         </div>
                     </form>
@@ -191,14 +200,14 @@
                     <p class="caption light-grey">Coverage Status</p>
                     <div class="d-flex justify-content-center">
                         <div class="w-75">
-                            <select class="form-select form-select-sm filter-select input-height"
-                                aria-label=".form-select-sm example">
-                                <option selected>All</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                            <i class="fa-solid fa-caret-down drop-down-icon"></i>
+                            <div class="select-style">
+                                <select class="form-select form-select-sm filter-select input-heigh">
+                                    <option selected>All</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -207,30 +216,42 @@
                     <p class="caption light-grey">Tier Type</p>
                     <div class="d-flex justify-content-center">
                         <div class="w-75">
-                            <select class="form-select form-select-sm filter-select input-height"
-                                aria-label=".form-select-sm example">
-                                <option selected>All</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                            <i class="fa-solid fa-caret-down drop-down-icon"></i>
+                            <div class="select-style">
+                                <select class="form-select form-select-sm filter-select input-heigh">
+                                    <option selected>All</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="filter-container mt-2">
                     <p class="caption light-grey">Location & Department</p>
-                    <div class="d-flex gap-2">
-                        <div class="rectangle-icon d-flex align-items-center">
-                            -
+                    <div class="d-flex justify-content-center w-100">
+                     
+                      <div class="w-75">
+                        <div class="accordion accordion-flush location-accordian" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed py-1 caption2" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                        aria-expanded="false" aria-controls="flush-collapseOne">
+                                        Client Code Include All
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse px-2"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <p class="caption3 weight-500 mb-2 mt-2 pointer">Location 1</p>
+                                    <p class="caption3 weight-500 mb-2 pointer">Location 2</p>
+                                    <p class="caption3 weight-500 mb-2 pointer">Location 3</p>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <p class="caption3 weight-500 mb-2">Client Code Include All</p>
-                            <p class="caption3 weight-500 mb-2">Location 1</p>
-                            <p class="caption3 weight-500 mb-2">Location 2</p>
-                            <p class="caption3 weight-500 mb-2">Location 3</p>
-                        </div>
+                      </div>
+
                     </div>
                 </div>
 
@@ -520,8 +541,8 @@
                         </div>
                     </div>
 
-                     <!-- column -->
-                     <div class="record-row d-flex align-items-center mt-1">
+                    <!-- column -->
+                    <div class="record-row d-flex align-items-center mt-1">
                         <div class="column-buttons d-flex gap-2">
                             <button type="button" class="btn btn-dark caption2 mat-bg-color">View Detils</button>
                             <button type="button" class="btn btn-secondary silver-bg-color border-0">
@@ -576,8 +597,8 @@
                         </div>
                     </div>
 
-                     <!-- column -->
-                     <div class="record-row d-flex align-items-center mt-1">
+                    <!-- column -->
+                    <div class="record-row d-flex align-items-center mt-1">
                         <div class="column-buttons d-flex gap-2">
                             <button type="button" class="btn btn-dark caption2 mat-bg-color">View Detils</button>
                             <button type="button" class="btn btn-secondary silver-bg-color border-0">
@@ -632,8 +653,8 @@
                         </div>
                     </div>
 
-                     <!-- column -->
-                     <div class="record-row d-flex align-items-center mt-1">
+                    <!-- column -->
+                    <div class="record-row d-flex align-items-center mt-1">
                         <div class="column-buttons d-flex gap-2">
                             <button type="button" class="btn btn-dark caption2 mat-bg-color">View Detils</button>
                             <button type="button" class="btn btn-secondary silver-bg-color border-0">
@@ -688,8 +709,8 @@
                         </div>
                     </div>
 
-                     <!-- column -->
-                     <div class="record-row d-flex align-items-center mt-1">
+                    <!-- column -->
+                    <div class="record-row d-flex align-items-center mt-1">
                         <div class="column-buttons d-flex gap-2">
                             <button type="button" class="btn btn-dark caption2 mat-bg-color">View Detils</button>
                             <button type="button" class="btn btn-secondary silver-bg-color border-0">
@@ -744,8 +765,8 @@
                         </div>
                     </div>
 
-                     <!-- column -->
-                     <div class="record-row d-flex align-items-center mt-1">
+                    <!-- column -->
+                    <div class="record-row d-flex align-items-center mt-1">
                         <div class="column-buttons d-flex gap-2">
                             <button type="button" class="btn btn-dark caption2 mat-bg-color">View Detils</button>
                             <button type="button" class="btn btn-secondary silver-bg-color border-0">
@@ -800,8 +821,8 @@
                         </div>
                     </div>
 
-                     <!-- column -->
-                     <div class="record-row d-flex align-items-center mt-1">
+                    <!-- column -->
+                    <div class="record-row d-flex align-items-center mt-1">
                         <div class="column-buttons d-flex gap-2">
                             <button type="button" class="btn btn-dark caption2 mat-bg-color">View Detils</button>
                             <button type="button" class="btn btn-secondary silver-bg-color border-0">
@@ -856,8 +877,8 @@
                         </div>
                     </div>
 
-                     <!-- column -->
-                     <div class="record-row d-flex align-items-center mt-1">
+                    <!-- column -->
+                    <div class="record-row d-flex align-items-center mt-1">
                         <div class="column-buttons d-flex gap-2">
                             <button type="button" class="btn btn-dark caption2 mat-bg-color">View Detils</button>
                             <button type="button" class="btn btn-secondary silver-bg-color border-0">
@@ -912,8 +933,8 @@
                         </div>
                     </div>
 
-                     <!-- column -->
-                     <div class="record-row d-flex align-items-center mt-1">
+                    <!-- column -->
+                    <div class="record-row d-flex align-items-center mt-1">
                         <div class="column-buttons d-flex gap-2">
                             <button type="button" class="btn btn-dark caption2 mat-bg-color">View Detils</button>
                             <button type="button" class="btn btn-secondary silver-bg-color border-0">
@@ -968,8 +989,8 @@
                         </div>
                     </div>
 
-                     <!-- column -->
-                     <div class="record-row d-flex align-items-center mt-1">
+                    <!-- column -->
+                    <div class="record-row d-flex align-items-center mt-1">
                         <div class="column-buttons d-flex gap-2">
                             <button type="button" class="btn btn-dark caption2 mat-bg-color">View Detils</button>
                             <button type="button" class="btn btn-secondary silver-bg-color border-0">
@@ -1024,8 +1045,8 @@
                         </div>
                     </div>
 
-                     <!-- column -->
-                     <div class="record-row d-flex align-items-center mt-1">
+                    <!-- column -->
+                    <div class="record-row d-flex align-items-center mt-1">
                         <div class="column-buttons d-flex gap-2">
                             <button type="button" class="btn btn-dark caption2 mat-bg-color">View Detils</button>
                             <button type="button" class="btn btn-secondary silver-bg-color border-0">
@@ -1080,8 +1101,8 @@
                         </div>
                     </div>
 
-                     <!-- column -->
-                     <div class="record-row d-flex align-items-center mt-1">
+                    <!-- column -->
+                    <div class="record-row d-flex align-items-center mt-1">
                         <div class="column-buttons d-flex gap-2">
                             <button type="button" class="btn btn-dark caption2 mat-bg-color">View Detils</button>
                             <button type="button" class="btn btn-secondary silver-bg-color border-0">
@@ -1136,8 +1157,8 @@
                         </div>
                     </div>
 
-                     <!-- column -->
-                     <div class="record-row d-flex align-items-center mt-1">
+                    <!-- column -->
+                    <div class="record-row d-flex align-items-center mt-1">
                         <div class="column-buttons d-flex gap-2">
                             <button type="button" class="btn btn-dark caption2 mat-bg-color">View Detils</button>
                             <button type="button" class="btn btn-secondary silver-bg-color border-0">
@@ -1192,8 +1213,8 @@
                         </div>
                     </div>
 
-                     <!-- column -->
-                     <div class="record-row d-flex align-items-center mt-1">
+                    <!-- column -->
+                    <div class="record-row d-flex align-items-center mt-1">
                         <div class="column-buttons d-flex gap-2">
                             <button type="button" class="btn btn-dark caption2 mat-bg-color">View Detils</button>
                             <button type="button" class="btn btn-secondary silver-bg-color border-0">
@@ -1248,8 +1269,8 @@
                         </div>
                     </div>
 
-                     <!-- column -->
-                     <div class="record-row d-flex align-items-center mt-1">
+                    <!-- column -->
+                    <div class="record-row d-flex align-items-center mt-1">
                         <div class="column-buttons d-flex gap-2">
                             <button type="button" class="btn btn-dark caption2 mat-bg-color">View Detils</button>
                             <button type="button" class="btn btn-secondary silver-bg-color border-0">
@@ -1304,8 +1325,8 @@
                         </div>
                     </div>
 
-                     <!-- column -->
-                     <div class="record-row d-flex align-items-center mt-1">
+                    <!-- column -->
+                    <div class="record-row d-flex align-items-center mt-1">
                         <div class="column-buttons d-flex gap-2">
                             <button type="button" class="btn btn-dark caption2 mat-bg-color">View Detils</button>
                             <button type="button" class="btn btn-secondary silver-bg-color border-0">
@@ -1360,8 +1381,8 @@
                         </div>
                     </div>
 
-                     <!-- column -->
-                     <div class="record-row d-flex align-items-center mt-1">
+                    <!-- column -->
+                    <div class="record-row d-flex align-items-center mt-1">
                         <div class="column-buttons d-flex gap-2">
                             <button type="button" class="btn btn-dark caption2 mat-bg-color">View Detils</button>
                             <button type="button" class="btn btn-secondary silver-bg-color border-0">
@@ -1416,8 +1437,8 @@
                         </div>
                     </div>
 
-                     <!-- column -->
-                     <div class="record-row d-flex align-items-center mt-1">
+                    <!-- column -->
+                    <div class="record-row d-flex align-items-center mt-1">
                         <div class="column-buttons d-flex gap-2">
                             <button type="button" class="btn btn-dark caption2 mat-bg-color">View Detils</button>
                             <button type="button" class="btn btn-secondary silver-bg-color border-0">
@@ -1472,8 +1493,8 @@
                         </div>
                     </div>
 
-                     <!-- column -->
-                     <div class="record-row d-flex align-items-center mt-1">
+                    <!-- column -->
+                    <div class="record-row d-flex align-items-center mt-1">
                         <div class="column-buttons d-flex gap-2">
                             <button type="button" class="btn btn-dark caption2 mat-bg-color">View Detils</button>
                             <button type="button" class="btn btn-secondary silver-bg-color border-0">
@@ -1548,6 +1569,10 @@
     </main>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/scroll.js"></script>
+    <script>
+
+
+    </script>
 </body>
 
 </html>

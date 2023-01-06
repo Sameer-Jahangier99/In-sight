@@ -16,6 +16,8 @@
   --white-color: #fff;
   --blackish-color: #464646;
   --sky-color: #DFEBF8;
+  --light-danger-color: #E3737A;
+  --white-color: #ffffff;
 }
 
 html {
@@ -204,6 +206,10 @@ a {
   color: var(--light-grey) !important;
 }
 
+.silver-color {
+  color: var(--silver-color) !important;
+}
+
 
 .link-blue {
   color: var(--lightBlue-color) !important;
@@ -216,6 +222,8 @@ a {
 .main-grey {
   background: var(--main-grey) !important;
 }
+
+
 
 .dark-grey {
   color: var(--dark-grey) !important;
@@ -259,10 +267,24 @@ a {
   background: var(--linkBlue-color) !important;
 }
 
+.light-danger-bg-color {
+  background: var(--light-danger-color) !important;
+}
+
+.white-bg-color {
+  background: var(--white-color) !important;
+}
+
+
 .password-field-icon {
   position: absolute;
   right: 0;
 }
+
+ /* require class */
+ .required::after {
+   content: "*";
+ }
 /* border */
 
 .grey-border {
