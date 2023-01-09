@@ -1,0 +1,20 @@
+:root {
+  --main-bg-color: #003366;
+  --main-font: "Poppins", sans-serif;
+  --grey-color: #7c7c7c;
+  --lightBlue-color: #398fff;
+  --linkBlue-color: #1cc1ff;
+  --sky-blue-color: #deebf8;
+  --silver-color: #edeff1;
+  --light-grey: #a0a0a0;
+  --silver-color: #a9a9a9;
+  --dark-grey: #4f4f4f;
+  --mat-color: #2f2f2f;
+  --main-grey: #f9f9f9;
+  --green-color: #04bd00;
+  --white-color: #fff;
+  --blackish-color: #464646;
+  --sky-color: #dfebf8;
+  --light-danger-color: #e3737a;
+  --white-color: #ffffff;
+}

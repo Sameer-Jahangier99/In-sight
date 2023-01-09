@@ -1,0 +1,81 @@
+/* ----------------------- JS CLASSES ----------------------- */
+.show-filter {
+  display: flex !important;
+}
+
+/* ---------------------------------------------------------- */
+
+#filters-wrapper {
+  display: none;
+  gap: 10px;
+}
+
+.layout-wrapper {
+  width: 100%;
+  background-color: #dddddd;
+}
+
+.cards-wrapper {
+  width: 100%;
+}
+
+.card-box {
+  background: #d9e6f3;
+  border-radius: 10px;
+  border: none;
+  padding: 15px;
+  width: 100%;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.label {
+  font-size: 12px;
+  margin-bottom: 0;
+  color: #a0a0a0;
+}
+
+.filter {
+  font-size: 12px;
+  background: white;
+  padding: 2px 5px;
+  width: 100%;
+  border: 1px solid;
+}
+
+.card {
+  padding: 10px;
+  width: 100%;
+  border: none !important;
+  box-shadow: 2px 2px 5px #bbbbbb;
+}
+
+@media screen and (min-width: 991px) {
+  #filters-wrapper {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .card-box {
+    width: 100%;
+  }
+
+  #filters-wrapper {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .layout-wrapper {
+    overflow-x: auto;
+  }
+
+  .cards-wrapper {
+    width: 991px;
+  }
+}

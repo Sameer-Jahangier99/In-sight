@@ -1,0 +1,41 @@
+@import url(/css/colors.css);
+
+#table-cont .nav-item {
+  width: 100%;
+}
+
+.cont-head {
+  background-color: var(--main-bg-color);
+  color: white;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.nav-tab {
+  background: #b7b7b7;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+}
+
+.nav-tab.active {
+  background: var(--main-bg-color);
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+}
+
+.nav-tab.active::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f058";
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-item {
+    border-bottom: 1px solid white;
+  }
+}

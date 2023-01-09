@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>In-Sightonline</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="/css/desktop-109.css">
+  <!-- Bootstrap file -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/b2e6ac0659.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg nav-container">
+    <div class="container-fluid container">
+      <a href="../index.html">
+        <img src="../assets/logo.png" alt="logo" class="pointer" />
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav w-100 d-flex justify-content-center gap-5">
+          <li class="nav-item responsive-icon">
+            <a class="nav-link" href="#">Quick Employee view</a>
+          </li>
+
+          <li class="nav-item responsive-icon">
+            <a class="nav-link" href="#">Live Chat</a>
+          </li>
+        </ul>
+
+        <div>
+          <div class="d-flex pointer">
+            <img src="../assets/msgIcon.svg" alt="message-icon" />
+            <div class="message-counter">
+              <div class="counter d-flex justify-content-center align-items-center">
+                2
+              </div>
+            </div>
+            <img src="../assets/profileIcon.svg" alt="profile-image" class="ms-5 pointer" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- BOX 1 -->
+  <div class="container my-5">
+    <div class="heading-box mb-3">
+      <h3>Add Dependent</h3>
+    </div>
+
+    <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link px-3 py-2 border-0 weight-500" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+          type="button" role="tab" aria-controls="home" aria-selected="true">Employee
+          Information</button>
+      </li>
+
+      <li class="nav-item" role="presentation">
+        <button class="nav-link px-3 py-2 border-0 weight-500 active" id="profile-tab" data-bs-toggle="tab"
+          data-bs-target="#dependent" type="button" role="tab" aria-controls="profile"
+          aria-selected="false">Dependent</button>
+      </li>
+
+      <li class="nav-item" role="presentation">
+        <button class="nav-link px-3 py-2 border-0 weight-500" id="contact-tab" data-bs-toggle="tab"
+          data-bs-target="#contact" type="button" role="tab" aria-controls="contact"
+          aria-selected="false">Coverage</button>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="dependent" role="tabpanel" aria-labelledby="home-tab">
+        <div class="box-content bg-white px-4 py-5">
+          <h5>Add Dependent(s)</h5>
+
+          <div class="btn-toolbar gap-1 mt-5">
+            <button class="btn-muted">Add Dependent</button>
+            <button class="btn-blue">Proceed to Coverage without Dependent</button>
+            <button class="btn-exit">Exit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOX 2 -->
+  <div class="container my-5">
+    <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link px-3 py-2 border-0 weight-500" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+          type="button" role="tab" aria-controls="home" aria-selected="true">Employee
+          Information</button>
+      </li>
+
+      <li class="nav-item" role="presentation">
+        <button class="nav-link px-3 py-2 border-0 weight-500 active" id="profile-tab" data-bs-toggle="tab"
+          data-bs-target="#dependent" type="button" role="tab" aria-controls="profile"
+          aria-selected="false">Dependent</button>
+      </li>
+
+      <li class="nav-item" role="presentation">
+        <button class="nav-link px-3 py-2 border-0 weight-500" id="contact-tab" data-bs-toggle="tab"
+          data-bs-target="#contact" type="button" role="tab" aria-controls="contact"
+          aria-selected="false">Coverage</button>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="dependent" role="tabpanel" aria-labelledby="home-tab">
+        <div class="box-content bg-white px-4 py-5">
+          <h5>Add Dependent(s)</h5>
+
+          <div>
+            <p>Please select the Relation to add new dependent.</p>
+
+            <div class="form-field col-md-3">
+              <p class="label">Relation</p>
+
+              <select class="form-select">
+                <option value="select" selected disabled>Select</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="btn-toolbar gap-1 mt-5">
+            <button class="btn-blue">Proceed to Coverage without Dependent</button>
+            <button class="btn-exit">Exit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOX 3 -->
+  <div class="container my-5">
+    <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link px-3 py-2 border-0 weight-500" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+          type="button" role="tab" aria-controls="home" aria-selected="true">Employee
+          Information</button>
+      </li>
+
+      <li class="nav-item" role="presentation">
+        <button class="nav-link px-3 py-2 border-0 weight-500 active" id="profile-tab" data-bs-toggle="tab"
+          data-bs-target="#dependent" type="button" role="tab" aria-controls="profile"
+          aria-selected="false">Dependent</button>
+      </li>
+
+      <li class="nav-item" role="presentation">
+        <button class="nav-link px-3 py-2 border-0 weight-500" id="contact-tab" data-bs-toggle="tab"
+          data-bs-target="#contact" type="button" role="tab" aria-controls="contact"
+          aria-selected="false">Coverage</button>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="dependent" role="tabpanel" aria-labelledby="home-tab">
+        <div class="box-content bg-white px-4 py-5">
+          <h5>Add Dependent(s)</h5>
+
+          <div class="d-flex flex-column align-items-start gap-4">
+            <p>Please select the Relation to add new dependent.</p>
+
+            <div class="form-field col-12 col-lg-4">
+              <p class="label weight-500 light-blue">Relation</p>
+
+              <select class="form-select">
+                <option value="select" selected disabled>Spounse</option>
+              </select>
+            </div>
+
+            <div class="row w-100 gap-3 mx-0">
+              <div class="col-12 col-lg-4 p-0">
+                <p class="label required">First Name</p>
+
+                <input name="firstname" class="form-control">
+              </div>
+
+              <div class="col-12 col-lg p-0">
+                <p class="label required">Last Name</p>
+
+                <input name="lastname" class="form-control">
+              </div>
+
+              <div class="col-12 col-lg p-0">
+                <p class="label required">Date of Birth</p>
+
+                <input name="lastname" type="text" class="form-control" placeholder="MM/DD/YYYY">
+              </div>
+
+              <div class="col-12 col-lg p-0">
+                <p class="label required">SNN</p>
+
+                <input name="lastname" class="form-control">
+              </div>
+
+              <div class="col-12 col-lg p-0">
+                <p class="label required">Gender</p>
+
+                <select name="gender" class="form-select">
+                  <option value="select" selected disabled>Select</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-field col-12 col-lg-4">
+              <p class="label">Association Effective from Date</p>
+
+              <input type="text" class="form-control" placeholder="MM/DD/YYYY">
+            </div>
+
+            <div class="row w-100 gap-3 mx-0">
+              <div class="col-12 col-lg-4 p-0">
+                <p class="label">Preferred Email</p>
+
+                <input type="text" class="form-control">
+              </div>
+
+              <div class="col-12 col-lg p-0">
+                <p class="label">Email Type</p>
+
+                <select class="form-select">
+                  <option value="select" selected disabled>Select</option>
+                </select>
+              </div>
+
+              <div class="col-12 col-lg p-0">
+                <p class="label">Preferred Phone Home</p>
+
+                <input class="form-control">
+              </div>
+
+              <div class="col-12 col-lg p-0">
+                <p class="label">Phone Type</p>
+
+                <select class="form-select">
+                  <option value="select" selected disabled>Select</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-start align-items-md-center flex-column flex-md-row w-100 gap-4">
+              <div class="d-flex align-items-center gap-2">
+                <input type="checkbox" name="address" id="address">
+
+                <div>
+                  <label class="label" for="address">Use Your Address</label>
+
+                  <p class="mb-0 caption">123 Demo Street City, State, Zip</p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center gap-2">
+                <span class="btn-blue py-0 px-2">+</span>
+
+                <p class="label">Add Additional Contact Information</p>
+              </div>
+            </div>
+
+            <div class="form-group w-100">
+              <p class="label weight-600">Coverage Impact</p>
+
+              <div class="row w-100 mx-0 gap-3">
+                <div class="col-3 px-0 d-flex align-items-center gap-2">
+                  <input type="checkbox" class="form-check">
+                  <p class="mb-0 label">Disability</p>
+                </div>
+
+                <div class="col-3 px-0 d-flex align-items-center gap-2">
+                  <input type="checkbox" class="form-check">
+                  <p class="mb-0 label">Medicare</p>
+                </div>
+
+                <div class="col-3 px-0 d-flex align-items-center gap-2">
+                  <input type="checkbox" class="form-check">
+                  <p class="mb-0 label">Military</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group w-100">
+              <p class="label weight-600">Privacy</p>
+
+              <div class="form-field d-flex align-items-center gap-2">
+                <input type="checkbox" name="privacy" class="form-check">
+                <p class="mb-0 label">Privacy Protected Member</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn-toolbar justify-content-center gap-1 mt-5">
+            <button class="btn-muted">Add to Dependent</button>
+            <button class="btn-blue">Save & Continue</button>
+            <button class="btn-exit">Exit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/scroll.js"></script>
+</body>
+
+</html>

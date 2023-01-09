@@ -1,11 +1,14 @@
-const rightBtn = document.getElementById('slide-right');
-const leftBtn = document.getElementById('slide-left');
+const rightBtn = document.getElementById("slide-right");
+const leftBtn = document.getElementById("slide-left");
 
-rightBtn.onclick = () => {
-    document.getElementById('link-container').scrollLeft += 120;
+if (rightBtn) {
+  rightBtn.onclick = () => {
+    document.getElementById("link-container").scrollLeft += 120;
   };
+}
 
+if (leftBtn) {
   leftBtn.onclick = () => {
-    document.getElementById('link-container').scrollLeft -= 120;
-
+    document.getElementById("link-container").scrollLeft -= 120;
   };
+}

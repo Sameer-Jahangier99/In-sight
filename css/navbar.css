@@ -1,0 +1,45 @@
+.nav-container {
+  background: var(--main-bg-color) !important;
+}
+
+li a {
+  font-family: var(--main-font);
+  font-size: 20px;
+  color: #ffffff !important;
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid #ffffff;
+}
+
+.active {
+  border-bottom: 1px solid #ffffff;
+}
+
+.nav-link {
+  padding: 0px !important;
+}
+
+.message-counter {
+  position: relative;
+  bottom: 6px;
+  right: 5px;
+  font-size: 10px;
+  font-family: var(--main-font);
+}
+
+.counter {
+  background: #ffffff;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.navbar-toggler {
+  border: var(--bs-border-width) solid #ffffff !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url(../assets/arrowRight.svg) !important;
+  transform: rotate(90deg);
+}

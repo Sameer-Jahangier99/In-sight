@@ -1,0 +1,6 @@
+@import url(./colors.css);
+@import url(./buttons.css);
+
+#myTab .nav-item .nav-link {
+  color: var(--lightBlue-color) !important;
+}

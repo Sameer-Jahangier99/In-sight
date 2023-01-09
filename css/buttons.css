@@ -1,0 +1,50 @@
+.btn-main {
+  border: none;
+  background: var(--main-bg-color);
+  color: white;
+  padding: 10px 20px;
+}
+
+.btn-main:hover {
+  background: #002b57;
+}
+
+.btn-muted {
+  border: none;
+  background: var(--silver-color);
+  color: white;
+  transition: 0.2s;
+  padding: 10px 20px;
+}
+
+.btn-muted:hover {
+  background: var(--dark-grey);
+  color: white;
+  transition: 0.2s;
+}
+
+.btn-blue {
+  color: white;
+  border: none;
+  background: var(--lightBlue-color);
+  transition: 0.2s;
+  padding: 10px 20px;
+}
+
+.btn-blue:hover {
+  background: var(--main-bg-color);
+  transition: 0.2s;
+}
+
+.btn-exit {
+  background: var(--mat-color);
+  color: white;
+  transition: 0.2s;
+  border: none;
+  padding: 10px 20px;
+}
+
+.btn-exit:hover {
+  background: #202020;
+  transition: 0.2s;
+}

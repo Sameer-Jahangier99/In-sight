@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>In-Sightonline</title>
+  <link rel="stylesheet" href="/css/globals.css" />
+  <link rel="stylesheet" href="/css/desktop-99.css">
+  <!-- Bootstrap file -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/b2e6ac0659.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg nav-container">
+    <div class="container-fluid container">
+      <a href="../index.html">
+        <img src="../assets/logo.png" alt="logo" class="pointer" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav w-100 d-flex justify-content-evenly">
+          <li class="nav-item responsive-icon">
+            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item responsive-icon">
+            <a class="nav-link" href="./findProvider.html">Find Provider</a>
+          </li>
+          <li class="nav-item responsive-icon active">
+            <a class="nav-link active" href="#">Req ID Card</a>
+          </li>
+          <li class="nav-item responsive-icon">
+            <a class="nav-link" href="#">Req Dep Access</a>
+          </li>
+        </ul>
+        <div>
+          <div class="d-flex pointer">
+            <img src="../assets/msgIcon.svg" alt="message-icon" />
+            <div class="message-counter">
+              <div class="counter d-flex justify-content-center align-items-center">
+                2
+              </div>
+            </div>
+            <img src="../assets/profileIcon.svg" alt="profile-image" class="ms-5 pointer" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-5" id="table-cont">
+    <div class="cont-head">
+      <h5>Coverage Selection</h5>
+    </div>
+
+    <div class="cont-body bg-white">
+      <p class="text-md-center my-2">The enrollment wizard will walk you through adjusting coverage for this employee. Please
+        enter the enrollment
+        event and the effective date to begin.</p>
+
+      <div class="row w-100 mx-0">
+        <div class="col-12 col-md-3">
+          <ul class="nav nav-tabs d-flex align-items-start flex-column" id="coverage-table" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-tab active" id="home-tab" data-bs-toggle="tab" data-bs-target="#enrollment">
+                ENROLLMENT EVENT
+              </button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <button class="nav-tab" id="profile-tab" data-bs-toggle="tab" data-bs-target="#medical">MEDICAL</button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <button class="nav-tab" id="contact-tab" data-bs-toggle="tab" data-bs-target="#dental">DENTAL</button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <button class="nav-tab" id="contact-tab" data-bs-toggle="tab" data-bs-target="#vision">VISION</button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <button class="nav-tab" id="contact-tab" data-bs-toggle="tab" data-bs-target="#review">REVIEW</button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-8">
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="enrollment">
+              <div class="tab-content-body row w-100 mx-0 gap-3 p-5">
+                <div class="form-field col-12 col-lg-5">
+                  <p class="label required">Enrollment Event</p>
+
+                  <select class="form-select">
+                    <option value="new" selected disabled>New</option>
+                  </select>
+                </div>
+
+                <div class="form-field col-12 col-lg-5">
+                  <p class="label required">Plan Effective Date</p>
+
+                  <input type="date" class="form-control">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="medical">Medical</div>
+            <div class="tab-pane fade" id="dental">Dental</div>
+            <div class="tab-pane fade" id="vision">Vision</div>
+            <div class="tab-pane fade" id="review">Review</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/scroll.js"></script>
+</body>
+
+</html>

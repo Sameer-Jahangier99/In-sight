@@ -1,0 +1,19 @@
+@import url(./colors.css);
+@import url(./buttons.css);
+
+.card-wrapper {
+  width: 100%;
+}
+
+.card-head {
+  background-color: var(--main-bg-color);
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.card-cont-body {
+  background-color: white;
+  margin-top: 10px !important;
+  border-radius: 10px;
+}
