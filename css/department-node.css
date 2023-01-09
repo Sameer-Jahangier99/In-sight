@@ -1,0 +1,39 @@
+@import url(./colors.css);
+
+.department-list-items {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.list-item p {
+  font-size: 13px;
+}
+
+.list-item .sub-node {
+  display: none;
+  padding-left: 35px;
+}
+
+.list-item i::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  content: "\f0fe";
+  /* font: var(--fa-font-solid); */
+  font-weight: 400;
+  color: var(--main-bg-color);
+  font-size: 14px;
+}
+
+.list-item.active i::before {
+  content: "\f146";
+}
+
+.list-item.active .sub-node {
+  display: block;
+}
+
+/* .list-item .sub-node.active {
+  display: block;
+} */

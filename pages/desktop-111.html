@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>In-Sightonline</title>
+  <link rel="stylesheet" href="/css/globals.css" />
+  <link rel="stylesheet" href="/css/desktop-111.css">
+  <!-- Bootstrap file -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/b2e6ac0659.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg nav-container">
+    <div class="container-fluid container">
+      <a href="../index.html">
+        <img src="../assets/logo.png" alt="logo" class="pointer" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav w-100 d-flex justify-content-evenly">
+          <li class="nav-item responsive-icon">
+            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item responsive-icon">
+            <a class="nav-link" href="./findProvider.html">Find Provider</a>
+          </li>
+          <li class="nav-item responsive-icon">
+            <a class="nav-link" href="#">Req ID Card</a>
+          </li>
+          <li class="nav-item responsive-icon">
+            <a class="nav-link" href="#">Req Dep Access</a>
+          </li>
+        </ul>
+        <div>
+          <div class="d-flex pointer">
+            <img src="../assets/msgIcon.svg" alt="message-icon" />
+            <div class="message-counter">
+              <div class="counter d-flex justify-content-center align-items-center">
+                2
+              </div>
+            </div>
+            <img src="../assets/profileIcon.svg" alt="profile-image" class="ms-5 pointer" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <!-- FILTERS ROW -->
+    <div class="row my-3 mx-0">
+      <div class="col-12 col-lg-7 row gap-1">
+        <div class="col-12 col-lg-9 row g-1 mt-0">
+          <div class="field col-6 mt-0">
+            <input type="number" placeholder="675000160" class="form-control">
+          </div>
+
+          <div class="field col-6 mt-0">
+            <input type="number" placeholder="675000160" class="form-control">
+          </div>
+
+          <div class="field col-4">
+            <input placeholder="First Name" type="text" class="form-control">
+          </div>
+
+          <div class="field col-4">
+            <input placeholder="Last Name" type="text" class="form-control">
+          </div>
+
+          <div class="field col-4">
+            <input placeholder="DOB" type="date" class="form-control">
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-3 d-flex flex-column gap-1 my-3 my-lg-0 px-0">
+          <button class="btn-muted w-100 align-self-stretch">Clear Search</button>
+          <button class="btn-blue w-100 align-self-stretch">Search</button>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-5 row flex-column gap-1 px-lg-5">
+        <select class="form-select">
+          <option value="add/change coverage" selected disabled>Add/Change coverage</option>
+        </select>
+
+        <select class="form-select">
+          <option value="add/change coverage" selected disabled>Add/Change coverage</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row my-3">
+      <!-- SIDEBAR -->
+      <div class="col-12 col-lg-5 d-flex flex-column align-items-stretch gap-2">
+        <div class="d-flex align-items-center gap-2">
+          <button class="btn-main w-100 p-2">
+            Eligible & Benefits
+          </button>
+
+          <select class="form-select">
+            <option value="all" selected>All</option>
+          </select>
+        </div>
+
+
+        <div class="card">
+          <div class="d-flex align-items-center mx-0 gap-4">
+            <p class="caption">Lorem Ipsm</p>
+            <p class="caption">(Subscriber)</p>
+          </div>
+
+          <div class="row">
+            <div class="col-6">
+              <p class="caption">Client Name:</p>
+              <p class="caption">Department ACTIVE</p>
+              <p class="caption">Alternate id: <span class="value">675000160</span></p>
+            </div>
+
+            <div class="col-6">
+              <p class="caption">Gender:</p>
+              <p class="caption">Social Security:</p>
+              <p class="caption">Date of Birth:</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="d-flex justify-content-between mx-0">
+            <p class="head">Medical</p>
+
+            <p class="caption text-primary">Plan Documents SBC View ID Card</p>
+          </div>
+
+          <div class="form-row">
+            <p class="caption">Tier:</p>
+            <p class="value">Employee</p>
+          </div>
+
+          <div class="form-row">
+            <p class="caption">Covered Since:</p>
+            <p class="value">1/17/2017</p>
+          </div>
+
+          <div class="form-row">
+            <p class="caption">Plan Number:</p>
+            <p class="value">6750001</p>
+          </div>
+
+          <div class="form-row">
+            <p class="caption">Network:</p>
+            <p class="value">HLTHHF</p>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <button class="btn-muted">
+            View Full Member Eligibility
+          </button>
+        </div>
+
+        <div class="card-wrapper">
+          <div class="card-label">LETTERS</div>
+
+          <div class="card">
+            <p class="caption">Letters-No Records Found</p>
+          </div>
+        </div>
+
+        <div class="card-wrapper">
+          <div class="card-label">Demographics</div>
+
+          <div class="card">
+            <p class="head">Address: For Correspondence</p>
+
+            <div class="form-row justify-content-between">
+              <p class="caption">Lorem Ipsum</p>
+
+              <button class="btn btn-primary rounded-0 py-1 px-2">Edit address</button>
+            </div>
+
+            <p class="caption">Lorem Ipsum</p>
+            <p class="caption">Lorem Ipsum</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <p class="head">Preferred Communication Method:</p>
+
+          <p class="caption">Email:</p>
+        </div>
+
+        <div class="card">
+          <p class="head">Contact Information:</p>
+
+          <div class="form-row">
+            <div class="col">
+              <p class="caption">Mobile:</p>
+              <p class="caption">Home:</p>
+            </div>
+
+            <div class="col">
+              <p class="caption">Work:</p>
+              <p class="caption">Email:</p>
+            </div>
+          </div>
+
+          <div class="form-row justify-content-evenly">
+            <button class="btn btn-primary rounded-0">Add/Edit Phone Number</button>
+            <button class="btn btn-primary rounded-0">Add/Edit Email</button>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <button class="btn-muted text-white">View Contact Information</button>
+        </div>
+
+
+        <div class="card-wrapper">
+          <div class="card-label">
+            CORDINATION OF BENEFITS
+          </div>
+
+          <div class="card">
+            <p class="caption">
+              Coordination of Benefits - Empty List
+            </p>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <button class="btn-main py-1 px-2 w-100">
+            Spending Accounts
+          </button>
+
+          <select class="form-select">
+            <option value="#" selected disabled>All</option>
+          </select>
+        </div>
+
+        <div class="text-center">
+          <button class="btn-muted">View Full Member Spending Accounts</button>
+        </div>
+
+        <div class="card-wrapper">
+          <div class="card-label">Cobra</div>
+
+          <div class="card">
+            <p class="caption">No data to display</p>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <button class="btn-muted">
+            View COBRA Details
+          </button>
+        </div>
+
+      </div>
+
+      <!-- MAIN BODY -->
+      <div class="col-12 col-lg-7">
+        <!-- FILTERS ROW -->
+        <div class="d-flex align-items-center flex-wrap flex-sm-nowrap gap-2">
+          <button class="btn-main p-2">Claims</button>
+
+          <input value="12/15/2020" type="date" class="form-control">
+
+          <input type="date" class="form-control">
+
+          <select class="form-select">
+            <option value="claim number" selected disabled>Claim Number</option>
+          </select>
+
+          <select class="form-select">
+            <option value="provider" selected disabled>Provider</option>
+          </select>
+
+          <select class="form-select">
+            <option value="status" selected disabled>Status</option>
+          </select>
+        </div>
+
+        <!-- CARDS TABLE -->
+        <div class="cards-layout-wrapper">
+          <div class="cards py-2 gap-1">
+            <div class="card">
+              <div class="d-flex align-items-center justify-content-between mx-0 mb-2">
+                <p class="mb-0 weight-600">MERCY WOMENS SERVICES LLC</p>
+
+                <p class="caption">Claim Status: Completed</p>
+              </div>
+
+              <div class="row mx-0 flex-nowrap">
+                <div class="col-4">
+                  <p class="caption">Service Date: 8/20/2022 For</p>
+                  <p class="caption">Lorem Ipsum (Employee)</p>
+                  <p class="caption">Medical</p>
+                </div>
+
+                <div class="col-2 text-center">
+                  <p class="caption">Amount Billed</p>
+                  <p class="value">$258.00</p>
+                </div>
+
+                <div class="col-2 text-center">
+                  <p class="caption">Plan Paid</p>
+                  <p class="value">$10.95</p>
+                </div>
+
+                <div class="col-2 text-center">
+                  <p class="caption">Member Remaining</p>
+                  <p class="value">$82.76</p>
+                </div>
+
+                <div class="col-2">
+                  <p class="text-center mb-1 text-primary caption">222000699
+                    View Payment
+                    View EOB</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="d-flex align-items-center justify-content-between mx-0 mb-2">
+                <p class="mb-0 weight-600">MERCY HOSPITAL ST LOUIS</p>
+
+                <p class="caption">Claim Status: Completed</p>
+              </div>
+
+              <div class="row mx-0 flex-nowrap">
+                <div class="col-4">
+                  <p class="caption">Service Date: 8/20/2022 For</p>
+                  <p class="caption">Lorem Ipsum (Employee)</p>
+                  <p class="caption">Medical</p>
+                </div>
+
+                <div class="col-2 text-center">
+                  <p class="caption">Amount Billed</p>
+                  <p class="value">$258.00</p>
+                </div>
+
+                <div class="col-2 text-center">
+                  <p class="caption">Plan Paid</p>
+                  <p class="value">$10.95</p>
+                </div>
+
+                <div class="col-2 text-center">
+                  <p class="caption">Member Remaining</p>
+                  <p class="value">$82.76</p>
+                </div>
+
+                <div class="col-2">
+                  <p class="text-center mb-1 text-primary caption">222000699
+                    View Payment
+                    View EOB</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="d-flex align-items-center justify-content-between mx-0 mb-2">
+                <p class="mb-0 weight-600">BOONSLICK MEDICAL</p>
+
+                <p class="caption">Claim Status: Completed</p>
+              </div>
+
+              <div class="row mx-0 flex-nowrap">
+                <div class="col-4">
+                  <p class="caption">Service Date: 8/20/2022 For</p>
+                  <p class="caption">Lorem Ipsum (Employee)</p>
+                  <p class="caption">Medical</p>
+                </div>
+
+                <div class="col-2 text-center">
+                  <p class="caption">Amount Billed</p>
+                  <p class="value">$258.00</p>
+                </div>
+
+                <div class="col-2 text-center">
+                  <p class="caption">Plan Paid</p>
+                  <p class="value">$10.95</p>
+                </div>
+
+                <div class="col-2 text-center">
+                  <p class="caption">Member Remaining</p>
+                  <p class="value">$82.76</p>
+                </div>
+
+                <div class="col-2">
+                  <p class="text-center mb-1 text-primary caption">222000699
+                    View Payment
+                    View EOB</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="d-flex align-items-center justify-content-between mx-0 mb-2">
+                <p class="mb-0 weight-600">BOONSLICK MEDICAL</p>
+
+                <p class="caption">Claim Status: Completed</p>
+              </div>
+
+              <div class="row mx-0 flex-nowrap">
+                <div class="col-4">
+                  <p class="caption">Service Date: 8/20/2022 For</p>
+                  <p class="caption">Lorem Ipsum (Employee)</p>
+                  <p class="caption">Medical</p>
+                </div>
+
+                <div class="col-2 text-center">
+                  <p class="caption">Amount Billed</p>
+                  <p class="value">$258.00</p>
+                </div>
+
+                <div class="col-2 text-center">
+                  <p class="caption">Plan Paid</p>
+                  <p class="value">$10.95</p>
+                </div>
+
+                <div class="col-2 text-center">
+                  <p class="caption">Member Remaining</p>
+                  <p class="value">$82.76</p>
+                </div>
+
+                <div class="col-2">
+                  <p class="text-center mb-1 text-primary caption">222000699
+                    View Payment
+                    View EOB</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="d-flex align-items-center justify-content-between mx-0 mb-2">
+                <p class="mb-0 weight-600">MERCY HOSPITAL ST LOUIS</p>
+
+                <p class="caption">Claim Status: Completed</p>
+              </div>
+
+              <div class="row mx-0 flex-nowrap">
+                <div class="col-4">
+                  <p class="caption">Service Date: 8/20/2022 For</p>
+                  <p class="caption">Lorem Ipsum (Employee)</p>
+                  <p class="caption">Medical</p>
+                </div>
+
+                <div class="col-2 text-center">
+                  <p class="caption">Amount Billed</p>
+                  <p class="value">$258.00</p>
+                </div>
+
+                <div class="col-2 text-center">
+                  <p class="caption">Plan Paid</p>
+                  <p class="value">$10.95</p>
+                </div>
+
+                <div class="col-2 text-center">
+                  <p class="caption">Member Remaining</p>
+                  <p class="value">$82.76</p>
+                </div>
+
+                <div class="col-2">
+                  <p class="text-center mb-1 text-primary caption">222000699
+                    View Payment
+                    View EOB</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PAGINATION & PAGE INFO -->
+          <div class="form-row justify-content-between align-items-center">
+            <nav>
+              <ul class="pagination mb-0">
+                <li class="page-item">
+                  <a class="page-link" href="#">
+                    <i class="fa-solid fa-backward-step"></i>
+                  </a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">
+                    <i class="fa-solid fa-caret-left"></i>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">
+                    <i class="fa-solid fa-caret-right"></i>
+                  </a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">
+                    <i class="fa-solid fa-forward-step"></i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="body1">1 - 5 of 21 items</div>
+          </div>
+
+          <div class="text-center my-4">
+            <button class="btn-muted">View Full Member Claims</button>
+          </div>
+        </div>
+
+
+        <!-- MEMBER DEDUCTIBLE SECTION -->
+        <div class="card-wrapper my-3">
+          <div class="row align-items-end flex-wrap flex-sm-nowrap mx-0 gap-3">
+            <div class="col-auto card-label order-3 order-sm-1">DEDUCTIBLE</div>
+
+            <div class="col-auto order-2 order-sm-2">
+              <select class="form-select">
+                <option value="" selected disabled>Subscriber</option>
+              </select>
+            </div>
+
+            <div class="col-auto order-1 order-sm-3">
+              <select class="form-select">
+                <option value="" selected disabled>Current Year</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- MEDICAL CARD WITH EXPENSE BARS -->
+          <div class="card">
+            <p class="text-black mb-0 weight-600">Medical</p>
+
+            <div class="progress-wrapper">
+              <p class="caption">In-Network</p>
+
+
+              <div class="progress-box">
+                <p class="caption">Medical Deductible - $1000</p>
+
+                <div class="progress">
+                  <div class="progress-bar bg-success" style="width: 100%"></div>
+                </div>
+
+                <div class="progress-label">
+                  <p class="caption">$1,000.00 Spent</p>
+                  <p class="caption">$0.00 Remaining</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="progress-wrapper">
+              <p class="caption">Out-Of-Network</p>
+
+
+              <div class="progress-box">
+                <p class="caption">Medical Deductible - $2,000.00</p>
+
+                <div class="progress">
+                  <div class="progress-bar bg-success" style="width: 0%"></div>
+                </div>
+
+                <div class="progress-label">
+                  <p class="caption">$0.00 Spent</p>
+                  <p class="caption">$2,000.00 Remaining</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="progress-wrapper">
+              <p class="caption">In-Network</p>
+
+
+              <div class="progress-box">
+                <p class="caption">Medical Out Of Pocket - $3,500.00</p>
+
+                <div class="progress">
+                  <div class="progress-bar bg-success" style="width: 35%"></div>
+                </div>
+
+                <div class="progress-label">
+                  <p class="caption">$1,042.74 Spent</p>
+                  <p class="caption">$2,457.26 Remaining</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="progress-wrapper">
+              <p class="caption">Out-Of-Network</p>
+
+
+              <div class="progress-box">
+                <p class="caption">Medical Out Of Pocket - $7,000.00</p>
+
+                <div class="progress">
+                  <div class="progress-bar bg-success" style="width: 0%"></div>
+                </div>
+
+                <div class="progress-label">
+                  <p class="caption">$0.00 Spent</p>
+                  <p class="caption">$7,000.00 Remaining</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-center my-3">
+              <button class="btn-muted">View Full Member Deductible</button>
+            </div>
+
+            <div class="form-row py-3 justify-content-between">
+              <button class="btn-main">DEDUCTIBLE SUMMARY</button>
+
+              <p class="caption text-primary">View Tooth Chart</p>
+            </div>
+
+            <!-- PAGINATION & PAGE INFO -->
+            <div class="form-row justify-content-between align-items-center">
+              <nav>
+                <ul class="pagination mb-0">
+                  <li class="page-item">
+                    <a class="page-link" href="#">
+                      <i class="fa-solid fa-backward-step"></i>
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">
+                      <i class="fa-solid fa-caret-left"></i>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link active" href="#">0</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">
+                      <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">
+                      <i class="fa-solid fa-forward-step"></i>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+
+              <div class="body1">No items to display</div>
+            </div>
+
+            <div class="text-center">
+              <button class="btn-muted">
+                View Full DENTAL SUMMARY
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/scroll.js"></script>
+</body>
+
+</html>
