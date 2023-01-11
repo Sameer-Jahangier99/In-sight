@@ -12,7 +12,33 @@
 
 .layout-wrapper {
   width: 100%;
-  background-color: #dddddd;
+}
+
+.print-btn {
+  border: 1px solid #fff !important;
+  border-radius: 5px !important;
+  color: #fff !important;
+}
+
+.print-btn:hover {
+  background: #fff !important ;
+  color: #003366 !important;
+}
+
+.export-btn {
+  background: #fff !important;
+  color: #000 !important;
+  border-radius: 5px;
+}
+
+.export-btn:hover {
+  background: #bbbbbb !important;
+  color: #000 !important;
+}
+
+.box-list-container-styles {
+  background: #003366 !important;
+  border-radius: 10px;
 }
 
 .cards-wrapper {
