@@ -3,6 +3,9 @@
     color: var(--lightBlue-color) !important;
 }
 
+.first-card-header {
+    height: 180px !important; 
+}
 .card-header {
     height: 145px;
 }

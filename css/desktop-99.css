@@ -34,6 +34,10 @@
   margin-right: 5px;
 }
 
+.exit-btn {
+  background: var(--secondary-grey) !important;
+}
+
 @media screen and (max-width: 768px) {
   .nav-item {
     border-bottom: 1px solid white;

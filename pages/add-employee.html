@@ -9,7 +9,7 @@
 	<!-- styles -->
 	<link rel="stylesheet" href="../css/style.css" />
 	<link rel="stylesheet" href="../css/add-employee.css" />
-	<link rel="stylesheet" href="/css/department-node.css" />
+	<link rel="stylesheet" href="../css/department-node.css" />
 	<!-- Bootstrap file -->
 	<link rel="stylesheet" href="../css/bootstrap.min.css" />
 	<!-- google fonts -->
@@ -26,8 +26,9 @@
 			<a href="../index.html">
 				<img src="../assets/logo.png" alt="logo" class="pointer" />
 			</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -87,7 +88,7 @@
 						<div class="col-md-3">
 							<label for="inputPassword4" class="form-label caption weight-500 mb-0 required">Last
 								Name</label>
-							<input type="password" class="form-control" id="inputPassword4">
+							<input type="text" class="form-control" id="inputPassword4">
 						</div>
 						<div class="col-3">
 							<label for="inputAddress" class="form-label caption weight-500 mb-0 required">Date Of
@@ -113,7 +114,7 @@
 						<div class="col-md-3">
 							<label for="inputPassword4" class="form-label caption weight-500 mb-0 required">Social
 								Security Number</label>
-							<input type="password" class="form-control" id="inputPassword4">
+							<input type="text" class="form-control" id="inputPassword4">
 						</div>
 						<div class="col-md-3">
 							<label for="inputEmail4" class="form-label caption weight-500 mb-0 required">Employment
@@ -124,7 +125,8 @@
 							</select>
 						</div>
 						<div class="col-md-3">
-							<label for="inputState" class="form-label caption weight-500 mb-0 required">Supervisor</label>
+							<label for="inputState"
+								class="form-label caption weight-500 mb-0 required">Supervisor</label>
 							<select id="inputState" class="form-select">
 								<option selected>option 1</option>
 								<option>option 2</option>
@@ -151,23 +153,8 @@
 						</div>
 
 						<div class="col-md-3">
-							<label for="inputState" class="form-label caption weight-500 mb-0 required">Department</label>
-
-							<!-- <div class="accordion accordion-flush" id="accordionFlushExample">
-								<div class="accordion-item">
-									<h2 class="accordion-header" id="flush-headingOne">
-										<button class="accordion-button collapsed py-2 caption accordian-btn-styles" type="button"
-											data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
-											aria-controls="flush-collapseOne">
-											Node 1
-										</button>
-									</h2>
-									<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-										data-bs-parent="#accordionFlushExample">
-										<div class="accordion-body caption2">Sub Node</div>
-									</div>
-								</div>
-							</div> -->
+							<label for="inputState"
+								class="form-label caption weight-500 mb-0 required">Department</label>
 
 							<div class="department-nodes">
 								<div class="department-list-items my-1">
@@ -258,7 +245,6 @@
 						</div>
 
 						<div class="col-md-3">
-
 						</div>
 
 						<h5 class="blue mt-4">Add Employee Contact Information</h5>
@@ -304,7 +290,78 @@
 							</div>
 						</div>
 
+						<h5 class="blue mt-4">Coverage Impact</h5>
+						<div class="col-md-2">
+							<div class="d-flex">
+								<div class="form-check">
+									<input class="form-check-input filter-select-checkbox" type="checkbox" value=""
+										id="flexCheckDefault">
+								</div>
+								<label for="exampleInputEmail1"
+									class="form-label caption m-0 filter-label d-flex align-items-center">Disability</label>
+							</div>
+							<input type="date" class="form-control" id="inputAddress" placeholder="Disability Date">
+						</div>
 
+						<div class="col-md-2">
+							<div class="d-flex">
+								<div class="form-check">
+									<input class="form-check-input filter-select-checkbox" type="checkbox" value=""
+										id="flexCheckDefault">
+								</div>
+								<label for="exampleInputEmail1"
+									class="form-label caption m-0 filter-label d-flex align-items-center">Medicare</label>
+							</div>
+							<input type="text" class="form-control" id="inputAddress" placeholder="Medial Number">
+						</div>
+
+						<div class="col-md-6">
+
+						</div>
+
+						<h5 class="blue mt-4">Privacy</h5>
+
+						<div class="col-md-12">
+							<div class="d-flex">
+								<div class="form-check">
+									<input class="form-check-input filter-select-checkbox" type="checkbox" value=""
+										id="flexCheckDefault">
+								</div>
+								<label for="exampleInputEmail1"
+									class="form-label caption m-0 filter-label d-flex align-items-center">Privacy
+									Protected Member</label>
+							</div>
+						</div>
+
+						<div class="col-md-12">
+							<div class="d-flex justify-content-between">
+								<div>
+									<div class="d-flex gap-2 align-items-center">
+										<button type="button" class="btn btn-primary" style="height: 40px">+</button>
+										<p class="caption mb-0">Additional Wage Information</p>
+									</div>
+									<!-- <div class="d-flex gap-2 align-items-center mt-2">
+										<button type="button" class="btn btn-primary" style="height: 40px">+</button>
+										<p class="caption mb-0">Additional Fields</p>
+									</div> -->
+								</div>
+
+							</div>
+							<div class="d-flex justify-content-between">
+								<div>
+									
+									<div class="d-flex gap-2 align-items-center mt-2">
+										<button type="button" class="btn btn-primary" style="height: 40px">+</button>
+										<p class="caption mb-0">Additional Fields</p>
+									</div>
+								</div>
+
+								<div class="d-flex gap-2">
+									<button type="button" class="btn btn-primary">Save & Continue</button>
+									<button type="button" class="btn btn-secondary">Exit</button>
+								</div>
+							</div>
+						</div>
 					</form>
 				</div>
 
@@ -314,7 +371,7 @@
 	</main>
 	<script src="../js/bootstrap.min.js"></script>
 	<script src="../js/scroll.js"></script>
-	<script src="/js/department-node.js"></script>
+	<script src="../js/department-node.js"></script>
 </body>
 
 </html>
